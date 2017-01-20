@@ -5,6 +5,8 @@ public class WaveManager : MonoBehaviour {
 
     public InvestigatorManager investigatorManager;
     public SwatManager swatManager;
+
+    private int currentWave = 0;
 	// Use this for initialization
 	void Start () {
 	
@@ -14,4 +16,16 @@ public class WaveManager : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void StartWave()
+    {
+
+
+    }
+
+    public void EndWave()
+    {
+        currentWave++;
+
+    }
 }
