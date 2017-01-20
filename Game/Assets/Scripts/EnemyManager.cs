@@ -1,10 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
-public class EnemyManager : MonoBehaviour {
+public abstract class EnemyManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    #region Public Variables
+    public GameObject enemyUnitPrefab;
+    #endregion
+
+    #region Protected Variables
+    protected List<Enemy> enemyUnits = new List<Enemy>();
+    #endregion
+
+    // Use this for initialization
+    void Start () {
 	
 	}
 	

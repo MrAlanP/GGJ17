@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Enemy_Investigator : Enemy {
+public class SwatManager : EnemyManager {
 
 	// Use this for initialization
 	void Start () {
