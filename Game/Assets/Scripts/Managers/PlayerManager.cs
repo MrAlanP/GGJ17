@@ -29,14 +29,14 @@ public class PlayerManager : Singleton<PlayerManager> {
     float speed;
     Vector3 move;
     int x;
-    int y;
+    int z;
     
 	// Use this for initialization
 	void Start () {
         speed = 1.0f;
         move = new Vector3(0, 0);
         x = 0;
-        y = 0;
+        z = 0;
     }
 	
 	// Update is called once per frame
@@ -66,16 +66,16 @@ public class PlayerManager : Singleton<PlayerManager> {
         if (up)
         {
             //move = new Vector3(0, 1);
-            y = 1;
+            z = 1;
         }
         else if (down)
         {
             //move = new Vector3(0, -1);
-            y = -1;
+            z = -1;
         }
         else
         {
-            y = 0;
+            z = 0;
         }
 
         //if (!left && !right && !up && !down)
@@ -83,7 +83,7 @@ public class PlayerManager : Singleton<PlayerManager> {
         //    move = new Vector3(0, 0);
         //}
 
-        move = new Vector3(x, y);
+        move = new Vector3(x, 0, z);
 
         this.transform.position += move * speed * Time.deltaTime;
     }
