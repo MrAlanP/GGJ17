@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour {
 
     public bool drawRaysDebug = false;
 
+    public bool isAlive { get; private set; }
+
     protected int scareCount = 0; //How many times we've been scared
     protected AttainedInformation attainedInformation;
 

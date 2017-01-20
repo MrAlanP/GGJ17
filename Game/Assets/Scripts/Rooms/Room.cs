@@ -20,6 +20,7 @@ public class Room : MonoBehaviour {
     {
         if (collider.gameObject.GetComponent<Enemy_Investigator>())
         {
+            Debug.Log("Investigator entered this room");
             //Code
         }
     }
