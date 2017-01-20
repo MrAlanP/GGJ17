@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Room : MonoBehaviour {
 
+    //References to the rooms it is connected to
+    public Room[] rooms;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -12,4 +15,12 @@ public class Room : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.GetComponent<Enemy_Investigator>())
+        {
+            //Code
+        }
+    }
 }

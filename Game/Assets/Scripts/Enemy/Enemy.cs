@@ -15,10 +15,21 @@ public class Enemy : MonoBehaviour {
     private float degreesBetweenRaycast = 2.0f;
 
     //All colliders hit in scan
-    private List<Collider2D> hitColliders = new List<Collider2D>(); 
+    private List<Collider2D> hitColliders = new List<Collider2D>();
+
+    //Ref to NavMeshAgent
+    private NavMeshAgent nMAgent;
+
+    //Ref to current room
+    public Room currentRoom;
+     
 	// Use this for initialization
 	protected virtual void Start () {
         attainedInformation = GetComponent<AttainedInformation>();
+
+        nMAgent = GetComponent<NavMeshAgent>();
+
+        
 	}
 
     // Update is called once per frame
