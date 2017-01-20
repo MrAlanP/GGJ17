@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerManager : Singleton<PlayerManager> {
 
+    public Room currentRoom { get; private set; }
+
     bool echo
     {
         get { return Input.GetKeyDown("e"); }

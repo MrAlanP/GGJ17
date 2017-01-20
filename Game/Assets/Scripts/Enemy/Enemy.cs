@@ -7,18 +7,18 @@ public class Enemy : MonoBehaviour {
     public bool drawRaysDebug = false;
 
     protected int scareCount = 0; //How many times we've been scared
+    protected AttainedInformation attainedInformation;
 
     private float movementSpeed = 2;
 
-    private float aimAngle;
-    private float viewDistance = 5.0f;
+    private float viewDistance = 50.0f;
     private float degreesBetweenRaycast = 2.0f;
 
     //All colliders hit in scan
     private List<Collider2D> hitColliders = new List<Collider2D>(); 
 	// Use this for initialization
 	protected virtual void Start () {
-	
+        attainedInformation = GetComponent<AttainedInformation>();
 	}
 
     // Update is called once per frame
@@ -31,8 +31,14 @@ public class Enemy : MonoBehaviour {
 
     }
 
+    //Once the enemy leaves the house with a number of information
+    private void OnSafetyReached()
+    {
+
+    }
+
     //Raycasts for vision
-    void Scan()
+    private void Scan()
     {
         hitColliders.Clear();
 
@@ -60,6 +66,7 @@ public class Enemy : MonoBehaviour {
             if(hitColliders[i].tag == "Player")
             {
                 Debug.Log("I see the player!");
+                attainedInformation.OnPlayerSeen();
             }
         }
     }
