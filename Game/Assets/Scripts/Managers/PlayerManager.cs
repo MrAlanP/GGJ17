@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerManager : MonoBehaviour {
+public class PlayerManager : Singleton<PlayerManager> {
 
     bool echo
     {
