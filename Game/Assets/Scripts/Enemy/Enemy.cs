@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour {
 
     public bool drawRaysDebug = false;
 
+    public bool isAlive { get; private set; }
+
     protected int scareCount = 0; //How many times we've been scared
     protected AttainedInformation attainedInformation;
 
@@ -14,12 +16,14 @@ public class Enemy : MonoBehaviour {
     private float viewDistance = 50.0f;
     private float degreesBetweenRaycast = 2.0f;
 
+    
+
     //All colliders hit in scan
     private List<Collider2D> hitColliders = new List<Collider2D>(); 
 	// Use this for initialization
 	protected virtual void Start () {
-        attainedInformation = GetComponent<AttainedInformation>();
-	}
+        attainedInformation = new AttainedInformation();
+    }
 
     // Update is called once per frame
     protected virtual void Update () {
