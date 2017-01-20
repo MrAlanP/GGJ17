@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerManager : Singleton<PlayerManager> {
 
     public Room currentRoom { get; private set; }
+    public Animator animator;
 
     bool echo
     {
@@ -27,10 +28,15 @@ public class PlayerManager : Singleton<PlayerManager> {
     }
     float speed;
     Vector3 move;
+    int x;
+    int z;
+    
 	// Use this for initialization
 	void Start () {
         speed = 1.0f;
         move = new Vector3(0, 0);
+        x = 0;
+        z = 0;
     }
 	
 	// Update is called once per frame
@@ -39,26 +45,46 @@ public class PlayerManager : Singleton<PlayerManager> {
         {
             // interact code here
         }
+
         if (left)
         {
-            move = new Vector3(-1, 0);
+            //move = new Vector3(-1, 0);
+            x = -1;
+            animator.SetInteger("direction", -90);
         }
         else if (right)
         {
-            move = new Vector3(1, 0);
-        }
-        else if (up)
-        {
-            move = new Vector3(0, 1);
-        }
-        else if (down)
-        {
-            move = new Vector3(0, -1);
+            //move = new Vector3(1, 0);
+            x = 1;
+            animator.SetInteger("direction", 90);
         }
         else
         {
-            move = new Vector3(0, 0);
+            x = 0;
         }
+
+        if (up)
+        {
+            //move = new Vector3(0, 1);
+            z = 1;
+        }
+        else if (down)
+        {
+            //move = new Vector3(0, -1);
+            z = -1;
+        }
+        else
+        {
+            z = 0;
+        }
+
+        //if (!left && !right && !up && !down)
+        //{
+        //    move = new Vector3(0, 0);
+        //}
+
+        move = new Vector3(x, 0, z);
+
         this.transform.position += move * speed * Time.deltaTime;
     }
 }

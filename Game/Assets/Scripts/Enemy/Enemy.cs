@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour {
 
         nMAgent = GetComponent<NavMeshAgent>();
 
-        
+        attainedInformation = new AttainedInformation(); 
 	}
 
     // Update is called once per frame
