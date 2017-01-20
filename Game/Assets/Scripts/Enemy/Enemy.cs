@@ -26,6 +26,11 @@ public class Enemy : MonoBehaviour {
         Scan();
 	}
 
+    public void Spawn()
+    {
+
+    }
+
     //Raycasts for vision
     void Scan()
     {
@@ -52,7 +57,10 @@ public class Enemy : MonoBehaviour {
         //Iterate over found colliders
         for(int i = 0; i<hitColliders.Count; i++)
         {
-
+            if(hitColliders[i].tag == "Player")
+            {
+                Debug.Log("I see the player!");
+            }
         }
     }
 }
