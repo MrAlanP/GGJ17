@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 147780238}
   - 212: {fileID: 147780240}
+  - 95: {fileID: 147780239}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Player
@@ -113,6 +114,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1671133024}
   m_RootOrder: 0
+--- !u!95 &147780239
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147780237}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a02dba17643628d468a128bb6c14f364, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &147780240
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -139,7 +157,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ce08773712b94584ba9d029848f09a1b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 858a5da211823b84c9d5f4ac978f57ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
