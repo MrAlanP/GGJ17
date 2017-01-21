@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameManager : Singleton<EnemyManager>
 {
+
 	// Use this for initialization
 	void Start () {
         WaveManager.Instance.StartWave();

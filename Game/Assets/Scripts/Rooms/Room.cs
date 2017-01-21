@@ -6,6 +6,8 @@ public class Room : MonoBehaviour {
     //References to the rooms it is connected to
     public Room[] rooms;
 
+    public int objectsToSee;
+
     public bool explored;
 
 	// Use this for initialization
@@ -21,6 +23,7 @@ public class Room : MonoBehaviour {
     //Finds the next room that's not explored
     public Vector3 GetNextRoom()
     {
+        //Attempt to look for next unexplored room
         for (int i = 0; i < rooms.Length; i++)
         {
             if(!rooms[i].explored)
@@ -29,10 +32,16 @@ public class Room : MonoBehaviour {
             }
         }
 
+        //If we don't find an unexplored room directly connected we need to look elsewhere
+        for (int j = 0; j < rooms.Length; j++)
+        {
+            return rooms[j].GetNextRoom();
+        }
+
         //Recurring code here potenitally
         //For now just return null Vector
 
-        return Vector3.zero;
+        return Vector3.up;
     }
 
     void OnTriggerEnter(Collider collider)

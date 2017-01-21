@@ -10,6 +10,7 @@ public class AttainedInformation_Enemy : AttainedInformation{
 
     }
 
+    //When the player has been seen Massive increase to alertness Investigators runs to other room
     public void OnPlayerSeen()
     {
         playerSeenRoom = PlayerManager.Instance.currentRoom;
@@ -31,6 +32,15 @@ public class AttainedInformation_Enemy : AttainedInformation{
             //Add to list of used traps
             usedTraps.Add(trap);
         }
+        else
+        {
+            traps.Add(trap);
+        }
+    }
+
+    public void OnWallSeen(Item wall)
+    {
+        walls.Add(wall); 
     }
 
     public void OnRoomExplored(Room room)

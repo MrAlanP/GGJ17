@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Trap : Item {
+public class Item : MonoBehaviour {
 
-    public bool used { get; private set; }
+    public float investigationTime = 1;
+
 	// Use this for initialization
 	void Start () {
-
-        investigationTime = 2;
+	
 	}
 	
 	// Update is called once per frame
