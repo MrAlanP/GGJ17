@@ -336,8 +336,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 31682218}
   - 65: {fileID: 31682219}
+  - 114: {fileID: 31682220}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: DiningRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,11 +351,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 31682217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 0.32, z: 0}
+  m_LocalPosition: {x: 0.64, y: 0.32, z: 2.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 574461521}
-  m_RootOrder: 0
+  m_Father: {fileID: 2102901802}
+  m_RootOrder: 1
 --- !u!65 &31682219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -367,6 +368,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.76, y: 0.64, z: 3.84}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &31682220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 31682217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRooms:
+  - {fileID: 794344508}
+  objectsToSee: 0
+  explored: 0
 --- !u!1 &41615126
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,51 +420,6 @@ Transform:
   - {fileID: 1799930347}
   m_Father: {fileID: 1020352948}
   m_RootOrder: 0
---- !u!1 &44818988
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 44818989}
-  - 114: {fileID: 44818990}
-  m_Layer: 0
-  m_Name: EntranceRoom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &44818989
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44818988}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6, y: 0, z: -4.48}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 96760158}
-  m_Father: {fileID: 2102901802}
-  m_RootOrder: 2
---- !u!114 &44818990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44818988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedRooms:
-  - {fileID: 1250651939}
-  - {fileID: 873211968}
-  objectsToSee: 0
-  explored: 0
 --- !u!1001 &51693264
 Prefab:
   m_ObjectHideFlags: 0
@@ -843,8 +814,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 96760158}
   - 65: {fileID: 96760159}
+  - 114: {fileID: 96760160}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: EntranceRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -857,11 +829,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 96760157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.32, z: 0}
+  m_LocalPosition: {x: 1.6, y: 0.32, z: -4.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 44818989}
-  m_RootOrder: 0
+  m_Father: {fileID: 2102901802}
+  m_RootOrder: 2
 --- !u!65 &96760159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -874,6 +846,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.84, y: 0.64, z: 4.48}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &96760160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96760157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRooms:
+  - {fileID: 794344508}
+  - {fileID: 455687183}
+  objectsToSee: 0
+  explored: 0
 --- !u!1001 &100809771
 Prefab:
   m_ObjectHideFlags: 0
@@ -1421,50 +1409,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 406458, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
   m_PrefabInternal: {fileID: 129303619}
---- !u!1 &145881890
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 145881891}
-  - 114: {fileID: 145881892}
-  m_Layer: 0
-  m_Name: Garage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &145881891
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 145881890}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.96, y: 0, z: 2.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1229915845}
-  m_Father: {fileID: 2102901802}
-  m_RootOrder: 4
---- !u!114 &145881892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 145881890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedRooms:
-  - {fileID: 1250651939}
-  objectsToSee: 0
-  explored: 0
 --- !u!1001 &149690548
 Prefab:
   m_ObjectHideFlags: 0
@@ -4265,8 +4209,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 455687181}
   - 65: {fileID: 455687182}
+  - 114: {fileID: 455687183}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: Bathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4279,11 +4224,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 455687180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.32, z: 0}
+  m_LocalPosition: {x: -1.6, y: 0.32, z: -2.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 873211967}
-  m_RootOrder: 0
+  m_Father: {fileID: 2102901802}
+  m_RootOrder: 3
 --- !u!65 &455687182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4296,6 +4241,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 0.64, z: 1.92}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &455687183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455687180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRooms:
+  - {fileID: 96760160}
+  objectsToSee: 0
+  explored: 0
 --- !u!1001 &458775990
 Prefab:
   m_ObjectHideFlags: 0
@@ -5210,50 +5170,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 442022, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_PrefabInternal: {fileID: 567327933}
---- !u!1 &574461520
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 574461521}
-  - 114: {fileID: 574461522}
-  m_Layer: 0
-  m_Name: DiningRoom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &574461521
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 574461520}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.96, y: 0, z: 2.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 31682218}
-  m_Father: {fileID: 2102901802}
-  m_RootOrder: 1
---- !u!114 &574461522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 574461520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedRooms:
-  - {fileID: 1250651939}
-  objectsToSee: 0
-  explored: 0
 --- !u!1001 &575071170
 Prefab:
   m_ObjectHideFlags: 0
@@ -7614,8 +7530,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 794344506}
   - 65: {fileID: 794344507}
+  - 114: {fileID: 794344508}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7628,10 +7545,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 794344505}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.32, z: 0}
+  m_LocalPosition: {x: 0.64, y: 0.32, z: -0.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1250651938}
+  m_Father: {fileID: 2102901802}
   m_RootOrder: 0
 --- !u!65 &794344507
 BoxCollider:
@@ -7645,6 +7562,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.48, y: 0.64, z: 2.56}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &794344508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 794344505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRooms:
+  - {fileID: 31682220}
+  - {fileID: 96760160}
+  - {fileID: 1229915847}
+  objectsToSee: 0
+  explored: 0
 --- !u!1001 &796140919
 Prefab:
   m_ObjectHideFlags: 0
@@ -8046,50 +7980,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
   m_PrefabInternal: {fileID: 181523993}
---- !u!1 &873211966
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 873211967}
-  - 114: {fileID: 873211968}
-  m_Layer: 0
-  m_Name: Bathroom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &873211967
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873211966}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6, y: 0, z: -2.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 455687181}
-  m_Father: {fileID: 2102901802}
-  m_RootOrder: 3
---- !u!114 &873211968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873211966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedRooms:
-  - {fileID: 44818990}
-  objectsToSee: 0
-  explored: 0
 --- !u!1001 &880127605
 Prefab:
   m_ObjectHideFlags: 0
@@ -11138,8 +11028,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1229915845}
   - 65: {fileID: 1229915846}
+  - 114: {fileID: 1229915847}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: Garage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11152,11 +11043,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1229915844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 0.32, z: 0}
+  m_LocalPosition: {x: -4.48, y: 0.32, z: -0.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 145881891}
-  m_RootOrder: 0
+  m_Father: {fileID: 2102901802}
+  m_RootOrder: 4
 --- !u!65 &1229915846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11167,8 +11058,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.76, y: 0.64, z: 3.84}
+  m_Size: {x: 5.76, y: 0.64, z: 2.56}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1229915847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229915844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRooms:
+  - {fileID: 794344508}
+  objectsToSee: 0
+  explored: 0
 --- !u!1001 &1236334366
 Prefab:
   m_ObjectHideFlags: 0
@@ -11369,50 +11275,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_PrefabInternal: {fileID: 1247027590}
---- !u!1 &1250651937
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1250651938}
-  - 114: {fileID: 1250651939}
-  m_Layer: 0
-  m_Name: Kitchen
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1250651938
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1250651937}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 0, z: -0.64}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 794344506}
-  m_Father: {fileID: 2102901802}
-  m_RootOrder: 0
---- !u!114 &1250651939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1250651937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedRooms:
-  - {fileID: 574461522}
-  objectsToSee: 0
-  explored: 0
 --- !u!1 &1271143966
 GameObject:
   m_ObjectHideFlags: 0
@@ -17407,11 +17269,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1250651938}
-  - {fileID: 574461521}
-  - {fileID: 44818989}
-  - {fileID: 873211967}
-  - {fileID: 145881891}
+  - {fileID: 794344506}
+  - {fileID: 31682218}
+  - {fileID: 96760158}
+  - {fileID: 455687181}
+  - {fileID: 1229915845}
   m_Father: {fileID: 1913612676}
   m_RootOrder: 2
 --- !u!1 &2103547977
