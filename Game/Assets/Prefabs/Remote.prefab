@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11444424}
   m_Layer: 0
   m_Name: Remote
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69954a1a102a6f44a158c7365a94263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trapType: 1
   animator: {fileID: 9575324}
 --- !u!135 &13504348
 SphereCollider:

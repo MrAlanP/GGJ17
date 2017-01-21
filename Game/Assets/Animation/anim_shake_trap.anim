@@ -44,13 +44,13 @@ AnimationClip:
         tangentMode: 0
       - time: 0.8333333
         value: {x: 0.439, y: -1.164, z: -1.323}
-        inSlope: {x: 0.24328256, y: 0.0012445449, z: 0.3127008}
-        outSlope: {x: 0.24328256, y: 0.0012445449, z: 0.3127008}
+        inSlope: {x: 0.20031396, y: 0.0013828274, z: 0.23377872}
+        outSlope: {x: 0.20031396, y: 0.0013828274, z: 0.23377872}
         tangentMode: 0
-      - time: 1
+      - time: 0.98333335
         value: {x: 0.31009412, y: -1.1635852, z: -1.5597665}
-        inSlope: {x: -0.77343524, y: 0.0024890897, z: -1.4205993}
-        outSlope: {x: -0.77343524, y: 0.0024890897, z: -1.4205993}
+        inSlope: {x: -0.85937244, y: 0.0027656548, z: -1.5784435}
+        outSlope: {x: -0.85937244, y: 0.0027656548, z: -1.5784435}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -163,6 +163,26 @@ AnimationClip:
     path: 
     classID: 212
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: isPlaying
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 2a57d33a0159dbc44adcc8fbf94d317c, type: 3}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -199,6 +219,12 @@ AnimationClip:
       attribute: 2334886179
       script: {fileID: 0}
       classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 3040763938
+      script: {fileID: 11500000, guid: 2a57d33a0159dbc44adcc8fbf94d317c, type: 3}
+      classID: 114
       customType: 0
       isPPtrCurve: 0
     - path: 0
@@ -259,13 +285,13 @@ AnimationClip:
         tangentMode: 10
       - time: 0.8333333
         value: 0.439
-        inSlope: 0.24328256
-        outSlope: 0.24328256
+        inSlope: 0.20031396
+        outSlope: 0.20031396
         tangentMode: 10
-      - time: 1
+      - time: 0.98333335
         value: 0.31009412
-        inSlope: -0.77343524
-        outSlope: -0.77343524
+        inSlope: -0.85937244
+        outSlope: -0.85937244
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -304,13 +330,13 @@ AnimationClip:
         tangentMode: 10
       - time: 0.8333333
         value: -1.164
-        inSlope: 0.0012445449
-        outSlope: 0.0012445449
+        inSlope: 0.0013828274
+        outSlope: 0.0013828274
         tangentMode: 10
-      - time: 1
+      - time: 0.98333335
         value: -1.1635852
-        inSlope: 0.0024890897
-        outSlope: 0.0024890897
+        inSlope: 0.0027656548
+        outSlope: 0.0027656548
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -349,13 +375,13 @@ AnimationClip:
         tangentMode: 10
       - time: 0.8333333
         value: -1.323
-        inSlope: 0.3127008
-        outSlope: 0.3127008
+        inSlope: 0.23377872
+        outSlope: 0.23377872
         tangentMode: 10
-      - time: 1
+      - time: 0.98333335
         value: -1.5597665
-        inSlope: -1.4205993
-        outSlope: -1.4205993
+        inSlope: -1.5784435
+        outSlope: -1.5784435
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -469,6 +495,26 @@ AnimationClip:
     path: 
     classID: 212
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 1
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: isPlaying
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 2a57d33a0159dbc44adcc8fbf94d317c, type: 3}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0

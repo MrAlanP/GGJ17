@@ -4,6 +4,7 @@ using System.Collections;
 public class PassCollisionsToGameobject : MonoBehaviour {
 
     public GameObject go;
+    public bool isPlaying;
 	// Use this for initialization
 	void Start () {
 	

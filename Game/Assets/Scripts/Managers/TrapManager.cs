@@ -2,39 +2,48 @@
 using System.Collections;
 
 public class TrapManager : MonoBehaviour {
-    bool echo
+        bool echo
     {
         get { return Input.GetKeyDown("e"); }
     }
     bool foxtrot
     {
-        get { return Input.GetKey("f"); }
+        get { return Input.GetKeyDown("f"); }
     }
 
     bool useable;
     bool inObject;
     bool pProxy;
     bool eProxy;
+    bool isPlaying;
+    public TrapType trapType;
     float y;
     GameObject player;
+    PassCollisionsToGameobject child;
     SpriteRenderer visability;
     Collider playerColl;
     Collider enemyColl;
+
     public Animator animator;
+    public enum TrapType { Lethal, NonLethal };
+
 
     // Use this for initialization
     void Start () {
         useable = true;
         inObject = false;
+        child = this.GetComponentInChildren<PassCollisionsToGameobject>();
         y = transform.position.y;
         player = GameObject.FindGameObjectWithTag("Player");
         visability = player.GetComponent<SpriteRenderer>();
         playerColl = player.GetComponent<Collider>();
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-        //Debug.Log(useable);
+        Debug.Log(isPlaying);
+        isPlaying = child.isPlaying;
         if (pProxy)
         {
             if (echo && inObject)
@@ -59,9 +68,17 @@ public class TrapManager : MonoBehaviour {
             }
             Debug.Log("Player!");
         }
-        if (eProxy)
+        if (pProxy && isPlaying)
         {
-            Debug.Log("wtf");
+            Debug.Log("what are you?");
+            if (trapType == TrapType.Lethal)
+            {
+                Debug.Log("needs to DIE");
+            }
+            if (trapType == TrapType.NonLethal)
+            {
+                Debug.Log("Needs to leave");
+            }
         }
     }
 
