@@ -24,19 +24,42 @@ public class Enemy : MonoBehaviour {
 
     //Ref to current room
     public Room currentRoom;
+
+    public EnemyState curState;
      
 	// Use this for initialization
 	protected virtual void Start () {
-        attainedInformation = GetComponent<AttainedInformation>();
 
         nMAgent = GetComponent<NavMeshAgent>();
 
-        attainedInformation = new AttainedInformation(); 
+        attainedInformation = new AttainedInformation();
+
+        curState = EnemyState.Searching;
+
 	}
 
     // Update is called once per frame
-    protected virtual void Update () {
-        Scan();
+    protected virtual void Update ()
+    {
+        switch(curState)
+        {
+            case EnemyState.Searching:
+
+                if (currentRoom.explored)
+                {
+                    Debug.Log(name + " Says: This room is explored, moving to next room");
+                    nMAgent.SetDestination(currentRoom.GetNextRoom());
+
+                    curState = EnemyState.ToNewRoom;
+                }
+                else
+                { 
+                    Scan();
+                }
+
+                break;
+
+        }
 	}
 
     public void Spawn()
@@ -48,6 +71,12 @@ public class Enemy : MonoBehaviour {
     private void OnSafetyReached()
     {
 
+    }
+
+    public void OnEnterNewRoom(Room newRoom)
+    {
+        currentRoom = newRoom;
+        curState = EnemyState.Searching;
     }
 
     //Raycasts for vision
