@@ -97,8 +97,13 @@ public class PlayerManager : Singleton<PlayerManager> {
             speed = 1.0f;
             if (sprintCurrent < sprintMax)
             {
-                sprintCurrent += 1.5f * Time.deltaTime;
+                sprintCurrent += 0.25f * Time.deltaTime;
             }
+        }
+
+        if (cooldown && sprintCurrent >= 0.5f)
+        {
+            cooldown = false;
         }
 
         if (sprintCurrent >= sprintMax)
@@ -110,8 +115,7 @@ public class PlayerManager : Singleton<PlayerManager> {
             sprintCurrent = 0.0f;
             cooldown = true;
         }
-        Debug.Log(sprintCurrent);
-
+        
         move = new Vector3(x, 0, z);
 
         this.transform.position += move * speed * Time.deltaTime;
