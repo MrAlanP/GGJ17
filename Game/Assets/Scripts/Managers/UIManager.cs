@@ -6,8 +6,15 @@ public class UIManager :Singleton<UIManager> {
 
     public bool inObject;
     public bool useable;
+    public enum Alert {stage1, stage2, stage3, stage4, stage5 };
+    public Alert alert;
     public Image Echo;
     public Image Foxtrot;
+    public Image Alert_One;
+    public Image Alert_Two;
+    public Image Alert_Three;
+    public Image Alert_Four;
+    public Image Alert_Five;
 
     void Start() {
 
@@ -30,58 +37,46 @@ public class UIManager :Singleton<UIManager> {
         {
             Foxtrot.GetComponent<Image>().enabled = false;
         }
-    }
 
-
-
-
-
-
-
-
-
-
-        /*
-        GameObject echo;
-        GameObject foxtrot;
-        TrapManager[] traps;
-        bool yFoxtrot;
-        bool yEcho;
-
-        // Use this for initialization
-        void Start () {
-            //echo = GetComponentInChildren<>().enabled;
-            //foxtrot = GetComponentInChildren<>(Foxt).enabled;
-            foreach (TrapManager trap in traps)
-            {
-                traps[i] = GameObject.GetComponent<TrapManager>();
-            }
+        if (alert == Alert.stage1)
+        {
+            Alert_One.GetComponent<Image>().enabled = true;
+            Alert_Two.GetComponent<Image>().enabled = false;
+            Alert_Three.GetComponent<Image>().enabled = false;
+            Alert_Four.GetComponent<Image>().enabled = false;
+            Alert_Five.GetComponent<Image>().enabled = false;
         }
-
-        // Update is called once per frame
-        void Update () {
-            yFoxtrot = false;
-            yEcho = false;
-            foreach (TrapManager trap in traps)
-            {
-                if (trap.inObject && trap.useable)
-                {
-                    echo.enabled = true;
-                    foxtrot.enabled = true;
-                    yFoxtrot = true;
-                    yEcho = true;
-                }
-                else if (trap.inObject)
-                {
-                    echo.enabled = true;
-                    foxtrot.enabled = false;
-                    yEcho = true;
-                }
-                else if (!yEcho && !yFoxtrot)
-                {
-                    echo.enabled = false;
-                    foxtrot.enabled = false;
-                }
-            }
-        } */
+        if (alert == Alert.stage2)
+        {
+            Alert_One.GetComponent<Image>().enabled = false;
+            Alert_Two.GetComponent<Image>().enabled = true;
+            Alert_Three.GetComponent<Image>().enabled = false;
+            Alert_Four.GetComponent<Image>().enabled = false;
+            Alert_Five.GetComponent<Image>().enabled = false;
+        }
+        if (alert == Alert.stage3)
+        {
+            Alert_One.GetComponent<Image>().enabled = false;
+            Alert_Two.GetComponent<Image>().enabled = false;
+            Alert_Three.GetComponent<Image>().enabled = true;
+            Alert_Four.GetComponent<Image>().enabled = false;
+            Alert_Five.GetComponent<Image>().enabled = false;
+        }
+        if (alert == Alert.stage4)
+        {
+            Alert_One.GetComponent<Image>().enabled = false;
+            Alert_Two.GetComponent<Image>().enabled = false;
+            Alert_Three.GetComponent<Image>().enabled = false;
+            Alert_Four.GetComponent<Image>().enabled = true;
+            Alert_Five.GetComponent<Image>().enabled = false;
+        }
+        if (alert == Alert.stage5)
+        {
+            Alert_One.GetComponent<Image>().enabled = false;
+            Alert_Two.GetComponent<Image>().enabled = false;
+            Alert_Three.GetComponent<Image>().enabled = false;
+            Alert_Four.GetComponent<Image>().enabled = false;
+            Alert_Five.GetComponent<Image>().enabled = true;
+        }
     }
+}
