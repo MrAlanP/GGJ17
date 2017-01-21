@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158936}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 448342}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.637, y: 0.06, z: 3.364}
+  m_LocalPosition: {x: 4.637, y: 0.35, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 423254}
@@ -88,12 +88,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawRaysDebug: 1
   hitColliders: []
-  objectsToSee: []
   currentRoom: {fileID: 0}
-  objectsExplored: 0
-  roomsExplored: 0
   curState: 0
-  entrance: {x: 0, y: 0, z: 0}
+  explorationTotal: 1
+  roomsExplored: []
 --- !u!136 &13633674
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -152,8 +150,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ce08773712b94584ba9d029848f09a1b, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300064, guid: 5de808efaff6384418f769a7e194eb19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
