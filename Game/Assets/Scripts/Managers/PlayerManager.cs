@@ -41,6 +41,7 @@ public class PlayerManager : Singleton<PlayerManager> {
     public bool action;
     public bool fire;
     float speed;
+    float baseSpeed;
     float sprintMax;
     float sprintCurrent;
     float sprintingSpeed;
@@ -50,7 +51,8 @@ public class PlayerManager : Singleton<PlayerManager> {
     
 	// Use this for initialization
 	void Start () {
-        speed = 1.0f;
+        baseSpeed = 2.5f;
+        speed = baseSpeed;
         sprintingSpeed = 3.5f;
         sprintMax = 2.0f;
         sprintCurrent = sprintMax;
@@ -119,7 +121,7 @@ public class PlayerManager : Singleton<PlayerManager> {
         }
         else
         {
-            speed = 1.0f;
+            speed = baseSpeed;
             if (sprintCurrent < sprintMax)
             {
                 sprintCurrent += 0.25f * Time.deltaTime;
