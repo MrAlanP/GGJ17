@@ -10,6 +10,10 @@ public class PlayerManager : Singleton<PlayerManager> {
     {
         get { return Input.GetKeyDown("e"); }
     }
+    bool foxtrot
+    {
+        get { return Input.GetKey("f"); }
+    }
     bool left
     {
         get { return Input.GetKey("a"); }
@@ -32,6 +36,9 @@ public class PlayerManager : Singleton<PlayerManager> {
         get { return Input.GetKey("left shift"); }
     }
     bool cooldown;
+    public bool inObject;
+    public bool action;
+    public bool fire;
     float speed;
     float sprintMax;
     float sprintCurrent;
@@ -49,15 +56,31 @@ public class PlayerManager : Singleton<PlayerManager> {
         move = new Vector3(0, 0);
         x = 0;
         z = 0;
+        action = false;
+        fire = false;
+        inObject = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (echo)
         {
-            // interact code here
+            action = true;
         }
-
+        else
+        {
+            action = false;
+        }
+        //Debug.Log(action);
+        if (foxtrot)
+        {
+            fire = true;
+        }
+        else
+        {
+            fire = false;
+        }
+        // movement controlls
         if (left)
         {
             x = -1;
@@ -85,8 +108,8 @@ public class PlayerManager : Singleton<PlayerManager> {
         {
             z = 0;
         }
+
         // apply sprint speed if enoght sprint energy (sprintCurrent) is left
-        // current unlimited need to look into more
         if (sprint && sprintCurrent > 0.0f && !cooldown)
         {
             speed = sprintingSpeed;
@@ -116,8 +139,11 @@ public class PlayerManager : Singleton<PlayerManager> {
             cooldown = true;
         }
         
+        // applys movement to player
         move = new Vector3(x, 0, z);
-
-        this.transform.position += move * speed * Time.deltaTime;
+        if (!inObject)
+        {
+            this.transform.position += move * speed * Time.deltaTime;
+        }
     }
 }
