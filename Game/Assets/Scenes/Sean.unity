@@ -624,6 +624,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefdae666e942374989850ec1a024081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inObject: 0
+  useable: 0
+  Echo: {fileID: 1353391505}
+  Foxtrot: {fileID: 1571062371}
 --- !u!1001 &1537762490
 Prefab:
   m_ObjectHideFlags: 0

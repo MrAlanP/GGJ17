@@ -43,11 +43,17 @@ public class TrapManager : MonoBehaviour {
         isPlaying = child.isPlaying;
         if (pProxy)
         {
+            if(useable)
+            {
+                UIManager.Instance.inObject = true;
+            }
             if (echo && inObject)
             {
                 print("Exiting object");
                 visability.enabled = true;
                 PlayerManager.Instance.inObject = false;
+                UIManager.Instance.useable = false;
+                UIManager.Instance.inObject = false;
                 inObject = false;
             }
             else if (echo && useable && !inObject)
@@ -56,15 +62,22 @@ public class TrapManager : MonoBehaviour {
                 visability.enabled = false;
                 inObject = true;
                 PlayerManager.Instance.inObject = true;
+                UIManager.Instance.inObject = true;
+                if (useable)
+                {
+                    UIManager.Instance.useable = true;
+                }
             }
             if (foxtrot && visability.enabled == false && useable)
             {
                 print("activating object");
                 useable = false;
                 animator.SetTrigger("Play");
+                UIManager.Instance.useable = false;
             }
             Debug.Log("Player!");
         }
+
         if (eProxy && isPlaying)
         {
             Debug.Log("what are you?");
@@ -95,6 +108,8 @@ public class TrapManager : MonoBehaviour {
     {
         if (other == playerColl)
         {
+            UIManager.Instance.inObject = false;
+            UIManager.Instance.useable = false;
             pProxy = false;
         }
         else if (other)
