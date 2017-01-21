@@ -12,11 +12,13 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
     #region Protected Variables
     protected List<Enemy> enemyUnits = new List<Enemy>();
     protected int spawnUnitCount = 1;
+    protected int waveCount = 0;
     #endregion
 
     // Use this for initialization
-    void Start () {
-	
+    void Start ()
+    {
+        StartWave();
 	}
 	
 	// Update is called once per frame
@@ -26,14 +28,35 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 
     public void StartWave()
     {
-        for(int i = 0; i<spawnUnitCount; i++)
+        waveCount++;
+        for(int i = 0; i < waveCount; i++)
         {
             GameObject enemyUnit = Instantiate(enemyUnitPrefab);
             enemyUnit.transform.SetParent(unitsTransform);
             Enemy enemy = enemyUnit.GetComponent<Enemy>();
             enemyUnits.Add(enemy);
             enemy.Spawn();
+            enemy.gameObject.SetActive(true);
         }
 
     }
+
+    public void OnInvestigatorFinish(Enemy enemy)
+    {
+        enemyUnits.Remove(enemy);
+        enemy.gameObject.AddComponent<TimedObjectDestructor>();
+
+        if (enemyUnits.Count == 0)
+        {
+            if (RoomManager.Instance.allRoomsExplored)
+            {
+                //StartWave Wave
+            }
+            else
+            {
+                StartWave();
+            }
+        }
+    }
+
 }

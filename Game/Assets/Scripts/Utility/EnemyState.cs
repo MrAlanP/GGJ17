@@ -3,4 +3,5 @@
     Searching,
     ToNewRoom,
     Leaving,
+    Left,
 };

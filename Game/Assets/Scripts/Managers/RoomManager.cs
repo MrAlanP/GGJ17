@@ -15,6 +15,22 @@ public class RoomManager : Singleton<RoomManager>
         }
     }
 
+    public bool allRoomsExplored
+    {
+        get
+        {
+            foreach(Room room in rooms)
+            {
+                if(!room.explored)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    }
+
 	// Use this for initialization
 	void Start () {
 	
@@ -38,4 +54,12 @@ public class RoomManager : Singleton<RoomManager>
         return rooms[0].transform.position;
     }
     
+    public void AddExploredRooms(List<Room> exploredRooms)
+    {
+        //Check all explored Rooms
+        for(int i=0; i < exploredRooms.Count; i++)
+        {
+            exploredRooms[i].explored = true;
+        }
+    }
 }

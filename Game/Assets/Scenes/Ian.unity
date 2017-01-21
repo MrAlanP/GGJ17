@@ -248,8 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms:
-  - {fileID: 349643756}
+  attachedRooms: []
   objectsToSee: 5
   explored: 0
 --- !u!65 &203491049
@@ -369,8 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms:
-  - {fileID: 203491048}
+  attachedRooms: []
   objectsToSee: 0
   explored: 1
 --- !u!65 &349643757
@@ -696,7 +694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!195 &868528512
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -752,7 +750,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 868528511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.637, y: -0.055, z: 3.364}
+  m_LocalPosition: {x: 4.637, y: -0.055, z: 6.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1553166511}
@@ -771,13 +769,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawRaysDebug: 1
   hitColliders: []
-  objectsToSee: []
-  currentObject: {fileID: 0}
   currentRoom: {fileID: 349643756}
-  objectsExplored: 0
-  roomsExplored: 0
   curState: 0
-  entrance: {x: 0, y: 0, z: 0}
+  explorationTotal: 1
+  roomsExplored: []
 --- !u!1 &905060194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,6 +1127,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2013136531}
   m_RootOrder: 1
+--- !u!1 &1430938188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1430938189}
+  - 114: {fileID: 1430938190}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1430938189
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430938188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1913612676}
+  m_RootOrder: 3
+--- !u!114 &1430938190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430938188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048e6a257b0881e4eba16ce0d14aa72f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyUnitPrefab: {fileID: 868528511}
+  unitsTransform: {fileID: 1430938189}
 --- !u!1 &1501904868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1297,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ce08773712b94584ba9d029848f09a1b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 858a5da211823b84c9d5f4ac978f57ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1520,6 +1556,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1913612676}
+  - 114: {fileID: 1913612677}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -1540,8 +1577,23 @@ Transform:
   - {fileID: 905060195}
   - {fileID: 203491047}
   - {fileID: 349643755}
+  - {fileID: 1430938189}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1913612677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1913612675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c760423a2c2743046ba6880e0bb7456b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rooms:
+  - {fileID: 349643756}
+  - {fileID: 203491048}
 --- !u!1 &1938065848
 GameObject:
   m_ObjectHideFlags: 0

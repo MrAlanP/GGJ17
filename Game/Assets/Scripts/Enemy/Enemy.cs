@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour {
     public bool isAlive { get; private set; }
 
     protected int scareCount = 0; //How many times we've been scared
-    protected AttainedInformation_Enemy attainedInformation;
 
     private float movementSpeed = 2;
 
@@ -41,8 +40,6 @@ public class Enemy : MonoBehaviour {
 
         nMAgent = GetComponent<NavMeshAgent>();
 
-        attainedInformation = new AttainedInformation_Enemy();
-
         curState = EnemyState.Searching;
 	}
 
@@ -64,14 +61,15 @@ public class Enemy : MonoBehaviour {
                     {
                         print(name + " Says: The buildings been explored, leaving");
                         nMAgent.SetDestination(RoomManager.Instance.startingRoom);
+                        curState = EnemyState.Leaving;
                     }
                     else
                     {
                         Debug.Log(name + " Says: This room is explored, moving to next room");
                         nMAgent.SetDestination(RoomManager.Instance.GetNextRoom(roomsExplored));
-                    }
 
-                    curState = EnemyState.ToNewRoom;
+                        curState = EnemyState.ToNewRoom;
+                    }
                 }
                 else
                 {
@@ -116,14 +114,21 @@ public class Enemy : MonoBehaviour {
     //Once the enemy leaves the house with a number of information
     private void OnSafetyReached()
     {
-
+        RoomManager.Instance.AddExploredRooms(roomsExplored);
+        roomsExplored.Clear();
+        InvestigatorManager.Instance.OnInvestigatorFinish(this);
+        curState = EnemyState.Left;
     }
 
     public void OnEnterNewRoom(Room newRoom)
     {
         currentRoom = newRoom;
-        curState = EnemyState.Searching;
         nMAgent.speed = 2;
+
+        if (curState != EnemyState.Leaving)
+        {
+            curState = EnemyState.Searching;
+        }
     }
 
     //Raycasts for vision
