@@ -2,4 +2,5 @@
 {
     Searching,
     ToNewRoom,
+    Leaving,
 };

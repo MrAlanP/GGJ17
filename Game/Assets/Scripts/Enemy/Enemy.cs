@@ -19,10 +19,7 @@ public class Enemy : MonoBehaviour {
     //All colliders hit in scan
     public List<Collider> hitColliders = new List<Collider>();
 
-    public List<Collider> objectsToSee = new List<Collider>();
-
-    Collider currentObject;
-
+    static float investigationTime = 1;
     float investigationTimer = 0;
 
     //Ref to NavMeshAgent
@@ -30,12 +27,15 @@ public class Enemy : MonoBehaviour {
 
     //Ref to current room
     public Room currentRoom;
-    public int objectsExplored = 0;
-    public int roomsExplored = 0;
 
     public EnemyState curState;
 
-    public Vector3 entrance;
+    public int explorationTotal = 1;
+
+    public List<Room> roomsExplored = new List<Room>();
+
+    bool investigated = false;
+
 	// Use this for initialization
 	protected virtual void Start () {
 
@@ -44,82 +44,67 @@ public class Enemy : MonoBehaviour {
         attainedInformation = new AttainedInformation_Enemy();
 
         curState = EnemyState.Searching;
-
-        entrance = transform.position;
 	}
 
     // Update is called once per frame
     protected virtual void Update ()
     {
-        switch(curState)
+        switch (curState)
         {
             case EnemyState.Searching:
 
-                if (currentRoom.explored)
+                if (currentRoom.explored || investigated)
                 {
+                    investigated = false;
                     //attainedInformation.OnRoomExplored(currentRoom);
-                    roomsExplored++;
-                    Debug.Log(name + " Says: This room is explored, moving to next room");
 
-                    if(roomsExplored <2)
-                    {
-                        nMAgent.SetDestination(currentRoom.GetNextRoom());
-                    }
-                    if (roomsExplored == 2)
+                    //Want Investigator to leave when they have explored enough or finished the whole house
+                    if (roomsExplored.Count >= explorationTotal ||
+                        roomsExplored.Count >= RoomManager.Instance.rooms.Length)
                     {
                         print(name + " Says: The buildings been explored, leaving");
-
-                        nMAgent.SetDestination(entrance);
+                        nMAgent.SetDestination(RoomManager.Instance.startingRoom);
+                    }
+                    else
+                    {
+                        Debug.Log(name + " Says: This room is explored, moving to next room");
+                        nMAgent.SetDestination(RoomManager.Instance.GetNextRoom(roomsExplored));
                     }
 
-                    objectsExplored = 0;
                     curState = EnemyState.ToNewRoom;
                 }
-                else if (currentObject) //If currently has object to explore
+                else
                 {
-                    //When close enough can begin investigation
-                    if (Vector3.Distance(transform.position, currentObject.transform.position) < 5)
+                    //If in the centre of room start exploration
+                    if (nMAgent.desiredVelocity.magnitude < 1)
                     {
-                        if (investigationTimer > currentObject.GetComponent<Item>().investigationTime)
-                        {
-                            switch (currentObject.tag)
-                            {
-                                case "Wall":
-                                    print("I've explored " + currentObject.transform.parent.name);
-                                    objectsToSee.Remove(currentObject.GetComponent<Collider>());
-                                    attainedInformation.walls.Add(currentObject.GetComponent<Item>());
-                                    currentObject = null;
-                                    investigationTimer = 0;
-                                    break;
-                            }
+                        investigationTimer += Time.deltaTime;
 
-                            objectsExplored++;
-                        }
-                        else
+                        if (investigationTimer > investigationTime)
                         {
-                            //Incremenet investigation;
-                            investigationTimer += Time.deltaTime;
+                            roomsExplored.Add(currentRoom);
+                            investigated = true;
                         }
                     }
                 }
-                else if (objectsToSee.Count > 0 && currentObject == null) //If there are objects to explore
-                {
-                    //Find the first one in the list
-                    currentObject = objectsToSee[0];
-                    //Set it as the new destination
-                    nMAgent.destination = currentObject.transform.position;
 
-                }
-                else if (objectsExplored == currentRoom.objectsToSee)
-                {
-                    currentRoom.explored = true;
-                }
-
-
-                Scan();
+                //Scan();
 
                 break;
 
+            case EnemyState.Leaving:
+
+                if (currentRoom == RoomManager.Instance.rooms[0])
+                {
+                    OnSafetyReached();
+                }
+                break;
+
+        }
+
+        if(drawRaysDebug)
+        {
+            Debug.DrawRay(transform.position, nMAgent.desiredVelocity, Color.blue);
         }
 	}
 
@@ -146,7 +131,7 @@ public class Enemy : MonoBehaviour {
     {
         hitColliders.Clear();
 
-        for(float i = 0; i<360; i += degreesBetweenRaycast)
+        for(float i = 0; i< 360; i += degreesBetweenRaycast)
         {
             float angleRadians = (i) * Mathf.Deg2Rad;
             Vector3 direction = new Vector3(Mathf.Cos(angleRadians), 0, Mathf.Sin(angleRadians));
@@ -160,9 +145,9 @@ public class Enemy : MonoBehaviour {
 
                 if (angle < 45.0f)
                 {
-                    if (hit.collider != null && !hitColliders.Contains(hit.collider) && 
+                    if (hit.collider != null && !hitColliders.Contains(hit.collider) &&
                         hit.collider.bounds.Intersects(currentRoom.GetComponent<BoxCollider>().bounds))
-                    { 
+                    {
                         hitColliders.Add(hit.collider);
                     }
 
@@ -191,37 +176,6 @@ public class Enemy : MonoBehaviour {
         //Iterate over found colliders
         for(int i = 0; i< hitColliders.Count; i++)
         {
-            if(hitColliders[i].tag == "Player" && !objectsToSee.Contains(hitColliders[i]))
-            {
-                Debug.Log("I see the player!");
-                attainedInformation.OnPlayerSeen();
-
-                //Investigator gets scared moves to other room
-                curState = EnemyState.ToNewRoom;
-                nMAgent.SetDestination(currentRoom.GetNextRoom());
-                nMAgent.speed = 4;
-                scareCount++;
-                return;
-            }
-
-            if(hitColliders[i].tag == "Death")
-            {
-                Debug.Log("I see a death!");
-                attainedInformation.OnEnemySeen(hitColliders[i].GetComponent<Enemy>());
-            }
-
-            if(hitColliders[i].tag == "Trap")
-            {
-                Debug.Log("I See a Trap");
-                attainedInformation.OnTrapSeen(hitColliders[i].GetComponent<Trap>());
-            }
-
-            if(hitColliders[i].tag == "Wall" && !objectsToSee.Contains(hitColliders[i]) && 
-                !attainedInformation.walls.Contains(hitColliders[i].GetComponent<Item>()))
-            {
-                Debug.Log("I See a Wall");
-                objectsToSee.Add(hitColliders[i]);
-            }
         }
     }
 }
