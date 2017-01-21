@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 90b3aae498913ec4eb368e493de2e226
+timeCreated: 1485024517
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: room_tiles_2_0
+    21300002: room_tiles_2_1
+    21300004: room_tiles_2_2
+    21300006: room_tiles_2_3
+    21300008: room_tiles_2_5
+    21300010: room_tiles_2_7
+    21300012: room_tiles_2_8
+    21300014: room_tiles_2_9
+    21300016: room_tiles_2_10
+    21300018: room_tiles_2_11
+    21300020: room_tiles_2_15
+    21300022: room_tiles_2_16
+    21300024: room_tiles_2_4
+    21300026: room_tiles_2_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: room_tiles_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: room_tiles_2_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: room_tiles_2_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: room_tiles_2_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58, y: 21}
+        - {x: -60, y: 15}
+        - {x: -60, y: -27}
+        - {x: -56, y: -30}
+        - {x: 53, y: -30}
+        - {x: 60, y: -22}
+        - {x: 60, y: 18}
+        - {x: 55, y: 21}
+    - name: room_tiles_2_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 52}
+        - {x: -63, y: 48}
+        - {x: -63, y: -62}
+        - {x: -58, y: -64}
+        - {x: 63, y: -64}
+        - {x: 63, y: 46}
+        - {x: 59, y: 52}
+    - name: room_tiles_2_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 23}
+        - {x: -18, y: 23}
+        - {x: -31, y: 19}
+        - {x: -31, y: -17}
+        - {x: -27, y: -31}
+        - {x: 14, y: -31}
+        - {x: 30, y: -14}
+        - {x: 30, y: 11}
+        - {x: 28, y: 19}
+    - name: room_tiles_2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 5}
+        - {x: -8, y: 5}
+        - {x: -15, y: -3}
+        - {x: -18, y: -15}
+        - {x: -18, y: -32}
+        - {x: 20, y: -32}
+        - {x: 20, y: -15}
+        - {x: 16, y: 3}
+    - name: room_tiles_2_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 4}
+        - {x: -12, y: 1}
+        - {x: -12, y: -19}
+        - {x: -7, y: -30}
+        - {x: 10, y: -30}
+        - {x: 16, y: -20}
+        - {x: 16, y: -2}
+        - {x: 14, y: 4}
+    - name: room_tiles_2_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 14}
+        - {x: -24, y: 14}
+        - {x: -27, y: 13}
+        - {x: -27, y: -32}
+        - {x: 26, y: -32}
+        - {x: 31, y: -23}
+        - {x: 31, y: 11}
+    - name: room_tiles_2_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 14}
+        - {x: -50, y: -32}
+        - {x: 53, y: -32}
+        - {x: 53, y: 14}
+    - name: room_tiles_2_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -16, y: -30}
+        - {x: -19, y: -29}
+        - {x: -21, y: -32}
+      - - {x: -5, y: 12}
+        - {x: -6, y: 7}
+        - {x: -6, y: -2}
+        - {x: 1, y: -6}
+        - {x: 3, y: -2}
+        - {x: 3, y: 9}
+        - {x: 2, y: 16}
+        - {x: -4, y: 19}
+        - {x: -14, y: 19}
+        - {x: -22, y: 12}
+        - {x: -22, y: -12}
+        - {x: -19, y: -13}
+        - {x: -9, y: -13}
+        - {x: -6, y: -10}
+        - {x: -6, y: 7}
+        - {x: -8, y: 10}
+    - name: room_tiles_2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 61}
+        - {x: -29, y: -63}
+        - {x: 19, y: -63}
+        - {x: 28, y: -58}
+        - {x: 28, y: 61}
+      - - {x: -22, y: -17}
+        - {x: -22, y: 53}
+        - {x: -4, y: 53}
+        - {x: -4, y: 54}
+        - {x: -8, y: 54}
+        - {x: -11, y: 52}
+        - {x: -14, y: 52}
+        - {x: -19, y: 47}
+        - {x: -21, y: 42}
+        - {x: -22, y: 35}
+        - {x: -23, y: 34}
+        - {x: -23, y: 19}
+        - {x: -22, y: 18}
+        - {x: -22, y: 5}
+        - {x: -14, y: -2}
+        - {x: 2, y: -2}
+        - {x: 7, y: 0}
+        - {x: 16, y: 9}
+        - {x: 19, y: 14}
+        - {x: 21, y: 34}
+        - {x: 20, y: 43}
+        - {x: 19, y: 47}
+        - {x: 16, y: 52}
+        - {x: 11, y: 53}
+        - {x: 10, y: 54}
+        - {x: 4, y: 54}
+        - {x: 4, y: 53}
+        - {x: 21, y: 53}
+        - {x: 21, y: 0}
+    - name: room_tiles_2_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: room_tiles_2_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
