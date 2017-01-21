@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class InvestigatorManager : EnemyManager {
-	
+
 	// Update is called once per frame
 	void Update () {
 	
 	}
 
-    public void OnInvestigatorFinish(Enemy enemy)
+    public override void OnEnemyFinish(Enemy enemy)
     {
+        WaveManager.Instance.EndWave();
+
         enemyUnits.Remove(enemy);
         enemy.gameObject.AddComponent<TimedObjectDestructor>();
 
@@ -21,7 +24,7 @@ public class InvestigatorManager : EnemyManager {
             }
             else
             {
-                StartWave();
+                WaveManager.Instance.StartWave();
             }
         }
     }

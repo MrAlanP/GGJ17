@@ -27,7 +27,7 @@ GameObject:
   - 65: {fileID: 6588246}
   - 23: {fileID: 2399286}
   m_Layer: 8
-  m_Name: Cube
+  m_Name: FloorCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

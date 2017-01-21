@@ -12,8 +12,10 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
     #region Protected Variables
     protected List<Enemy> enemyUnits = new List<Enemy>();
     protected int spawnUnitCount = 1;
-    protected int waveCount = 0;
     #endregion
+
+    public KeyValuePair<Room, Enemy> roomsClaimed = new KeyValuePair<Room, Enemy>();
+
 
     // Use this for initialization
     void Start ()
@@ -25,13 +27,15 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 	
 	}
 
-    public void StartWave()
+    public IEnumerator SpawnWave(int UnitsToSpawn)
     {
-        waveCount++;
-        for(int i = 0; i < waveCount; i++)
+        yield return new WaitForSeconds(2);
+
+        for(int i = 0; i < UnitsToSpawn; i++)
         {
             GameObject enemyUnit = Instantiate(enemyUnitPrefab);
             enemyUnit.transform.SetParent(unitsTransform);
+            enemyUnit.transform.position = RoomManager.Instance.startingRoom;
             Enemy enemy = enemyUnit.GetComponent<Enemy>();
             enemyUnits.Add(enemy);
             enemy.Spawn();
@@ -40,22 +44,7 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 
     }
 
-    public void OnInvestigatorFinish(Enemy enemy)
+    public virtual void OnEnemyFinish(Enemy enemy)
     {
-        enemyUnits.Remove(enemy);
-        enemy.gameObject.AddComponent<TimedObjectDestructor>();
-
-        if (enemyUnits.Count == 0)
-        {
-            if (RoomManager.Instance.allRoomsExplored)
-            {
-                //StartWave Wave
-            }
-            else
-            {
-                StartWave();
-            }
-        }
     }
-
 }

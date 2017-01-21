@@ -36,7 +36,7 @@ public class WaveManager : Singleton<WaveManager>
         {
             case WaveType.Investigator:
                 {
-                    investigatorManager.StartWave();
+                    StartCoroutine(investigatorManager.SpawnWave(2));
                     break;
                 }
             case WaveType.Swat:
@@ -51,6 +51,5 @@ public class WaveManager : Singleton<WaveManager>
     public void EndWave()
     {
         currentWave++;
-
     }
 }

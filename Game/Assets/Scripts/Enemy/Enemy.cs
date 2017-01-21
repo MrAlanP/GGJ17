@@ -56,12 +56,15 @@ public class Enemy : MonoBehaviour {
                     //attainedInformation.OnRoomExplored(currentRoom);
 
                     //Want Investigator to leave when they have explored enough or finished the whole house
-                    if (roomsExplored.Count >= explorationTotal ||
-                        roomsExplored.Count >= RoomManager.Instance.rooms.Length)
+                    if (roomsExplored.Count >= explorationTotal)
+                    {
+                        print(name + "Says I'm done exploring, time to leave");
+                        OnFinishExploring();
+                    }
+                    else if(roomsExplored.Count >= RoomManager.Instance.rooms.Length)
                     {
                         print(name + " Says: The buildings been explored, leaving");
-                        nMAgent.SetDestination(RoomManager.Instance.startingRoom);
-                        curState = EnemyState.Leaving;
+                        OnFinishExploring();
                     }
                     else
                     {
@@ -76,6 +79,8 @@ public class Enemy : MonoBehaviour {
                     //If in the centre of room start exploration
                     if (nMAgent.desiredVelocity.magnitude < 1)
                     {
+                        //InvestigatorManager.Instance.beingExplorerd.Add(currentRoom);
+
                         investigationTimer += Time.deltaTime;
 
                         if (investigationTimer > investigationTime)
@@ -116,17 +121,25 @@ public class Enemy : MonoBehaviour {
     {
         RoomManager.Instance.AddExploredRooms(roomsExplored);
         roomsExplored.Clear();
-        InvestigatorManager.Instance.OnInvestigatorFinish(this);
+        InvestigatorManager.Instance.OnEnemyFinish(this);
         curState = EnemyState.Left;
+    }
+
+    private void OnFinishExploring()
+    {
+        nMAgent.SetDestination(RoomManager.Instance.startingRoom);
+        curState = EnemyState.Leaving;
     }
 
     public void OnEnterNewRoom(Room newRoom)
     {
         currentRoom = newRoom;
+
         nMAgent.speed = 2;
 
         if (curState != EnemyState.Leaving)
         {
+            nMAgent.SetDestination(currentRoom.transform.position);
             curState = EnemyState.Searching;
         }
     }

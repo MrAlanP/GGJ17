@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : Singleton<EnemyManager>
+public class GameManager : Singleton<GameManager>
 {
 
 	// Use this for initialization

@@ -74,7 +74,7 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: 0.25
+    agentRadius: 0.15
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -82,9 +82,9 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     accuratePlacement: 1
     minRegionArea: 2.12
-    cellSize: 0.083333336
+    cellSize: 0.05
     manualCellSize: 0
-  m_NavMeshData: {fileID: 23800000, guid: 0eab8a9895d49df439ae6741affc4119, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 5a66030346fb2844a99df810d0f8bce9, type: 2}
 --- !u!1 &1364421
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +170,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -219,6 +223,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -270,6 +278,14 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenCabinetFront_2
       objectReference: {fileID: 0}
+    - target: {fileID: 114102, guid: 6fdd6147032855c4899bbb2adec346fe, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114102, guid: 6fdd6147032855c4899bbb2adec346fe, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fdd6147032855c4899bbb2adec346fe, type: 2}
   m_IsPrefabParent: 0
@@ -319,6 +335,10 @@ Prefab:
     - target: {fileID: 120522, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
@@ -463,6 +483,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_BathroomTile (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
   m_IsPrefabParent: 0
@@ -512,6 +536,10 @@ Prefab:
     - target: {fileID: 140140, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_5 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 117186, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
@@ -563,6 +591,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -613,6 +645,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
   m_IsPrefabParent: 0
@@ -662,6 +698,10 @@ Prefab:
     - target: {fileID: 120522, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
@@ -748,6 +788,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -797,6 +845,14 @@ Prefab:
     - target: {fileID: 156898, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
       propertyPath: m_Name
       value: SideWall_Right_Full (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
@@ -905,6 +961,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Garage (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
   m_IsPrefabParent: 0
@@ -954,6 +1018,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -1005,6 +1073,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -1055,6 +1131,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -1100,6 +1180,10 @@ Prefab:
     - target: {fileID: 478636, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
@@ -1150,6 +1234,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -1206,6 +1294,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -1255,6 +1347,14 @@ Prefab:
     - target: {fileID: 187708, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
       propertyPath: m_Name
       value: TopWall_Garage (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
@@ -1306,6 +1406,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -1356,6 +1460,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -1401,6 +1509,14 @@ Prefab:
     - target: {fileID: 406458, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
@@ -1452,6 +1568,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -1501,6 +1625,14 @@ Prefab:
     - target: {fileID: 187708, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
       propertyPath: m_Name
       value: TopWall_Garage (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
@@ -1771,6 +1903,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -1892,6 +2028,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -1908,7 +2048,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.637
+      value: 2.383
       objectReference: {fileID: 0}
     - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1916,7 +2056,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.04
+      value: -0.366
       objectReference: {fileID: 0}
     - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1940,7 +2080,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 108622, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
@@ -2029,6 +2169,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -2153,6 +2297,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -2204,6 +2356,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300012, guid: 5de808efaff6384418f769a7e194eb19,
         type: 3}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
   m_IsPrefabParent: 0
@@ -2253,6 +2413,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -2331,6 +2495,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -2522,6 +2690,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -2645,6 +2821,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -2767,6 +2947,10 @@ Prefab:
     - target: {fileID: 106356, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107570, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
@@ -2965,6 +3149,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -3042,6 +3234,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -3309,6 +3509,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_BathroomTile (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
   m_IsPrefabParent: 0
@@ -3390,6 +3594,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -3515,6 +3723,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -3564,6 +3776,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -3735,6 +3951,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -3784,6 +4004,10 @@ Prefab:
     - target: {fileID: 128550, guid: 256213f742e52b9458a1448522a8a754, type: 2}
       propertyPath: m_Name
       value: Floor_BathroomTile (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
@@ -3835,6 +4059,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -3884,6 +4112,14 @@ Prefab:
     - target: {fileID: 156898, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
       propertyPath: m_Name
       value: SideWall_Right_Full (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
@@ -3993,6 +4229,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -4042,6 +4282,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -4093,6 +4337,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -4143,6 +4391,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -4192,6 +4444,10 @@ Prefab:
     - target: {fileID: 120522, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_4 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
@@ -4299,6 +4555,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -4348,6 +4608,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -4404,6 +4668,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Bathroom (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
   m_IsPrefabParent: 0
@@ -4453,6 +4725,10 @@ Prefab:
     - target: {fileID: 122896, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_3 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
@@ -4528,6 +4804,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -4577,6 +4857,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -4657,6 +4941,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -4707,6 +4995,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Garage (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
   m_IsPrefabParent: 0
@@ -4756,6 +5052,10 @@ Prefab:
     - target: {fileID: 106356, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107570, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
@@ -4835,6 +5135,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -4884,6 +5188,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -4935,6 +5243,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -4984,6 +5296,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -5035,6 +5351,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_4 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
   m_IsPrefabParent: 0
@@ -5084,6 +5404,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -5163,6 +5491,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -5208,6 +5544,14 @@ Prefab:
     - target: {fileID: 442022, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -5259,6 +5603,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -5308,6 +5656,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -5359,6 +5711,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -5409,6 +5765,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 107570, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
   m_IsPrefabParent: 0
@@ -5454,6 +5814,14 @@ Prefab:
     - target: {fileID: 499480, guid: f8b4c375011d9d140989c823a3a5ee5e, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 123916, guid: f8b4c375011d9d140989c823a3a5ee5e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 123916, guid: f8b4c375011d9d140989c823a3a5ee5e, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8b4c375011d9d140989c823a3a5ee5e, type: 2}
@@ -5505,6 +5873,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -5554,6 +5926,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -5610,6 +5990,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Bathroom (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
   m_IsPrefabParent: 0
@@ -5665,6 +6053,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -5715,6 +6107,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Garage (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
   m_IsPrefabParent: 0
@@ -5764,6 +6164,10 @@ Prefab:
     - target: {fileID: 120522, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_4 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
@@ -5816,6 +6220,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300070, guid: 5de808efaff6384418f769a7e194eb19,
         type: 3}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -5865,6 +6273,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -5916,6 +6328,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -5965,6 +6381,14 @@ Prefab:
     - target: {fileID: 156898, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
       propertyPath: m_Name
       value: SideWall_Right_Full (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
@@ -6016,6 +6440,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -6065,6 +6493,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -6116,6 +6552,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -6161,6 +6601,14 @@ Prefab:
     - target: {fileID: 424340, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
@@ -6212,6 +6660,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -6261,6 +6717,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -6312,6 +6776,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -6361,6 +6829,10 @@ Prefab:
     - target: {fileID: 149484, guid: 8c879b42e6559e14882f0cb2acc66662, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenCabinetSide (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 179304, guid: 8c879b42e6559e14882f0cb2acc66662, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c879b42e6559e14882f0cb2acc66662, type: 2}
@@ -6412,6 +6884,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -6461,6 +6937,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -6512,6 +6992,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -6561,6 +7045,14 @@ Prefab:
     - target: {fileID: 187708, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
       propertyPath: m_Name
       value: TopWall_Garage (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
@@ -6617,6 +7109,10 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.642
       objectReference: {fileID: 0}
+    - target: {fileID: 162908, guid: b3207f8e8d87ac2428fa32b2da209ce0, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3207f8e8d87ac2428fa32b2da209ce0, type: 2}
   m_IsPrefabParent: 0
@@ -6666,6 +7162,10 @@ Prefab:
     - target: {fileID: 140140, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_5 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 117186, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
@@ -6717,6 +7217,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_3 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
   m_IsPrefabParent: 0
@@ -6766,6 +7270,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -6817,6 +7325,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -6866,6 +7382,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -6917,6 +7437,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -6967,6 +7491,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -7016,6 +7548,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -7072,6 +7608,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -7121,6 +7661,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -7245,6 +7789,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -7327,6 +7875,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -7377,6 +7929,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Corner (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
   m_IsPrefabParent: 0
@@ -7426,6 +7986,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -7513,6 +8077,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -7621,6 +8189,10 @@ Prefab:
     - target: {fileID: 122896, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
@@ -7775,6 +8347,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
   m_IsPrefabParent: 0
@@ -7869,6 +8445,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -7919,6 +8499,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Right_Full (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
   m_IsPrefabParent: 0
@@ -7968,6 +8556,14 @@ Prefab:
     - target: {fileID: 188232, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
       propertyPath: m_Name
       value: SideWall_Full (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
@@ -8022,6 +8618,14 @@ Prefab:
     - target: {fileID: 188232, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
       propertyPath: m_Name
       value: SideWall_Full (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
@@ -8142,6 +8746,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
   m_IsPrefabParent: 0
@@ -8191,6 +8799,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -8284,6 +8896,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 107570, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
   m_IsPrefabParent: 0
@@ -8333,6 +8949,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -8469,6 +9089,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 107570, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
   m_IsPrefabParent: 0
@@ -8519,6 +9143,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -8568,6 +9196,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -8623,6 +9255,10 @@ Prefab:
     - target: {fileID: 188108, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
@@ -8706,6 +9342,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -8784,6 +9424,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -8838,6 +9482,10 @@ Prefab:
     - target: {fileID: 188108, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
@@ -8894,6 +9542,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -8943,6 +9595,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -9022,6 +9678,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -9072,6 +9732,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Right_Full (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
   m_IsPrefabParent: 0
@@ -9121,6 +9789,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -9245,6 +9917,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -9294,6 +9970,14 @@ Prefab:
     - target: {fileID: 187708, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
       propertyPath: m_Name
       value: TopWall_Garage (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
@@ -9374,6 +10058,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_BathroomTile (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
   m_IsPrefabParent: 0
@@ -9419,6 +10107,14 @@ Prefab:
     - target: {fileID: 444394, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 158322, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 158322, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
@@ -9469,6 +10165,14 @@ Prefab:
     - target: {fileID: 103712, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
       propertyPath: m_Name
       value: SideWall_Corner (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
@@ -9523,6 +10227,14 @@ Prefab:
     - target: {fileID: 435948, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0.642
+      objectReference: {fileID: 0}
+    - target: {fileID: 158322, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 158322, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
@@ -9597,6 +10309,10 @@ Prefab:
     - target: {fileID: 459848, guid: 60324e36855310741968c137875281e0, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 139670, guid: 60324e36855310741968c137875281e0, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60324e36855310741968c137875281e0, type: 2}
@@ -9726,6 +10442,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Bathroom (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
   m_IsPrefabParent: 0
@@ -9775,6 +10499,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -9839,6 +10567,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -9888,6 +10624,10 @@ Prefab:
     - target: {fileID: 128550, guid: 256213f742e52b9458a1448522a8a754, type: 2}
       propertyPath: m_Name
       value: Floor_BathroomTile (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
@@ -9939,6 +10679,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_5 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 117186, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
   m_IsPrefabParent: 0
@@ -9984,6 +10728,14 @@ Prefab:
     - target: {fileID: 445710, guid: e437fd7225893d8479423a8e85f563a9, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 189656, guid: e437fd7225893d8479423a8e85f563a9, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 189656, guid: e437fd7225893d8479423a8e85f563a9, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e437fd7225893d8479423a8e85f563a9, type: 2}
@@ -10142,6 +10894,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Bathroom (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
   m_IsPrefabParent: 0
@@ -10191,6 +10951,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -10242,6 +11006,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -10291,6 +11059,14 @@ Prefab:
     - target: {fileID: 156898, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
       propertyPath: m_Name
       value: SideWall_Right_Full (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
@@ -10342,6 +11118,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -10392,6 +11172,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -10441,6 +11229,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -10520,6 +11316,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -10569,6 +11369,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -10624,6 +11428,14 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.642
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -10674,6 +11486,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -10723,6 +11539,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -10847,6 +11667,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -10966,6 +11790,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -11011,6 +11839,14 @@ Prefab:
     - target: {fileID: 456278, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
@@ -11118,6 +11954,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -11167,6 +12007,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -11218,6 +12062,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -11267,6 +12115,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -11363,6 +12215,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -11456,6 +12312,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -11505,6 +12365,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -11640,6 +12504,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -11689,6 +12557,10 @@ Prefab:
     - target: {fileID: 120522, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_4 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
@@ -11740,6 +12612,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
   m_IsPrefabParent: 0
@@ -11790,6 +12666,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -11839,6 +12719,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -11917,6 +12801,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -11997,6 +12885,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_BathroomTile (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
   m_IsPrefabParent: 0
@@ -12046,6 +12938,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -12097,6 +12993,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -12146,6 +13046,14 @@ Prefab:
     - target: {fileID: 103712, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
       propertyPath: m_Name
       value: SideWall_Corner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
@@ -12221,6 +13129,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -12270,6 +13186,14 @@ Prefab:
     - target: {fileID: 187708, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
       propertyPath: m_Name
       value: TopWall_Garage (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
@@ -12321,6 +13245,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Corner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 169214, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78e42f286dc82f24fa240807fae871cc, type: 2}
   m_IsPrefabParent: 0
@@ -12370,6 +13302,10 @@ Prefab:
     - target: {fileID: 122896, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
@@ -12487,6 +13423,14 @@ Prefab:
     - target: {fileID: 156898, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
       propertyPath: m_Name
       value: SideWall_Right_Full (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
@@ -12611,6 +13555,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -12661,6 +13613,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -12707,6 +13667,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
   m_IsPrefabParent: 0
@@ -12752,6 +13716,10 @@ Prefab:
     - target: {fileID: 449566, guid: 8c879b42e6559e14882f0cb2acc66662, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 179304, guid: 8c879b42e6559e14882f0cb2acc66662, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c879b42e6559e14882f0cb2acc66662, type: 2}
@@ -12807,6 +13775,14 @@ Prefab:
     - target: {fileID: 151282, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
       propertyPath: m_Name
       value: TopWall_Bathroom (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
@@ -12940,6 +13916,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 184958, guid: d2daedb3bd3e41a4d88e3a23d3ecf532, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2daedb3bd3e41a4d88e3a23d3ecf532, type: 2}
   m_IsPrefabParent: 0
@@ -12989,6 +13969,10 @@ Prefab:
     - target: {fileID: 128550, guid: 256213f742e52b9458a1448522a8a754, type: 2}
       propertyPath: m_Name
       value: Floor_BathroomTile (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
@@ -13040,6 +14024,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Right_Full (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
   m_IsPrefabParent: 0
@@ -13089,6 +14081,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -13168,6 +14164,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Garage (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
   m_IsPrefabParent: 0
@@ -13217,6 +14221,14 @@ Prefab:
     - target: {fileID: 479248, guid: 019f2967487835a4b8f4768e1509cff4, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0.642
+      objectReference: {fileID: 0}
+    - target: {fileID: 181920, guid: 019f2967487835a4b8f4768e1509cff4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 181920, guid: 019f2967487835a4b8f4768e1509cff4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 019f2967487835a4b8f4768e1509cff4, type: 2}
@@ -13268,6 +14280,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -13317,6 +14337,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -13368,6 +14396,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -13417,6 +14449,14 @@ Prefab:
     - target: {fileID: 156898, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
       propertyPath: m_Name
       value: SideWall_Right_Full (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
@@ -13495,6 +14535,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 117186, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
   m_IsPrefabParent: 0
@@ -13544,6 +14588,10 @@ Prefab:
     - target: {fileID: 120522, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_4 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
@@ -13595,6 +14643,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -13644,6 +14696,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -13700,6 +14756,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -13749,6 +14809,14 @@ Prefab:
     - target: {fileID: 188232, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
       propertyPath: m_Name
       value: SideWall_Full (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
@@ -13828,6 +14896,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -13877,6 +14953,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -13928,6 +15008,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -13977,6 +15065,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -14028,6 +15124,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_4 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
   m_IsPrefabParent: 0
@@ -14078,6 +15178,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -14127,6 +15235,10 @@ Prefab:
     - target: {fileID: 140140, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 117186, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bb80059bfbc0064997fd0dccfe1045e, type: 2}
@@ -14255,6 +15367,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -14300,6 +15416,14 @@ Prefab:
     - target: {fileID: 480868, guid: 6fdd6147032855c4899bbb2adec346fe, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114102, guid: 6fdd6147032855c4899bbb2adec346fe, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114102, guid: 6fdd6147032855c4899bbb2adec346fe, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fdd6147032855c4899bbb2adec346fe, type: 2}
@@ -14356,6 +15480,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -14405,6 +15533,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -14456,6 +15592,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -14506,6 +15646,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -14555,6 +15699,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -14611,6 +15759,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -14661,6 +15813,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -14710,6 +15866,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -14834,6 +15998,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -14883,6 +16055,10 @@ Prefab:
     - target: {fileID: 122896, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
       propertyPath: m_Name
       value: Floor_Stone_3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
@@ -15007,6 +16183,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Right_Full (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
   m_IsPrefabParent: 0
@@ -15057,6 +16241,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Full (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
   m_IsPrefabParent: 0
@@ -15106,6 +16298,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -15230,6 +16430,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Garage (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
   m_IsPrefabParent: 0
@@ -15279,6 +16487,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -15358,6 +16570,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -15407,6 +16623,14 @@ Prefab:
     - target: {fileID: 188232, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
       propertyPath: m_Name
       value: SideWall_Full (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168970, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ea8ccea1f086c4408a315c6d19363b5, type: 2}
@@ -15458,6 +16682,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -15507,6 +16735,14 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -15558,6 +16794,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 173188, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fc902ea397241a4ebcea333985e0c0b, type: 2}
   m_IsPrefabParent: 0
@@ -15607,6 +16847,14 @@ Prefab:
     - target: {fileID: 156898, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
       propertyPath: m_Name
       value: SideWall_Right_Full (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
@@ -15736,6 +16984,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -15785,6 +17037,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -15909,6 +17165,14 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Right_Full (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
   m_IsPrefabParent: 0
@@ -15992,6 +17256,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Bathroom (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
   m_IsPrefabParent: 0
@@ -16041,6 +17313,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -16092,6 +17368,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -16142,6 +17422,14 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.642
       objectReference: {fileID: 0}
+    - target: {fileID: 189656, guid: e437fd7225893d8479423a8e85f563a9, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 189656, guid: e437fd7225893d8479423a8e85f563a9, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e437fd7225893d8479423a8e85f563a9, type: 2}
   m_IsPrefabParent: 0
@@ -16191,6 +17479,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -16247,6 +17539,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Bathroom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165838, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b042ff4bd950684c83d1c9a2fa9159a, type: 2}
   m_IsPrefabParent: 0
@@ -16262,6 +17562,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1913612676}
+  - 114: {fileID: 1913612677}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -16285,6 +17586,23 @@ Transform:
   - {fileID: 1383320799}
   m_Father: {fileID: 813011681}
   m_RootOrder: 4
+--- !u!114 &1913612677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1913612675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c760423a2c2743046ba6880e0bb7456b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rooms:
+  - {fileID: 96760160}
+  - {fileID: 794344508}
+  - {fileID: 31682220}
+  - {fileID: 455687183}
+  - {fileID: 1229915847}
 --- !u!1 &1917007176
 GameObject:
   m_ObjectHideFlags: 0
@@ -16361,6 +17679,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 177700, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f87cb3ee4f37f3e4097982e6620ede11, type: 2}
   m_IsPrefabParent: 0
@@ -16426,6 +17748,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -16476,6 +17802,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -16525,6 +17855,10 @@ Prefab:
     - target: {fileID: 128550, guid: 256213f742e52b9458a1448522a8a754, type: 2}
       propertyPath: m_Name
       value: Floor_BathroomTile (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
@@ -16604,6 +17938,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -16654,6 +17992,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Garage (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
   m_IsPrefabParent: 0
@@ -16703,6 +18049,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -16781,6 +18131,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114584, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144ba33fa8d8b1b4292433e0d81bc2ae, type: 2}
   m_IsPrefabParent: 0
@@ -16830,6 +18184,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -16909,6 +18267,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -16959,6 +18321,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Garage (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
   m_IsPrefabParent: 0
@@ -17008,6 +18378,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -17087,6 +18461,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Garage (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
   m_IsPrefabParent: 0
@@ -17136,6 +18518,10 @@ Prefab:
     - target: {fileID: 128550, guid: 256213f742e52b9458a1448522a8a754, type: 2}
       propertyPath: m_Name
       value: Floor_BathroomTile (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
@@ -17187,6 +18573,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_KitchenTile (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_IsPrefabParent: 0
@@ -17236,6 +18626,10 @@ Prefab:
     - target: {fileID: 128550, guid: 256213f742e52b9458a1448522a8a754, type: 2}
       propertyPath: m_Name
       value: Floor_BathroomTile (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 194076, guid: 256213f742e52b9458a1448522a8a754, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256213f742e52b9458a1448522a8a754, type: 2}
@@ -17353,6 +18747,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_WoodenPlanks (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_IsPrefabParent: 0
@@ -17407,6 +18805,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -17456,6 +18862,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
@@ -17580,6 +18990,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -17629,6 +19047,10 @@ Prefab:
     - target: {fileID: 198088, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
       propertyPath: m_Name
       value: Floor_KitchenTile (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186646, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
@@ -17680,6 +19102,14 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_Garage (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145988, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e55bec67e5070c4d82c9b452ffd1aa6, type: 2}
   m_IsPrefabParent: 0
@@ -17730,6 +19160,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor_Stone_2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 107570, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad6430137de2c341a09b54e795aed69, type: 2}
   m_IsPrefabParent: 0
@@ -17779,6 +19213,10 @@ Prefab:
     - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
       propertyPath: m_Name
       value: Floor_WoodenPlanks (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
