@@ -26,7 +26,15 @@ public class PlayerManager : Singleton<PlayerManager> {
     {
         get { return Input.GetKey("s"); }
     }
+
+    bool sprint
+    {
+        get { return Input.GetKey("left shift"); }
+    }
     float speed;
+    float sprintMax;
+    float sprintCurrent;
+    float sprintingSpeed;
     Vector3 move;
     int x;
     int z;
@@ -34,6 +42,9 @@ public class PlayerManager : Singleton<PlayerManager> {
 	// Use this for initialization
 	void Start () {
         speed = 1.0f;
+        sprintingSpeed = 3.5f;
+        sprintMax = 2.0f;
+        sprintCurrent = sprintMax;
         move = new Vector3(0, 0);
         x = 0;
         z = 0;
@@ -48,13 +59,11 @@ public class PlayerManager : Singleton<PlayerManager> {
 
         if (left)
         {
-            //move = new Vector3(-1, 0);
             x = -1;
             animator.SetInteger("direction", -90);
         }
         else if (right)
         {
-            //move = new Vector3(1, 0);
             x = 1;
             animator.SetInteger("direction", 90);
         }
@@ -65,23 +74,29 @@ public class PlayerManager : Singleton<PlayerManager> {
 
         if (up)
         {
-            //move = new Vector3(0, 1);
             z = 1;
         }
         else if (down)
         {
-            //move = new Vector3(0, -1);
             z = -1;
         }
         else
         {
             z = 0;
         }
-
-        //if (!left && !right && !up && !down)
-        //{
-        //    move = new Vector3(0, 0);
-        //}
+        // apply sprint speed if enoght sprint energy (sprintCurrent) is left
+        // current unlimited need to look into more
+        if (sprint && sprintCurrent > 0.0f)
+        {
+            speed = sprintingSpeed;
+            sprintCurrent -= 0.1f * Time.deltaTime;
+        }
+        else
+        {
+            speed = 1.0f;
+            if(sprintCurrent <= sprintMax)
+            sprintCurrent += 0.1f * Time.deltaTime;
+        }
 
         move = new Vector3(x, 0, z);
 

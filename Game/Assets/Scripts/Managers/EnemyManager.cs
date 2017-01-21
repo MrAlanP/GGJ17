@@ -11,7 +11,7 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 
     #region Protected Variables
     protected List<Enemy> enemyUnits = new List<Enemy>();
-    protected int spawnUnitCount = 10;
+    protected int spawnUnitCount = 1;
     #endregion
 
     // Use this for initialization
