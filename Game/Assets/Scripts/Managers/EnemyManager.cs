@@ -18,7 +18,6 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
     // Use this for initialization
     void Start ()
     {
-        StartWave();
 	}
 	
 	// Update is called once per frame

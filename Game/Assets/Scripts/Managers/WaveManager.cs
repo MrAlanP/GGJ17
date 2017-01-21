@@ -41,7 +41,7 @@ public class WaveManager : Singleton<WaveManager>
                 }
             case WaveType.Swat:
                 {
-                    swatManager.StartWave();
+                    //swatManager.StartWave();
                     break;
                 }
         }

@@ -1922,6 +1922,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 108622, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
   m_IsPrefabParent: 0
@@ -5382,7 +5386,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 594596985}
-  - 114: {fileID: 594596986}
   m_Layer: 0
   m_Name: Room_BR
   m_TagString: Untagged
@@ -5403,22 +5406,6 @@ Transform:
   - {fileID: 2090519249}
   m_Father: {fileID: 2102901802}
   m_RootOrder: 3
---- !u!114 &594596986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 594596984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedRooms:
-  - {fileID: 1383524357}
-  - {fileID: 1250651939}
-  objectsToSee: 0
-  explored: 0
 --- !u!1001 &599219729
 Prefab:
   m_ObjectHideFlags: 0
@@ -7159,6 +7146,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 794344506}
   - 65: {fileID: 794344507}
+  - 114: {fileID: 794344508}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -7190,6 +7178,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.84, y: 0.64, z: 3.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &794344508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 794344505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRooms:
+  - {fileID: 2014340314}
+  - {fileID: 1848877038}
+  objectsToSee: 0
+  explored: 0
 --- !u!1 &796898673
 GameObject:
   m_ObjectHideFlags: 0
@@ -7924,7 +7928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   investigatorManager: {fileID: 1364423}
   swatManager: {fileID: 0}
-  waves: 00000000000000000000000001000000
+  waves: 00000000
 --- !u!1 &914548234
 GameObject:
   m_ObjectHideFlags: 0
@@ -11044,7 +11048,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1250651938}
-  - 114: {fileID: 1250651939}
   m_Layer: 0
   m_Name: Room_BL
   m_TagString: Untagged
@@ -11065,22 +11068,6 @@ Transform:
   - {fileID: 794344506}
   m_Father: {fileID: 2102901802}
   m_RootOrder: 0
---- !u!114 &1250651939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1250651937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedRooms:
-  - {fileID: 1567014075}
-  - {fileID: 594596986}
-  objectsToSee: 0
-  explored: 0
 --- !u!1 &1271143966
 GameObject:
   m_ObjectHideFlags: 0
@@ -11932,7 +11919,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1383524356}
-  - 114: {fileID: 1383524357}
   m_Layer: 0
   m_Name: Room_UR
   m_TagString: Untagged
@@ -11953,22 +11939,6 @@ Transform:
   - {fileID: 1848877036}
   m_Father: {fileID: 2102901802}
   m_RootOrder: 2
---- !u!114 &1383524357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1383524355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedRooms:
-  - {fileID: 1567014075}
-  - {fileID: 594596986}
-  objectsToSee: 0
-  explored: 0
 --- !u!1001 &1387566574
 Prefab:
   m_ObjectHideFlags: 0
@@ -13414,7 +13384,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1567014074}
-  - 114: {fileID: 1567014075}
   m_Layer: 0
   m_Name: Room_UL
   m_TagString: Untagged
@@ -13435,22 +13404,6 @@ Transform:
   - {fileID: 2014340312}
   m_Father: {fileID: 2102901802}
   m_RootOrder: 1
---- !u!114 &1567014075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1567014073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedRooms:
-  - {fileID: 1250651939}
-  - {fileID: 594596986}
-  objectsToSee: 0
-  explored: 0
 --- !u!1001 &1589352574
 Prefab:
   m_ObjectHideFlags: 0
@@ -14803,6 +14756,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1848877036}
   - 65: {fileID: 1848877037}
+  - 114: {fileID: 1848877038}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -14834,6 +14788,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.84, y: 0.64, z: 4.48}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1848877038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848877035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRooms:
+  - {fileID: 0}
+  - {fileID: 0}
+  objectsToSee: 0
+  explored: 0
 --- !u!1001 &1853652042
 Prefab:
   m_ObjectHideFlags: 0
@@ -15480,10 +15450,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rooms:
-  - {fileID: 1250651939}
-  - {fileID: 1567014075}
-  - {fileID: 1383524357}
-  - {fileID: 594596986}
+  - {fileID: 2090519251}
+  - {fileID: 2014340314}
+  - {fileID: 1848877038}
+  - {fileID: 794344508}
 --- !u!1001 &1917799557
 Prefab:
   m_ObjectHideFlags: 0
@@ -16570,6 +16540,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2014340312}
   - 65: {fileID: 2014340313}
+  - 114: {fileID: 2014340314}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -16601,6 +16572,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.84, y: 0.64, z: 4.48}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2014340314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2014340311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRooms:
+  - {fileID: 794344508}
+  - {fileID: 1848877038}
+  objectsToSee: 0
+  explored: 0
 --- !u!1001 &2019984162
 Prefab:
   m_ObjectHideFlags: 0
@@ -17265,6 +17252,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2090519249}
   - 65: {fileID: 2090519250}
+  - 114: {fileID: 2090519251}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -17296,6 +17284,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.84, y: 0.64, z: 3.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2090519251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2090519248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383d23017ebee004bb1d466c6d80d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRooms:
+  - {fileID: 1848877038}
+  - {fileID: 794344508}
+  objectsToSee: 0
+  explored: 0
 --- !u!1001 &2094434688
 Prefab:
   m_ObjectHideFlags: 0

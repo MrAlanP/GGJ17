@@ -50,7 +50,7 @@ public class Enemy : MonoBehaviour {
         {
             case EnemyState.Searching:
 
-                if (currentRoom.explored || investigated)
+                if (currentRoom && (currentRoom.explored || investigated))
                 {
                     investigated = false;
                     //attainedInformation.OnRoomExplored(currentRoom);
@@ -108,7 +108,7 @@ public class Enemy : MonoBehaviour {
 
     public void Spawn()
     {
-
+        nMAgent = GetComponent<NavMeshAgent>();
     }
 
     //Once the enemy leaves the house with a number of information
