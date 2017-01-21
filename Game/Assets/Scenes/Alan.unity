@@ -179,8 +179,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048e6a257b0881e4eba16ce0d14aa72f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alertness: 0
   enemyUnitPrefab: {fileID: 108622, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
   unitsTransform: {fileID: 476793854}
+  investigationSpeed: 1
+  movementSpeed: 1
+  sightRange: 25
 --- !u!1001 &6637708
 Prefab:
   m_ObjectHideFlags: 0
@@ -639,68 +643,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 480868, guid: 6fdd6147032855c4899bbb2adec346fe, type: 2}
   m_PrefabInternal: {fileID: 27618990}
---- !u!1001 &28236231
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 892504443}
-    m_Modifications:
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 141762, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_Name
-      value: Floor_WoodenPlanks_Carpet_Corner (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalScale.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 179902, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &28236232 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-  m_PrefabInternal: {fileID: 28236231}
 --- !u!1001 &28502831
 Prefab:
   m_ObjectHideFlags: 0
@@ -6398,64 +6340,6 @@ Transform:
   - {fileID: 1886998525}
   m_Father: {fileID: 1936146981}
   m_RootOrder: 1
---- !u!1001 &270374818
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 892504443}
-    m_Modifications:
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalScale.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 155122, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_Name
-      value: Floor_WoodenPlanks_Carpet_Top (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 198736, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &270374819 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_PrefabInternal: {fileID: 270374818}
 --- !u!1 &271736055
 GameObject:
   m_ObjectHideFlags: 0
@@ -7136,8 +7020,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176546236a6046e4188937fdde1cc8ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alertness: 0
   enemyUnitPrefab: {fileID: 0}
   unitsTransform: {fileID: 0}
+  investigationSpeed: 1
+  movementSpeed: 1
+  sightRange: 25
 --- !u!1 &304535043
 GameObject:
   m_ObjectHideFlags: 0
@@ -8132,60 +8020,6 @@ Transform:
   - {fileID: 1157972123}
   m_Father: {fileID: 1913612676}
   m_RootOrder: 0
---- !u!1001 &354071358
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 892504443}
-    m_Modifications:
-    - target: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_RootOrder
-      value: 44
-      objectReference: {fileID: 0}
-    - target: {fileID: 143468, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_Name
-      value: Floor_WoodenPlanks (42)
-      objectReference: {fileID: 0}
-    - target: {fileID: 191540, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &354071359 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
-  m_PrefabInternal: {fileID: 354071358}
 --- !u!1 &355283417
 GameObject:
   m_ObjectHideFlags: 0
@@ -10927,6 +10761,60 @@ Transform:
   - {fileID: 1767159608}
   m_Father: {fileID: 1383320799}
   m_RootOrder: 4
+--- !u!1001 &493911257
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 892504443}
+    m_Modifications:
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000016292068
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 108668, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_Name
+      value: Floor_WoodenPlanks_Carpet_Centre (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 106828, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &493911258 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_PrefabInternal: {fileID: 493911257}
 --- !u!1001 &500937378
 Prefab:
   m_ObjectHideFlags: 0
@@ -12079,68 +11967,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 402562, guid: 960d18038f0a7464b91af17d96567219, type: 2}
   m_PrefabInternal: {fileID: 908025502}
---- !u!1001 &542214275
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 892504443}
-    m_Modifications:
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 141762, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_Name
-      value: Floor_WoodenPlanks_Carpet_Corner (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_LocalScale.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 179902, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &542214276 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 415366, guid: 2c6c5a036a851aa498241374cb45efb6, type: 2}
-  m_PrefabInternal: {fileID: 542214275}
 --- !u!1001 &547049254
 Prefab:
   m_ObjectHideFlags: 0
@@ -14417,6 +14243,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_PrefabInternal: {fileID: 627731737}
+--- !u!1001 &628703582
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 892504443}
+    m_Modifications:
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000016292068
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 108668, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_Name
+      value: Floor_WoodenPlanks_Carpet_Centre (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 106828, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &628703583 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_PrefabInternal: {fileID: 628703582}
 --- !u!1001 &629465332
 Prefab:
   m_ObjectHideFlags: 0
@@ -19350,8 +19230,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 542214276}
-  - {fileID: 28236232}
   - {fileID: 1639138161}
   - {fileID: 1189770113}
   - {fileID: 170225519}
@@ -19360,12 +19238,7 @@ Transform:
   - {fileID: 2104897189}
   - {fileID: 921544359}
   - {fileID: 1614501326}
-  - {fileID: 1906110136}
-  - {fileID: 1231046162}
-  - {fileID: 893151124}
-  - {fileID: 1932284747}
   - {fileID: 1076825472}
-  - {fileID: 270374819}
   - {fileID: 1093725393}
   - {fileID: 92718791}
   - {fileID: 1782012581}
@@ -19394,67 +19267,15 @@ Transform:
   - {fileID: 284159986}
   - {fileID: 1924818639}
   - {fileID: 1648285717}
-  - {fileID: 354071359}
+  - {fileID: 1598230109}
+  - {fileID: 493911258}
+  - {fileID: 628703583}
+  - {fileID: 932580261}
+  - {fileID: 1622427836}
+  - {fileID: 1022400561}
+  - {fileID: 901052730}
   m_Father: {fileID: 352910914}
   m_RootOrder: 8
---- !u!1001 &893151123
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 892504443}
-    m_Modifications:
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalScale.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 155122, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_Name
-      value: Floor_WoodenPlanks_Carpet_Top (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 198736, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &893151124 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_PrefabInternal: {fileID: 893151123}
 --- !u!1 &893869293
 GameObject:
   m_ObjectHideFlags: 0
@@ -19722,6 +19543,64 @@ Transform:
   - {fileID: 1264557283}
   m_Father: {fileID: 178728743}
   m_RootOrder: 55
+--- !u!1001 &901052729
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 892504443}
+    m_Modifications:
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 186100, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_Name
+      value: Floor_WoodenPlanks_Carpet_Side (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 173494, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &901052730 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+  m_PrefabInternal: {fileID: 901052729}
 --- !u!1 &903255840
 GameObject:
   m_ObjectHideFlags: 0
@@ -20418,6 +20297,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 469898, guid: e55dc7381ce95b741a8fa909dbe235be, type: 2}
   m_PrefabInternal: {fileID: 929654421}
+--- !u!1001 &932580260
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 892504443}
+    m_Modifications:
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000016292068
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 108668, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_Name
+      value: Floor_WoodenPlanks_Carpet_Centre (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 106828, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &932580261 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_PrefabInternal: {fileID: 932580260}
 --- !u!1001 &936144659
 Prefab:
   m_ObjectHideFlags: 0
@@ -22180,6 +22113,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 408898, guid: 256213f742e52b9458a1448522a8a754, type: 2}
   m_PrefabInternal: {fileID: 1021495126}
+--- !u!1001 &1022400560
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 892504443}
+    m_Modifications:
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000016292068
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 108668, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_Name
+      value: Floor_WoodenPlanks_Carpet_Centre (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 106828, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1022400561 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_PrefabInternal: {fileID: 1022400560}
 --- !u!1001 &1022545128
 Prefab:
   m_ObjectHideFlags: 0
@@ -23079,7 +23066,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -2.56
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
       propertyPath: m_LocalRotation.x
@@ -26186,64 +26173,6 @@ MonoBehaviour:
   - {fileID: 794344508}
   objectsToSee: 0
   explored: 0
---- !u!1001 &1231046161
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 892504443}
-    m_Modifications:
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalScale.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 155122, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_Name
-      value: Floor_WoodenPlanks_Carpet_Top (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 198736, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1231046162 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_PrefabInternal: {fileID: 1231046161}
 --- !u!1 &1233599955
 GameObject:
   m_ObjectHideFlags: 0
@@ -33012,6 +32941,60 @@ Transform:
   - {fileID: 1181274153}
   m_Father: {fileID: 1196510665}
   m_RootOrder: 2
+--- !u!1001 &1598230108
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 892504443}
+    m_Modifications:
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 186100, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_Name
+      value: Floor_WoodenPlanks_Carpet_Side (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 173494, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1598230109 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 468300, guid: 20747115e01b64d4283fb525a6968927, type: 2}
+  m_PrefabInternal: {fileID: 1598230108}
 --- !u!1001 &1600021628
 Prefab:
   m_ObjectHideFlags: 0
@@ -33296,6 +33279,60 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 0.64, z: 1.92}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1622427835
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 892504443}
+    m_Modifications:
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000016292068
+      objectReference: {fileID: 0}
+    - target: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 108668, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_Name
+      value: Floor_WoodenPlanks_Carpet_Centre (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 106828, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1622427836 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
+  m_PrefabInternal: {fileID: 1622427835}
 --- !u!1001 &1624024163
 Prefab:
   m_ObjectHideFlags: 0
@@ -38932,64 +38969,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 497808, guid: 4b1a88eb7bbf77e4dbfd7866f6e2e79f, type: 2}
   m_PrefabInternal: {fileID: 1894841586}
---- !u!1001 &1906110135
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 892504443}
-    m_Modifications:
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalScale.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 155122, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_Name
-      value: Floor_WoodenPlanks_Carpet_Top (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 198736, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1906110136 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_PrefabInternal: {fileID: 1906110135}
 --- !u!1001 &1907411353
 Prefab:
   m_ObjectHideFlags: 0
@@ -39137,7 +39116,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1913612676}
-  - 114: {fileID: 1913612677}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -39161,23 +39139,6 @@ Transform:
   - {fileID: 1383320799}
   m_Father: {fileID: 813011681}
   m_RootOrder: 4
---- !u!114 &1913612677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1913612675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c760423a2c2743046ba6880e0bb7456b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rooms:
-  - {fileID: 96760160}
-  - {fileID: 794344508}
-  - {fileID: 31682220}
-  - {fileID: 455687183}
-  - {fileID: 1229915847}
 --- !u!1001 &1924818638
 Prefab:
   m_ObjectHideFlags: 0
@@ -39476,64 +39437,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &1932284746
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 892504443}
-    m_Modifications:
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_LocalScale.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 155122, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_Name
-      value: Floor_WoodenPlanks_Carpet_Top (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 198736, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1932284747 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 495452, guid: 6903fa144f634004caeab982a7dbd952, type: 2}
-  m_PrefabInternal: {fileID: 1932284746}
 --- !u!1 &1933802241
 GameObject:
   m_ObjectHideFlags: 0
