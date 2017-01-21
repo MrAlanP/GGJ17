@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
     public bool isAlive { get; private set; }
 
     protected int scareCount = 0; //How many times we've been scared
-    protected AttainedInformation attainedInformation;
+    protected AttainedInformation_Enemy attainedInformation;
 
     private float movementSpeed = 2;
 
@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour {
     private float degreesBetweenRaycast = 2.0f;
 
     //All colliders hit in scan
-    private List<Collider2D> hitColliders = new List<Collider2D>();
+    private List<Collider> hitColliders = new List<Collider>();
 
     //Ref to NavMeshAgent
     private NavMeshAgent nMAgent;
@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour {
 
         nMAgent = GetComponent<NavMeshAgent>();
 
-        attainedInformation = new AttainedInformation();
+        attainedInformation = new AttainedInformation_Enemy();
 
         curState = EnemyState.Searching;
 
@@ -87,19 +87,29 @@ public class Enemy : MonoBehaviour {
         for(float i = 0; i<360; i += degreesBetweenRaycast)
         {
             float angleRadians = i * Mathf.Deg2Rad;
-            Vector2 direction = new Vector2(Mathf.Cos(angleRadians), Mathf.Sin(angleRadians));
+            Vector3 direction = new Vector3(Mathf.Cos(angleRadians), 0, Mathf.Sin(angleRadians));
 
-            if (drawRaysDebug)
+            RaycastHit hit;
+
+            if (Physics.Raycast(transform.position, direction, out hit, viewDistance))
             {
-                Debug.DrawRay(transform.position, direction * viewDistance, Color.red);
+                if (hit.collider != null && !hitColliders.Contains(hit.collider))
+                {
+                    hitColliders.Add(hit.collider);
+                }
+
+                if (drawRaysDebug)
+                {
+                    Debug.DrawLine(transform.position, hit.point, Color.green);
+                }
             }
-            
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, viewDistance);
-            if(hit.collider != null && !hitColliders.Contains(hit.collider))
+            else
             {
-                hitColliders.Add(hit.collider);
+                if(drawRaysDebug)
+                {
+                    Debug.DrawRay(transform.position, direction * viewDistance, Color.red);
+                }
             }
-            
         }
 
         //Iterate over found colliders
