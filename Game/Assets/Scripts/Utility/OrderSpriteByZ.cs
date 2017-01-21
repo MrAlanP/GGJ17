@@ -9,7 +9,7 @@ public class OrderSpriteByZ : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sortingOrder = (int)(gameObject.transform.position.z * -1000) + 10000;
+        //spriteRenderer.sortingOrder = (int)(gameObject.transform.position.z * -1000) + 10000;
     }
 	
 	// Update is called once per frame

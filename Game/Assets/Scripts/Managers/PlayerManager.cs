@@ -5,6 +5,7 @@ public class PlayerManager : Singleton<PlayerManager> {
 
     public Room currentRoom { get; private set; }
     public Animator animator;
+    public Rigidbody rb;
 
     bool echo
     {
@@ -63,6 +64,7 @@ public class PlayerManager : Singleton<PlayerManager> {
 	
 	// Update is called once per frame
 	void Update () {
+
         if (echo)
         {
             action = true;
@@ -143,7 +145,7 @@ public class PlayerManager : Singleton<PlayerManager> {
         move = new Vector3(x, 0, z);
         if (!inObject)
         {
-            this.transform.position += move * speed * Time.deltaTime;
+            rb.velocity = new Vector3(move.x, move.y, move.z) * speed;
         }
     }
 }
