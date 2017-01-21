@@ -18,4 +18,8 @@ public class PassCollisionsToGameobject : MonoBehaviour {
     {
         go.SendMessage("OnTriggerStay", playerColl);
     }
+    void OnTriggerExit(Collider playerColl)
+    {
+        go.SendMessage("OnTriggerExit", playerColl);
+    }
 }
