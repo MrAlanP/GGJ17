@@ -65,7 +65,7 @@ public class RoomManager : Singleton<RoomManager>
         for(int i=0; i < exploredRooms.Count; i++)
         {
             exploredRooms[i].explored = true;
-            EnemyManager.Instance.alertness += .2f;
+            EnemyManager.Instance.alertness += .4f;
         }
     }
 }

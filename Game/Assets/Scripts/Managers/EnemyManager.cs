@@ -39,21 +39,23 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
         switch ((int)alertness)
         {
             case 1:
+                print("Stage 2 ");
+                UIManager.Instance.alert = UIManager.Alert.stage2;
                 investigationSpeed = 2;
                 break;
 
             case 2:
+                UIManager.Instance.alert = UIManager.Alert.stage3;
                 movementSpeed = 2;
                 break;
 
             case 3:
+                UIManager.Instance.alert = UIManager.Alert.stage4;
                 sightRange = 3;
                 break;
 
             case 4:
-                break;
-
-            case 5:
+                UIManager.Instance.alert = UIManager.Alert.stage5;
                 break;
         }
 

@@ -2025,7 +2025,7 @@ MonoBehaviour:
   - {fileID: 1480363180}
   - {fileID: 1336264339}
   objectsToSee: 0
-  explored: 0
+  explored: 1
 --- !u!1 &98896424
 GameObject:
   m_ObjectHideFlags: 0
@@ -6989,7 +6989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &302910261
 Transform:
   m_ObjectHideFlags: 0
@@ -7009,7 +7009,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 302910260}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 176546236a6046e4188937fdde1cc8ed, type: 3}
   m_Name: 
@@ -19701,7 +19701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   investigatorManager: {fileID: 1364423}
   swatManager: {fileID: 0}
-  waves: 00000000000000000000000001000000
+  waves: 0000000000000000000000000000000001000000
 --- !u!1001 &906737500
 Prefab:
   m_ObjectHideFlags: 0
@@ -42587,12 +42587,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rooms:
-  - {fileID: 794344508}
-  - {fileID: 31682220}
   - {fileID: 96760160}
+  - {fileID: 794344508}
   - {fileID: 455687183}
-  - {fileID: 1229915847}
   - {fileID: 481731277}
+  - {fileID: 1229915847}
+  - {fileID: 31682220}
   - {fileID: 1480363180}
   - {fileID: 204177946}
   - {fileID: 1705473059}
