@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
     public bool isAlive { get; private set; }
 
     protected int scareCount = 0; //How many times we've been scared
-    protected AttainedInformation attainedInformation;
+    protected AttainedInformation_Enemy attainedInformation;
 
     private float movementSpeed = 2;
 
@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour {
     private List<Collider2D> hitColliders = new List<Collider2D>(); 
 	// Use this for initialization
 	protected virtual void Start () {
-        attainedInformation = new AttainedInformation();
+        attainedInformation = new AttainedInformation_Enemy();
     }
 
     // Update is called once per frame

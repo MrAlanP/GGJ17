@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 409484}
   - 212: {fileID: 21236544}
   - 114: {fileID: 11496212}
-  - 114: {fileID: 11441468}
   m_Layer: 0
   m_Name: EnemyInvestigator
   m_TagString: Untagged
@@ -30,17 +29,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11441468
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4e08573a9f730e47afd0ce1b4a40a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11496212
 MonoBehaviour:
   m_ObjectHideFlags: 1
