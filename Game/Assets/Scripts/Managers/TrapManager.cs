@@ -17,7 +17,6 @@ public class TrapManager : MonoBehaviour {
     bool eProxy;
     bool isPlaying;
     public TrapType trapType;
-    float y;
     GameObject player;
     PassCollisionsToGameobject child;
     SpriteRenderer visability;
@@ -33,7 +32,6 @@ public class TrapManager : MonoBehaviour {
         useable = true;
         inObject = false;
         child = this.GetComponentInChildren<PassCollisionsToGameobject>();
-        y = transform.position.y;
         player = GameObject.FindGameObjectWithTag("Player");
         visability = player.GetComponent<SpriteRenderer>();
         playerColl = player.GetComponent<Collider>();
@@ -42,7 +40,6 @@ public class TrapManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(isPlaying);
         isPlaying = child.isPlaying;
         if (pProxy)
         {
@@ -68,7 +65,7 @@ public class TrapManager : MonoBehaviour {
             }
             Debug.Log("Player!");
         }
-        if (pProxy && isPlaying)
+        if (eProxy && isPlaying)
         {
             Debug.Log("what are you?");
             if (trapType == TrapType.Lethal)
