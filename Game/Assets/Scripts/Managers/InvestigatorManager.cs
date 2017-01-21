@@ -12,13 +12,14 @@ public class InvestigatorManager : EnemyManager {
     public override void OnEnemyFinish(Enemy enemy)
     {
         roomsClaimed.Clear();
-        WaveManager.Instance.EndWave();
 
         enemyUnits.Remove(enemy);
         enemy.gameObject.AddComponent<TimedObjectDestructor>();
 
         if (enemyUnits.Count == 0)
         {
+            WaveManager.Instance.EndWave();
+
             if (RoomManager.Instance.allRoomsExplored)
             {
                 //StartWave Wave

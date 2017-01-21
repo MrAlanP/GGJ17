@@ -93,6 +93,7 @@ MonoBehaviour:
   curState: 0
   explorationTotal: 1
   roomsExplored: []
+  targetRoom: {fileID: 0}
 --- !u!114 &11496258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +113,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108622}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.31
   m_Height: 0
@@ -125,7 +126,7 @@ NavMeshAgent:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108622}
   m_Enabled: 1
-  m_Radius: 0.3
+  m_Radius: 0.2
   m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
@@ -164,7 +165,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300064, guid: 5de808efaff6384418f769a7e194eb19, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9813b5d35efe32c419d7003af8a767ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -55,7 +55,9 @@ public class Enemy : MonoBehaviour {
                 //If current rooms has already been explored or has been 
                 if (currentRoom && (currentRoom.explored || investigated))
                 {
-                    Debug.Log(name + " Says: This room is explored, moving to next room");
+                    if(targetRoom)
+                        Debug.Log(name + " Says: " + targetRoom.name + " room is explored, moving to next room");
+
                     investigated = false;
 
                     //Has the Investigator done all the exploring they can?
@@ -89,7 +91,7 @@ public class Enemy : MonoBehaviour {
                 else
                 {
                     //If in the centre of room start exploration
-                    if (nMAgent.desiredVelocity.magnitude < 1)
+                    if (nMAgent.desiredVelocity.magnitude < 1 && Vector3.Distance(transform.position, nMAgent.destination) < 2)
                     {
                         //if (!InvestigatorManager.Instance.roomsClaimed.ContainsKey(currentRoom))
                         //{ 
@@ -100,7 +102,7 @@ public class Enemy : MonoBehaviour {
                         //    nMAgent.SetDestination(RoomManager.Instance.GetNextRoom(roomsExplored));
                         //}
 
-                        investigationTimer += Time.deltaTime;
+                        investigationTimer += Time.deltaTime * EnemyManager.Instance.investigationSpeed;
 
                         if (investigationTimer > investigationTime)
                         {
@@ -134,6 +136,8 @@ public class Enemy : MonoBehaviour {
     public void Spawn()
     {
         nMAgent = GetComponent<NavMeshAgent>();
+        viewDistance = EnemyManager.Instance.sightRange;
+        nMAgent.speed = EnemyManager.Instance.movementSpeed;
     }
 
     //Once the enemy leaves the house with a number of information
@@ -154,8 +158,6 @@ public class Enemy : MonoBehaviour {
     public void OnEnterNewRoom(Room newRoom)
     {
         currentRoom = newRoom;
-
-        nMAgent.speed = 2;
 
         if (curState != EnemyState.Leaving)
         {
@@ -214,6 +216,25 @@ public class Enemy : MonoBehaviour {
         //Iterate over found colliders
         for(int i = 0; i< hitColliders.Count; i++)
         {
+            if(hitColliders[i].tag == "Player")
+            {
+                print(name + " Says: I've seen the Ghost, oh crumbs");
+                targetRoom = RoomManager.Instance.GetNextRoom(roomsExplored);
+                //Look for new Room
+                nMAgent.SetDestination(targetRoom.transform.position);
+
+                if (targetRoom.transform.position != RoomManager.Instance.startingRoom)
+                {
+                    print(name + " Says: Found room, claiming");
+                    InvestigatorManager.Instance.roomsClaimed.Add(targetRoom, this);
+                }
+
+                curState = EnemyState.ToNewRoom;
+
+                break;
+
+                scareCount++;
+            }
         }
     }
 }

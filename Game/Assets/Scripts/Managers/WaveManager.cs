@@ -32,20 +32,22 @@ public class WaveManager : Singleton<WaveManager>
 
     public void StartWave()
     {
-        switch (waves[currentWave])
+        if (currentWave < waves.Length)
         {
-            case WaveType.Investigator:
-                {
-                    StartCoroutine(investigatorManager.SpawnWave(2));
-                    break;
-                }
-            case WaveType.Swat:
-                {
-                    //swatManager.StartWave();
-                    break;
-                }
+            switch (waves[currentWave])
+            {
+                case WaveType.Investigator:
+                    {
+                        StartCoroutine(investigatorManager.SpawnWave(currentWave+1));
+                        break;
+                    }
+                case WaveType.Swat:
+                    {
+                        //swatManager.StartWave();
+                        break;
+                    }
+            }
         }
-
     }
 
     public void EndWave()

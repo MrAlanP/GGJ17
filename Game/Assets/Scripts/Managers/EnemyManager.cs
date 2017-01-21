@@ -5,8 +5,12 @@ using System.Collections.Generic;
 public abstract class EnemyManager : Singleton<EnemyManager> {
 
     #region Public Variables
+    public float alertness = 0;
     public GameObject enemyUnitPrefab;
     public Transform unitsTransform;
+    public float investigationSpeed = 1;
+    public float movementSpeed = 1;
+    public float sightRange = 25;
     #endregion
 
     #region Protected Variables
@@ -16,6 +20,7 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 
     public Dictionary<Room, Enemy> roomsClaimed = new Dictionary<Room, Enemy>();
 
+    
 
     // Use this for initialization
     void Start ()
@@ -31,8 +36,30 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
     {
         yield return new WaitForSeconds(2);
 
+        switch ((int)alertness)
+        {
+            case 1:
+                investigationSpeed = 2;
+                break;
+
+            case 2:
+                movementSpeed = 2;
+                break;
+
+            case 3:
+                sightRange = 3;
+                break;
+
+            case 4:
+                break;
+
+            case 5:
+                break;
+        }
+
         for(int i = 0; i < UnitsToSpawn; i++)
         {
+
             GameObject enemyUnit = Instantiate(enemyUnitPrefab);
             enemyUnit.transform.SetParent(unitsTransform);
             enemyUnit.transform.position = RoomManager.Instance.startingRoom;
