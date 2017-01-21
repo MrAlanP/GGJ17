@@ -4,7 +4,7 @@ using System.Collections;
 public class Room : MonoBehaviour {
 
     //References to the rooms it is connected to
-    public Room[] rooms;
+    public Room[] attachedRooms;
 
     public int objectsToSee;
 
@@ -24,18 +24,18 @@ public class Room : MonoBehaviour {
     public Vector3 GetNextRoom()
     {
         //Attempt to look for next unexplored room
-        for (int i = 0; i < rooms.Length; i++)
+        for (int i = 0; i < attachedRooms.Length; i++)
         {
-            if(!rooms[i].explored)
+            if(!attachedRooms[i].explored)
             {
-                return rooms[i].transform.position;
+                return attachedRooms[i].transform.position;
             }
         }
 
         //If we don't find an unexplored room directly connected we need to look elsewhere
-        for (int j = 0; j < rooms.Length; j++)
+        for (int j = 0; j < attachedRooms.Length; j++)
         {
-            return rooms[j].GetNextRoom();
+            return attachedRooms[j].GetNextRoom();
         }
 
         //Recurring code here potenitally
@@ -50,10 +50,7 @@ public class Room : MonoBehaviour {
         {
             Debug.Log("Investigator entered this room");
 
-            if (!this.explored)
-            {
-                collider.gameObject.GetComponent<Enemy>().OnEnterNewRoom(this);
-            }
+            collider.gameObject.GetComponent<Enemy>().OnEnterNewRoom(this);
 
             //Code
         }

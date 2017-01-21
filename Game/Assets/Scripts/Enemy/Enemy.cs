@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour {
     private float degreesBetweenRaycast = 2.0f;
 
     //All colliders hit in scan
+    [HideInInspector]
     public List<Collider> hitColliders = new List<Collider>();
 
     public List<Collider> objectsToSee = new List<Collider>();
@@ -113,6 +114,7 @@ public class Enemy : MonoBehaviour {
                 else if (objectsExplored == currentRoom.objectsToSee)
                 {
                     currentRoom.explored = true;
+                    attainedInformation.OnRoomFullyExplored(currentRoom);
                 }
 
 
@@ -136,9 +138,11 @@ public class Enemy : MonoBehaviour {
 
     public void OnEnterNewRoom(Room newRoom)
     {
+        Debug.Log(1);
         currentRoom = newRoom;
         curState = EnemyState.Searching;
         nMAgent.speed = 2;
+        attainedInformation.OnRoomEntered(currentRoom);
     }
 
     //Raycasts for vision
