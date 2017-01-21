@@ -13,11 +13,13 @@ public class TrapManager : MonoBehaviour {
 
     bool useable;
     bool inObject;
-    bool proxy;
+    bool pProxy;
+    bool eProxy;
     float y;
     GameObject player;
     SpriteRenderer visability;
     Collider playerColl;
+    Collider enemyColl;
     public Animator animator;
 
     // Use this for initialization
@@ -33,7 +35,7 @@ public class TrapManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Debug.Log(useable);
-        if (proxy)
+        if (pProxy)
         {
             if (echo && inObject)
             {
@@ -55,17 +57,35 @@ public class TrapManager : MonoBehaviour {
                 useable = false;
                 animator.SetTrigger("Play");
             }
+            Debug.Log("Player!");
+        }
+        if (eProxy)
+        {
+            Debug.Log("wtf");
         }
     }
 
-    void OnTriggerStay(Collider playerColl)
+    void OnTriggerStay(Collider other)
     {
-        proxy = true;        
+        if (other == playerColl)
+        {
+            pProxy = true;
+        }
+        else if (other)
+        {
+            eProxy = true;
+        }
+
     }
-    void OnTriggerExit(Collider playerColl)
+    void OnTriggerExit(Collider other)
     {
-        proxy = false;
+        if (other == playerColl)
+        {
+            pProxy = false;
+        }
+        else if (other)
+        {
+            eProxy = false;
+        }
     }
-
-
 }
