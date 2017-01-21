@@ -31,6 +31,7 @@ public class PlayerManager : Singleton<PlayerManager> {
     {
         get { return Input.GetKey("left shift"); }
     }
+    bool cooldown;
     float speed;
     float sprintMax;
     float sprintCurrent;
@@ -86,18 +87,35 @@ public class PlayerManager : Singleton<PlayerManager> {
         }
         // apply sprint speed if enoght sprint energy (sprintCurrent) is left
         // current unlimited need to look into more
-        if (sprint && sprintCurrent > 0.0f)
+        if (sprint && sprintCurrent > 0.0f && !cooldown)
         {
             speed = sprintingSpeed;
-            sprintCurrent -= 0.1f * Time.deltaTime;
+            sprintCurrent -= 1.5f * Time.deltaTime;
         }
         else
         {
             speed = 1.0f;
-            if(sprintCurrent <= sprintMax)
-            sprintCurrent += 0.1f * Time.deltaTime;
+            if (sprintCurrent < sprintMax)
+            {
+                sprintCurrent += 0.25f * Time.deltaTime;
+            }
         }
 
+        if (cooldown && sprintCurrent >= 0.5f)
+        {
+            cooldown = false;
+        }
+
+        if (sprintCurrent >= sprintMax)
+        {
+            sprintCurrent = sprintMax;
+        }
+        else if (sprintCurrent < 0.0f)
+        {
+            sprintCurrent = 0.0f;
+            cooldown = true;
+        }
+        
         move = new Vector3(x, 0, z);
 
         this.transform.position += move * speed * Time.deltaTime;

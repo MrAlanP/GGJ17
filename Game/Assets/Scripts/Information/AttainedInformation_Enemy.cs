@@ -43,14 +43,16 @@ public class AttainedInformation_Enemy : AttainedInformation{
         walls.Add(wall); 
     }
 
-    public void OnRoomExplored(Room room)
+    public void OnRoomEntered(Room room)
     {
         if (!enteredRooms.Contains(room))
         {
             enteredRooms.Add(room);
-        }
+        }        
+    }
 
-        //TODO - check if the room has been completely explored
+    public void OnRoomFullyExplored(Room room)
+    {
         if (!fullyExploredRooms.Contains(room))
         {
             fullyExploredRooms.Add(room);
