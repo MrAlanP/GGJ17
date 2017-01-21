@@ -14,7 +14,7 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
     protected int spawnUnitCount = 1;
     #endregion
 
-    public KeyValuePair<Room, Enemy> roomsClaimed = new KeyValuePair<Room, Enemy>();
+    public Dictionary<Room, Enemy> roomsClaimed = new Dictionary<Room, Enemy>();
 
 
     // Use this for initialization

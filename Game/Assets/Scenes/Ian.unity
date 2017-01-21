@@ -74,7 +74,7 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: 0.25
+    agentRadius: 0.3
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -82,7 +82,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     accuratePlacement: 1
     minRegionArea: 2.12
-    cellSize: 0.083333336
+    cellSize: 0.1
     manualCellSize: 0
   m_NavMeshData: {fileID: 23800000, guid: 0eab8a9895d49df439ae6741affc4119, type: 2}
 --- !u!1 &1364421
@@ -127,8 +127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyUnitPrefab: {fileID: 108622, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
   unitsTransform: {fileID: 476793854}
-  beingExplorerd: []
-  beingExplorerd: []
 --- !u!1001 &15536521
 Prefab:
   m_ObjectHideFlags: 0
@@ -2740,7 +2738,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyUnitPrefab: {fileID: 0}
   unitsTransform: {fileID: 0}
-  beingExplorerd: []
 --- !u!1001 &304946367
 Prefab:
   m_ObjectHideFlags: 0

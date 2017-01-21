@@ -35,12 +35,14 @@ public class Enemy : MonoBehaviour {
 
     bool investigated = false;
 
+    public Room targetRoom;
+
 	// Use this for initialization
 	protected virtual void Start () {
 
         nMAgent = GetComponent<NavMeshAgent>();
 
-        curState = EnemyState.Searching;
+        curState = EnemyState.SearchingForNewRoom;
 	}
 
     // Update is called once per frame
@@ -48,28 +50,38 @@ public class Enemy : MonoBehaviour {
     {
         switch (curState)
         {
-            case EnemyState.Searching:
+            case EnemyState.SearchingForNewRoom:
 
+                //If current rooms has already been explored or has been 
                 if (currentRoom && (currentRoom.explored || investigated))
                 {
+                    Debug.Log(name + " Says: This room is explored, moving to next room");
                     investigated = false;
-                    //attainedInformation.OnRoomExplored(currentRoom);
 
-                    //Want Investigator to leave when they have explored enough or finished the whole house
+                    //Has the Investigator done all the exploring they can?
                     if (roomsExplored.Count >= explorationTotal)
                     {
                         print(name + "Says I'm done exploring, time to leave");
                         OnFinishExploring();
                     }
+                    //Have all the rooms been explored
                     else if(roomsExplored.Count >= RoomManager.Instance.rooms.Length)
                     {
                         print(name + " Says: The buildings been explored, leaving");
                         OnFinishExploring();
                     }
+                    //If not then find the next room
                     else
                     {
-                        Debug.Log(name + " Says: This room is explored, moving to next room");
-                        nMAgent.SetDestination(RoomManager.Instance.GetNextRoom(roomsExplored));
+                        targetRoom = RoomManager.Instance.GetNextRoom(roomsExplored);
+                        //Look for new Room
+                        nMAgent.SetDestination(targetRoom.transform.position);
+
+                        if (targetRoom.transform.position != RoomManager.Instance.startingRoom)
+                        {
+                            print(name + " Says: Found room, claiming");
+                            InvestigatorManager.Instance.roomsClaimed.Add(targetRoom, this);
+                        }
 
                         curState = EnemyState.ToNewRoom;
                     }
@@ -79,12 +91,20 @@ public class Enemy : MonoBehaviour {
                     //If in the centre of room start exploration
                     if (nMAgent.desiredVelocity.magnitude < 1)
                     {
-                        //InvestigatorManager.Instance.beingExplorerd.Add(currentRoom);
+                        //if (!InvestigatorManager.Instance.roomsClaimed.ContainsKey(currentRoom))
+                        //{ 
+                        //    InvestigatorManager.Instance.roomsClaimed.Add(currentRoom, this);
+                        //}
+                        //else
+                        //{
+                        //    nMAgent.SetDestination(RoomManager.Instance.GetNextRoom(roomsExplored));
+                        //}
 
                         investigationTimer += Time.deltaTime;
 
                         if (investigationTimer > investigationTime)
                         {
+                            InvestigatorManager.Instance.roomsClaimed.Remove(currentRoom);
                             roomsExplored.Add(currentRoom);
                             investigated = true;
                         }
@@ -139,8 +159,8 @@ public class Enemy : MonoBehaviour {
 
         if (curState != EnemyState.Leaving)
         {
-            nMAgent.SetDestination(currentRoom.transform.position);
-            curState = EnemyState.Searching;
+            //nMAgent.SetDestination(currentRoom.transform.position);
+            curState = EnemyState.SearchingForNewRoom;
         }
     }
 
