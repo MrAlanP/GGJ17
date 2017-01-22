@@ -39,6 +39,7 @@ public class Enemy_Investigator : Enemy {
                 if (playerSightCooldown < 0)
                 {
                     playerWitnessed = false;
+                    playerSightCooldown = 2;
                 }
 
             }
@@ -165,7 +166,7 @@ public class Enemy_Investigator : Enemy {
                 animator.SetBool("sad", true);
                 fearSpeedMultiplier = 2;
                 explorationTotal--;
-                Debug.Log("i'm a sad panda");
+                //Debug.Log("i'm a sad panda");
                 // investagtor scared enemy images
                 // stuff
                 break;
@@ -203,6 +204,10 @@ public class Enemy_Investigator : Enemy {
             }
 
             curState = EnemyState.ToNewRoom;
+        }
+        else
+        {
+            print("Technically I saw a ghost but I'm on cooldown");
         }
     }
 }

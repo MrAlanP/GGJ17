@@ -54,6 +54,7 @@ public class TrapManager : MonoBehaviour {
                 visability.enabled = true;
                 PlayerManager.Instance.inObject = false;
                 PlayerManager.Instance.rb.isKinematic = false;
+                PlayerManager.Instance.GetComponentInChildren<Collider>().enabled = false;
                 UIManager.Instance.useable = false;
                 UIManager.Instance.inObject = false;
                 inObject = false;
@@ -65,6 +66,7 @@ public class TrapManager : MonoBehaviour {
                 PlayerManager.Instance.moveToObject = transform.position;
                 PlayerManager.Instance.rb.isKinematic = true;
                 PlayerManager.Instance.inObject = true;
+                PlayerManager.Instance.GetComponentInChildren<Collider>().enabled = false;
                 UIManager.Instance.inObject = true;
                 if (useable)
                 {
