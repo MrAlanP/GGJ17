@@ -168,6 +168,7 @@ public class PlayerManager : Singleton<PlayerManager> {
         GetComponentInChildren<Collider>().enabled = false;
         rb.transform.SetParent(captor);
         rb.transform.localPosition = new Vector3(0, transform.localPosition.y, 0);
+        rb.isKinematic = true;
     }
 
 }

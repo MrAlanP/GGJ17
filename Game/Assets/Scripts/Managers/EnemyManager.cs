@@ -12,6 +12,7 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
     public float investigationSpeed = 1;
     public float movementSpeed = 1;
     public float sightRange = 25;
+    public int extraSpawn = 0;
     #endregion
 
     #region Protected Variables
@@ -41,16 +42,19 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 
             case 2:
                 UIManager.Instance.alert = UIManager.Alert.stage3;
+                extraSpawn = 1;
                 movementSpeed = 2;
                 break;
 
             case 3:
                 UIManager.Instance.alert = UIManager.Alert.stage4;
+                extraSpawn = 1;
                 Enemy.viewDistance = 3;
                 break;
 
             case 4:
                 UIManager.Instance.alert = UIManager.Alert.stage5;
+                extraSpawn = 2;
                 break;
         }
 

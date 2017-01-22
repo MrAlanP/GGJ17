@@ -9,6 +9,8 @@ public class Enemy_Investigator : Enemy {
     static float investigationTime = 1;
     float investigationTimer = 0;
 
+    float playerSightCooldown = 2;
+
     // Use this for initialization
     protected override void Start () {
         base.Start();
@@ -30,6 +32,16 @@ public class Enemy_Investigator : Enemy {
                 animator.SetInteger("direction", -90);
             }
 
+            if(playerWitnessed)
+            {
+                playerSightCooldown -= Time.deltaTime;
+
+                if (playerSightCooldown < 0)
+                {
+                    playerWitnessed = false;
+                }
+
+            }
 
             switch (curState)
             {
@@ -134,12 +146,9 @@ public class Enemy_Investigator : Enemy {
 
     protected override void OnFinishExploring()
     {
-        nMAgent.SetDestination(RoomManager.Instance.startingRoom);
-        curState = EnemyState.Leaving;
+        LeaveHouse();
     }
-
-    //Once the enemy leaves the house with a number of information
-    private void OnSafetyReached()
+    protected override void OnSafetyReached()
     {
         RoomManager.Instance.AddExploredRooms(roomsExplored);
         roomsExplored.Clear();
@@ -162,6 +171,8 @@ public class Enemy_Investigator : Enemy {
                 break;
 
             case 2:
+                fearSpeedMultiplier = 4;
+                LeaveHouse();
                 // investagtor override set alertness value to 0
                 // OnFinishExploring();   (?)
                 break;
@@ -175,19 +186,23 @@ public class Enemy_Investigator : Enemy {
 
     protected override void OnPlayerSeen()
     {
-        print(name + " Says: I've seen the Ghost, oh crumbs");
-        OnTrapScare();
-        targetRoom = RoomManager.Instance.GetNextRoom(roomsExplored);
-        //Look for new Room
-        nMAgent.SetDestination(targetRoom.transform.position);
-
-        if (targetRoom.transform.position != RoomManager.Instance.startingRoom)
+        if (!playerWitnessed)
         {
-            print(name + " Says: Found room, claiming");
-            InvestigatorManager.Instance.roomsClaimed.Add(targetRoom, this);
+            playerWitnessed = true;
+            EnemyManager.Instance.alertness += .6f;
+            print(name + " Says: I've seen the Ghost, oh crumbs");
+            OnTrapScare();
+            targetRoom = RoomManager.Instance.GetNextRoom(roomsExplored);
+            //Look for new Room
+            nMAgent.SetDestination(targetRoom.transform.position);
+
+            if (targetRoom.transform.position != RoomManager.Instance.startingRoom)
+            {
+                print(name + " Says: Found room, claiming");
+                InvestigatorManager.Instance.roomsClaimed.Add(targetRoom, this);
+            }
+
+            curState = EnemyState.ToNewRoom;
         }
-
-        curState = EnemyState.ToNewRoom;
-
     }
 }

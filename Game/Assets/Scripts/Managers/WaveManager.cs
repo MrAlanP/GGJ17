@@ -39,12 +39,12 @@ public class WaveManager : Singleton<WaveManager>
             {
                 case WaveType.Investigator:
                     {
-                        StartCoroutine(investigatorManager.SpawnUnits(numberOfEnemies + 1, SpawnType.Investigator));
+                        StartCoroutine(investigatorManager.SpawnUnits(numberOfEnemies + 1 + EnemyManager.Instance.extraSpawn, SpawnType.Investigator));
                         break;
                     }
                 case WaveType.Swat:
                     {
-                        StartCoroutine(investigatorManager.SpawnUnits(numberOfEnemies + 1, SpawnType.Swat));
+                        StartCoroutine(investigatorManager.SpawnUnits(numberOfEnemies + 1 + EnemyManager.Instance.extraSpawn, SpawnType.Swat));
                         break;
                     }
             }

@@ -4,11 +4,6 @@ using System.Collections.Generic;
 
 public class InvestigatorManager : EnemyManager {
 
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
     public override void OnEnemyFinish(Enemy enemy, bool destroy)
     {
         roomsClaimed.Clear();

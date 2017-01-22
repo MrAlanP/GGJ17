@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour {
     public Room targetRoom;
 
     bool deathWitnessed = false;
-    protected bool playerWitnessed = false;
+    public bool playerWitnessed = false;
 
     // Use this for initialization
     protected virtual void Start() {
@@ -152,6 +152,12 @@ public class Enemy : MonoBehaviour {
         }
     }
 
+    public void LeaveHouse()
+    {
+        curState = EnemyState.Leaving;
+        nMAgent.destination = RoomManager.Instance.startingRoom;
+    }
+
     protected virtual void OnPlayerSeen()
     {
     }
@@ -160,6 +166,11 @@ public class Enemy : MonoBehaviour {
     {
         // Ramp up fear level
         scareCount++;
+    }
+
+    protected virtual void OnSafetyReached()
+    {
+
     }
 
     public virtual void OnTrapDeath()

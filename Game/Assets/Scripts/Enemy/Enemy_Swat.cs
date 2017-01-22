@@ -35,8 +35,7 @@ public class Enemy_Swat : Enemy {
 
             if(!PlayerManager.Instance.alive)
             {
-                curState = EnemyState.Leaving;
-                nMAgent.destination = RoomManager.Instance.rooms[0].transform.position;
+                LeaveHouse();
             }
 
             switch (curState)
@@ -102,7 +101,7 @@ public class Enemy_Swat : Enemy {
 
                     if (currentRoom == RoomManager.Instance.rooms[0])
                     {
-                        //OnSafetyReached();
+                       OnSafetyReached();
                     }
                     break;
 
@@ -171,6 +170,15 @@ public class Enemy_Swat : Enemy {
     {
         roomsExplored.Clear();
         curState = EnemyState.SearchingForNewRoom;
+    }
+
+    protected override void OnSafetyReached()
+    {
+        base.OnSafetyReached();
+
+        roomsExplored.Clear();
+        InvestigatorManager.Instance.OnEnemyFinish(this, true);
+        curState = EnemyState.Left;
     }
 
     public override void ScareState()

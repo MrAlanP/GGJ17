@@ -53,6 +53,7 @@ public class TrapManager : MonoBehaviour {
             {
                 visability.enabled = true;
                 PlayerManager.Instance.inObject = false;
+                PlayerManager.Instance.rb.isKinematic = false;
                 UIManager.Instance.useable = false;
                 UIManager.Instance.inObject = false;
                 inObject = false;
@@ -62,6 +63,7 @@ public class TrapManager : MonoBehaviour {
                 visability.enabled = false;
                 inObject = true;
                 PlayerManager.Instance.moveToObject = transform.position;
+                PlayerManager.Instance.rb.isKinematic = true;
                 PlayerManager.Instance.inObject = true;
                 UIManager.Instance.inObject = true;
                 if (useable)
@@ -98,7 +100,6 @@ public class TrapManager : MonoBehaviour {
     {
         if (other == playerColl)
         {
-            print("Player in range");
             pProxy = true;
         }
         else if (other)
