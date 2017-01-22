@@ -6,6 +6,7 @@ public class PlayerManager : Singleton<PlayerManager> {
     public Room currentRoom { get; private set; }
     public Animator animator;
     public Rigidbody rb;
+    public Vector3 moveToObject;
 
     bool echo
     {
@@ -148,6 +149,10 @@ public class PlayerManager : Singleton<PlayerManager> {
         if (!inObject)
         {
             rb.velocity = new Vector3(move.x, move.y, move.z) * speed;
+        }
+        else
+        {
+            rb.position = moveToObject;
         }
     }
 }

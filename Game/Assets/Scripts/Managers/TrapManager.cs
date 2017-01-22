@@ -61,6 +61,7 @@ public class TrapManager : MonoBehaviour {
             {
                 visability.enabled = false;
                 inObject = true;
+                PlayerManager.Instance.moveToObject = transform.position;
                 PlayerManager.Instance.inObject = true;
                 UIManager.Instance.inObject = true;
                 if (useable)
