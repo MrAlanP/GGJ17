@@ -98,6 +98,7 @@ public class TrapManager : MonoBehaviour {
     {
         if (other == playerColl)
         {
+            print("Player in range");
             pProxy = true;
         }
         else if (other)
