@@ -838,7 +838,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.12, y: 0.64, z: 3.84}
+  m_Size: {x: 4.48, y: 0.64, z: 3.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &31682220
 MonoBehaviour:
@@ -1058,6 +1058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &49178077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2115,6 +2116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &98896427
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2961,6 +2963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &130704039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3034,6 +3037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &135210723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3391,6 +3395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &166589970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3745,6 +3750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &174184570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4513,6 +4519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &186690596
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4826,6 +4833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &196230478
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5008,7 +5016,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 0.64, z: 2.56}
+  m_Size: {x: 1.92, y: 0.64, z: 1.92}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &204485822
 Prefab:
@@ -5257,6 +5265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &210239116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5361,6 +5370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &216765561
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5602,6 +5612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &231124032
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5729,6 +5740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &233928307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5801,6 +5813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &237448043
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6057,6 +6070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &246607507
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6253,6 +6267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &260806881
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6895,8 +6910,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.84, y: 0, z: -1.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2068207235}
+  m_Children: []
   m_Father: {fileID: 493627032}
   m_RootOrder: 3
 --- !u!1 &292550932
@@ -6940,6 +6954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &292550935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8876,6 +8891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &378040539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9115,6 +9131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &387025238
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9211,7 +9228,7 @@ GameObject:
   - 33: {fileID: 395329089}
   - 65: {fileID: 395329088}
   - 23: {fileID: 395329087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9386,6 +9403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &402523297
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9572,7 +9590,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.48, y: 0.64, z: 3.2}
+  m_Size: {x: 3.84, y: 0.64, z: 2.56}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &418723820
 Prefab:
@@ -9983,7 +10001,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 0.64, z: 1.82}
+  m_Size: {x: 1.92, y: 0.64, z: 1.18}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &455687183
 MonoBehaviour:
@@ -10041,6 +10059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &457665246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10498,6 +10517,10 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 22302050, guid: b55b3273518938f43a6117adc0f62135, type: 2}
+      propertyPath: m_SortingOrder
+      value: 2000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b55b3273518938f43a6117adc0f62135, type: 2}
   m_IsPrefabParent: 0
@@ -10555,7 +10578,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 0.64, z: 3.1}
+  m_Size: {x: 1.92, y: 0.64, z: 2.46}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &484728632
 Prefab:
@@ -11653,6 +11676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &525775421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12083,6 +12107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &538385994
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13378,6 +13403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &593813747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13562,6 +13588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &601940148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14185,6 +14212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &618653622
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14399,14 +14427,6 @@ Prefab:
     - target: {fileID: 171214, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
       propertyPath: m_Name
       value: TopWall_1 (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
@@ -14722,6 +14742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &635136524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14958,14 +14979,6 @@ Prefab:
       propertyPath: m_Name
       value: TopWall_1 (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 168292, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d34c0bd68644664ab9a9d1bad1d73dc, type: 2}
   m_IsPrefabParent: 0
@@ -15083,6 +15096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &652764962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15432,6 +15446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &684680374
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16513,6 +16528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &713246175
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17004,6 +17020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &736547521
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17405,6 +17422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &756415406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17608,6 +17626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &762234705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18229,6 +18248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &794314128
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18299,7 +18319,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.84, y: 0.64, z: 2.56}
+  m_Size: {x: 3.2, y: 0.64, z: 1.92}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &794344508
 MonoBehaviour:
@@ -19385,6 +19405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &865813873
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19461,6 +19482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &871193221
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19663,6 +19685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &885364506
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19907,6 +19930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &893869296
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20033,6 +20057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &898184866
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21204,6 +21229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &949789419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21395,6 +21421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &954287962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21575,6 +21602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &959604922
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22303,6 +22331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1008399872
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22476,6 +22505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1015840070
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23187,6 +23217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1045663410
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24218,6 +24249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1098115245
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24290,6 +24322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1098216092
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24717,6 +24750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1116994320
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25505,6 +25539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1167355115
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25736,6 +25771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1181274155
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26782,6 +26818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1223040139
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26923,7 +26960,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.76, y: 0.64, z: 2.56}
+  m_Size: {x: 5.12, y: 0.64, z: 1.92}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1229915847
 MonoBehaviour:
@@ -27532,6 +27569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1264557285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28581,6 +28619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1326034523
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28653,6 +28692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1328258013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30161,6 +30201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1415269702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30742,6 +30783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1437779431
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31205,6 +31247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1459287487
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31278,18 +31321,6 @@ Prefab:
     - target: {fileID: 175766, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
       propertyPath: m_Name
       value: SideWall_Right_HalfCollision_Bottom (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 435948, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.641
-      objectReference: {fileID: 0}
-    - target: {fileID: 158322, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 158322, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ac8e61d5dbda464a8c463416e11a4ef, type: 2}
@@ -31452,6 +31483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1478317687
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31711,7 +31743,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.2, y: 0.64, z: 2.56}
+  m_Size: {x: 2.56, y: 0.64, z: 1.92}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1484237967
 Prefab:
@@ -31832,7 +31864,7 @@ GameObject:
   - 33: {fileID: 1487475522}
   - 65: {fileID: 1487475521}
   - 23: {fileID: 1487475520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32048,6 +32080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1497440165
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32638,6 +32671,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1535730320 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 188826, guid: b55b3273518938f43a6117adc0f62135, type: 2}
+  m_PrefabInternal: {fileID: 479060518}
+--- !u!114 &1535730326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535730320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eab6d78db5b8254199cfe772c502a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateOrder: 1
+  orderOffset: 0
 --- !u!1001 &1535774537
 Prefab:
   m_ObjectHideFlags: 0
@@ -32903,6 +32953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1548154679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34196,7 +34247,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 0.64, z: 1.92}
+  m_Size: {x: 1.92, y: 0.64, z: 1.28}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1622027131 stripped
 Transform:
@@ -35483,6 +35534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1672012222
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36007,6 +36059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1697880751
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36434,7 +36487,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.36, y: 0.64, z: 4.36}
+  m_Size: {x: 3.72, y: 0.64, z: 3.72}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1708353584
 GameObject:
@@ -36478,6 +36531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1708353587
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36747,6 +36801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1740267241
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37215,6 +37270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1771930795
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37572,6 +37628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1784013177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39536,8 +39593,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1959113826}
+  m_Children: []
   m_Father: {fileID: 493627032}
   m_RootOrder: 6
 --- !u!1 &1886998524
@@ -39656,6 +39712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1887504592
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40296,6 +40353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1930027468
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40369,6 +40427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1933802244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40614,6 +40673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1944517316
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40857,84 +40917,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 478966, guid: 0cff37d9f0155b34a8f2189f5229efb4, type: 2}
   m_PrefabInternal: {fileID: 1958041372}
---- !u!1 &1959113825
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 187350, guid: d999eb6ae62b38f469c013a377fd0da2, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1959113826}
-  - 33: {fileID: 1959113829}
-  - 23: {fileID: 1959113828}
-  - 65: {fileID: 1959113827}
-  m_Layer: 8
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
-  m_IsActive: 1
---- !u!4 &1959113826
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 469504, guid: d999eb6ae62b38f469c013a377fd0da2, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1959113825}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.16, z: 0}
-  m_LocalScale: {x: 0.64, y: 0.32, z: 0.16}
-  m_Children: []
-  m_Father: {fileID: 1882655642}
-  m_RootOrder: 0
---- !u!65 &1959113827
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6517304, guid: d999eb6ae62b38f469c013a377fd0da2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1959113825}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1959113828
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2352194, guid: d999eb6ae62b38f469c013a377fd0da2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1959113825}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &1959113829
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3382800, guid: d999eb6ae62b38f469c013a377fd0da2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1959113825}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1960252906
 Prefab:
   m_ObjectHideFlags: 0
@@ -41308,6 +41290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &1979668243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41820,6 +41803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &2028418974
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42068,6 +42052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &2041230787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42140,6 +42125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &2044902792
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43054,84 +43040,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_PrefabInternal: {fileID: 2067587761}
---- !u!1 &2068207234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 187350, guid: d999eb6ae62b38f469c013a377fd0da2, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2068207235}
-  - 33: {fileID: 2068207238}
-  - 23: {fileID: 2068207237}
-  - 65: {fileID: 2068207236}
-  m_Layer: 8
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
-  m_IsActive: 1
---- !u!4 &2068207235
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 469504, guid: d999eb6ae62b38f469c013a377fd0da2, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2068207234}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.16, z: 0}
-  m_LocalScale: {x: 0.64, y: 0.32, z: 0.16}
-  m_Children: []
-  m_Father: {fileID: 286211597}
-  m_RootOrder: 0
---- !u!65 &2068207236
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6517304, guid: d999eb6ae62b38f469c013a377fd0da2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2068207234}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2068207237
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2352194, guid: d999eb6ae62b38f469c013a377fd0da2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2068207234}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &2068207238
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3382800, guid: d999eb6ae62b38f469c013a377fd0da2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2068207234}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2068729745
 Prefab:
   m_ObjectHideFlags: 0
@@ -43227,6 +43135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &2069123456
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43643,6 +43552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &2085972942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44318,6 +44228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &2114581318
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44405,6 +44316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &2120222957
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44653,6 +44565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 0
+  orderOffset: 0
 --- !u!212 &2130216341
 SpriteRenderer:
   m_ObjectHideFlags: 0

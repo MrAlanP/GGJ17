@@ -116,6 +116,7 @@ MonoBehaviour:
   explorationTotal: 2000
   roomsExplored: []
   targetRoom: {fileID: 0}
+  playerWitnessed: 0
 --- !u!114 &11496258
 MonoBehaviour:
   m_ObjectHideFlags: 1

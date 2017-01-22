@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 408148}
   - 212: {fileID: 21209282}
+  - 114: {fileID: 11437292}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -27,12 +28,12 @@ GameObject:
   - 33: {fileID: 3304448}
   - 65: {fileID: 6588784}
   - 23: {fileID: 2338172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &171214
 GameObject:
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.36, y: 0, z: -2.24}
+  m_LocalPosition: {x: 5.76, y: 0, z: 4.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408148}
@@ -132,6 +133,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11437292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eab6d78db5b8254199cfe772c502a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateOrder: 0
 --- !u!212 &21209282
 SpriteRenderer:
   m_ObjectHideFlags: 1
