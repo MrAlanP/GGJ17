@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: af6b715999af0714dabc7c214d6061da
+timeCreated: 1485075173
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bio hazard_0
+    21300002: Bio hazard_1
+    21300004: Bio hazard_2
+    21300006: Bio hazard_3
+    21300008: Bio hazard_4
+    21300010: Bio hazard_5
+    21300012: Bio hazard_6
+    21300014: Bio hazard_7
+    21300016: Bio hazard_8
+    21300018: Bio hazard_9
+    21300020: Bio hazard_10
+    21300022: Bio hazard_11
+    21300024: Bio hazard_12
+    21300026: Bio hazard_13
+    21300028: Bio hazard_14
+    21300030: Bio hazard_15
+    21300032: Bio hazard_16
+    21300034: Bio hazard_17
+    21300036: Bio hazard_18
+    21300038: Bio hazard_19
+    21300040: Bio hazard_20
+    21300042: Bio hazard_21
+    21300044: Bio hazard_22
+    21300046: Bio hazard_23
+    21300048: Bio hazard_24
+    21300050: Bio hazard_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Bio hazard_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Bio hazard_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Bio hazard_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 31}
+        - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+    - name: Bio hazard_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Bio hazard_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -27}
+        - {x: -13, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Bio hazard_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -27}
+        - {x: -14, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 28}
+        - {x: 16, y: 31}
+    - name: Bio hazard_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Bio hazard_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Bio hazard_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 31}
+        - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+    - name: Bio hazard_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Bio hazard_10
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -27}
+        - {x: -13, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Bio hazard_11
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -27}
+        - {x: -14, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 28}
+        - {x: 16, y: 31}
+    - name: Bio hazard_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Bio hazard_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Bio hazard_14
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 31}
+        - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+    - name: Bio hazard_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Bio hazard_16
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -27}
+        - {x: -13, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Bio hazard_17
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -27}
+        - {x: -14, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 28}
+        - {x: 16, y: 31}
+    - name: Bio hazard_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Bio hazard_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Bio hazard_20
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 31}
+        - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+    - name: Bio hazard_21
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Bio hazard_22
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -27}
+        - {x: -13, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Bio hazard_23
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -27}
+        - {x: -14, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 28}
+        - {x: 16, y: 31}
+    - name: Bio hazard_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 75
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 20}
+        - {x: -20, y: 18}
+        - {x: -20, y: -20}
+        - {x: 20, y: -20}
+        - {x: 20, y: 17}
+        - {x: 18, y: 20}
+    - name: Bio hazard_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 75
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 20}
+        - {x: -20, y: -20}
+        - {x: 20, y: -20}
+        - {x: 20, y: 20}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
