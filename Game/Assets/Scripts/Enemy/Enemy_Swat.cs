@@ -8,6 +8,8 @@ public class Enemy_Swat : Enemy {
     static float investigationTime = 2;
     float investigationTimer = 0;
 
+    public bool hasPlayer = false;
+
     // Use this for initialization
     protected override void Start()
     {
@@ -121,6 +123,7 @@ public class Enemy_Swat : Enemy {
 
                         if (Vector3.Distance(transform.position, nMAgent.destination) < .5f)
                         {
+                            hasPlayer = true;
                             PlayerManager.Instance.OnDeath(this.transform);
                             nMAgent.destination = RoomManager.Instance.rooms[0].transform.position;
 

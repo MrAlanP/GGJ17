@@ -104,7 +104,7 @@ public class Enemy_Investigator : Enemy {
 
                 case EnemyState.Leaving:
 
-                    if (currentRoom == RoomManager.Instance.rooms[0])
+                    if (Vector3.Distance(transform.position, RoomManager.Instance.entranceDoor) < 1)
                     {
                         OnSafetyReached();
                     }

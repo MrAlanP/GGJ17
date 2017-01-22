@@ -170,5 +170,4 @@ public class PlayerManager : Singleton<PlayerManager> {
         rb.transform.localPosition = new Vector3(0, transform.localPosition.y, 0);
         rb.isKinematic = true;
     }
-
 }

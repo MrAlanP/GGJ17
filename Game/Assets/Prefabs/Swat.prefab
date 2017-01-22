@@ -12,7 +12,7 @@ GameObject:
   - 195: {fileID: 19533720}
   - 54: {fileID: 5415238}
   - 114: {fileID: 11449058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Swat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ GameObject:
   - 212: {fileID: 21294356}
   - 114: {fileID: 11496258}
   - 95: {fileID: 9590366}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,6 +117,7 @@ MonoBehaviour:
   roomsExplored: []
   targetRoom: {fileID: 0}
   playerWitnessed: 0
+  hasPlayer: 0
 --- !u!114 &11496258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateOrder: 1
+  orderOffset: 0
 --- !u!136 &13633674
 CapsuleCollider:
   m_ObjectHideFlags: 1

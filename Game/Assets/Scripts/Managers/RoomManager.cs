@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public class RoomManager : Singleton<RoomManager>
 {
 
+    public Vector3 entranceDoor = new Vector3(1.2f, 0, -7);
+
     public Room[] rooms;
 
     public Vector3 startingRoom

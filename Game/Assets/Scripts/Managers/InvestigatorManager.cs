@@ -8,8 +8,16 @@ public class InvestigatorManager : EnemyManager {
     {
         roomsClaimed.Clear();
 
+        if(enemy.GetComponent<Enemy_Swat>())
+        {
+            if(enemy.GetComponent<Enemy_Swat>().hasPlayer)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+            }
+        }
+
         enemyUnits.Remove(enemy);
-        if (destroy)
+        if (destroy && !enemy.GetComponentInChildren<PlayerManager>())
         {
             enemy.gameObject.AddComponent<TimedObjectDestructor>();
         }
