@@ -161,10 +161,13 @@ public class PlayerManager : Singleton<PlayerManager> {
     }
 
     //What happens when the Player is hit by Swat
-    public void OnDeath()
+    public void OnDeath(Transform captor)
     {
         alive = false;
         animator.SetBool("alive", false);
+        GetComponentInChildren<Collider>().enabled = false;
+        rb.transform.SetParent(captor);
+        rb.transform.localPosition = new Vector3(0, transform.localPosition.y, 0);
     }
 
 }

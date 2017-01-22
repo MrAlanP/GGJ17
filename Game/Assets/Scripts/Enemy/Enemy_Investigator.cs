@@ -35,6 +35,7 @@ public class Enemy_Investigator : Enemy {
             {
                 case EnemyState.Investigating:
 
+
                     //If current rooms has already been explored or has been 
                     if (currentRoom && (currentRoom.explored || investigated))
                     {
@@ -102,6 +103,8 @@ public class Enemy_Investigator : Enemy {
                     {
                         curState = EnemyState.Investigating;
                     }
+                    Scan();
+
                     break;
 
             }

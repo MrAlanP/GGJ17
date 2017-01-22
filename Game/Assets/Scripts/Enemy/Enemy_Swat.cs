@@ -33,6 +33,12 @@ public class Enemy_Swat : Enemy {
 
             Scan();
 
+            if(!PlayerManager.Instance.alive)
+            {
+                curState = EnemyState.Leaving;
+                nMAgent.destination = RoomManager.Instance.rooms[0].transform.position;
+            }
+
             switch (curState)
             {
                 case EnemyState.Investigating:
@@ -112,9 +118,12 @@ public class Enemy_Swat : Enemy {
 
                     nMAgent.destination = PlayerManager.Instance.rb.position;
 
-                    if(Vector3.Distance(transform.position, nMAgent.destination) < 2)
+                    if(Vector3.Distance(transform.position, nMAgent.destination) < .5f)
                     {
-                        PlayerManager.Instance.OnDeath();
+                        PlayerManager.Instance.OnDeath(this.transform);
+                        nMAgent.destination = RoomManager.Instance.rooms[0].transform.position;
+
+                        curState = EnemyState.Leaving;
                     }
                     break;
 
