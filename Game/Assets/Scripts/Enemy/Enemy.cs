@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour {
 
     private float movementSpeed = 2;
 
-    private float viewDistance = 25;
+    public static float viewDistance = 25;
     private float degreesBetweenRaycast = 2.0f;
 
     //Sean, referance to trap activation
@@ -22,11 +22,8 @@ public class Enemy : MonoBehaviour {
     //All colliders hit in scan
     public List<Collider> hitColliders = new List<Collider>();
 
-    static float investigationTime = 1;
-    float investigationTimer = 0;
-
     //Ref to NavMeshAgent
-    private NavMeshAgent nMAgent;
+    protected NavMeshAgent nMAgent;
 
     //Ref to current room
     public Room currentRoom;
@@ -37,121 +34,42 @@ public class Enemy : MonoBehaviour {
 
     public List<Room> roomsExplored = new List<Room>();
 
-    bool investigated = false;
-
     public Room targetRoom;
 
-	// Use this for initialization
-	protected virtual void Start () {
+    // Use this for initialization
+    protected virtual void Start() {
 
         nMAgent = GetComponent<NavMeshAgent>();
 
         curState = EnemyState.SearchingForNewRoom;
-	}
+    }
 
     // Update is called once per frame
-    protected virtual void Update ()
+    protected virtual void Update()
     {
-        switch (curState)
+        if(nMAgent.speed < EnemyManager.Instance.movementSpeed)
         {
-            case EnemyState.SearchingForNewRoom:
-
-                //If current rooms has already been explored or has been 
-                if (currentRoom && (currentRoom.explored || investigated))
-                {
-                    if(targetRoom)
-                        Debug.Log(name + " Says: " + targetRoom.name + " room is explored, moving to next room");
-
-                    investigated = false;
-
-                    //Has the Investigator done all the exploring they can?
-                    if (roomsExplored.Count >= explorationTotal)
-                    {
-                        print(name + "Says I'm done exploring, time to leave");
-                        OnFinishExploring();
-                    }
-                    //Have all the rooms been explored
-                    else if(roomsExplored.Count >= RoomManager.Instance.rooms.Length)
-                    {
-                        print(name + " Says: The buildings been explored, leaving");
-                        OnFinishExploring();
-                    }
-                    //If not then find the next room
-                    else
-                    {
-                        targetRoom = RoomManager.Instance.GetNextRoom(roomsExplored);
-                        //Look for new Room
-                        nMAgent.SetDestination(targetRoom.transform.position);
-
-                        if (targetRoom.transform.position != RoomManager.Instance.startingRoom)
-                        {
-                            print(name + " Says: Found room, claiming");
-                            InvestigatorManager.Instance.roomsClaimed.Add(targetRoom, this);
-                        }
-
-                        curState = EnemyState.ToNewRoom;
-                    }
-                }
-                else
-                {
-                    //If in the centre of room start exploration
-                    if (nMAgent.desiredVelocity.magnitude < 1 && Vector3.Distance(transform.position, nMAgent.destination) < 2)
-                    {
-                        //if (!InvestigatorManager.Instance.roomsClaimed.ContainsKey(currentRoom))
-                        //{ 
-                        //    InvestigatorManager.Instance.roomsClaimed.Add(currentRoom, this);
-                        //}
-                        //else
-                        //{
-                        //    nMAgent.SetDestination(RoomManager.Instance.GetNextRoom(roomsExplored));
-                        //}
-
-                        investigationTimer += Time.deltaTime * EnemyManager.Instance.investigationSpeed;
-
-                        if (investigationTimer > investigationTime)
-                        {
-                            InvestigatorManager.Instance.roomsClaimed.Remove(currentRoom);
-                            roomsExplored.Add(currentRoom);
-                            investigated = true;
-                        }
-                    }
-                }
-
-                //Scan();
-
-                break;
-
-            case EnemyState.Leaving:
-
-                if (currentRoom == RoomManager.Instance.rooms[0])
-                {
-                    OnSafetyReached();
-                }
-                break;
-
+            nMAgent.speed = EnemyManager.Instance.movementSpeed;
         }
+    }
 
-        if(drawRaysDebug)
+    public void FindNewRoom()
+    {
+        if (!targetRoom)
         {
-            Debug.DrawRay(transform.position, nMAgent.desiredVelocity, Color.blue);
-        }
+            targetRoom = RoomManager.Instance.GetNextRoom(roomsExplored);
+            //Look for new Room
+            nMAgent.SetDestination(targetRoom.transform.position);
 
-        //Sean triggers for death and scare
-        if (fearTrap)
-        {
-            Debug.Log("enemy script fear");
-            OnTrapScare();
-            fearTrap = false;
-        }
-        if (deathTrap)
-        {
-            Debug.Log("enemy script death");
-            OnTrapDeath();
-            deathTrap = false;
-        }
+            if (targetRoom.transform.position != RoomManager.Instance.startingRoom)
+            {
+                print(name + " Says: Found room, claiming");
+                InvestigatorManager.Instance.roomsClaimed.Add(targetRoom, this);
+            }
 
-        
-	}
+            curState = EnemyState.ToNewRoom;
+        }
+    }
 
     public void Spawn()
     {
@@ -160,34 +78,13 @@ public class Enemy : MonoBehaviour {
         nMAgent.speed = EnemyManager.Instance.movementSpeed;
     }
 
-    //Once the enemy leaves the house with a number of information
-    private void OnSafetyReached()
-    {
-        RoomManager.Instance.AddExploredRooms(roomsExplored);
-        roomsExplored.Clear();
-        InvestigatorManager.Instance.OnEnemyFinish(this);
-        curState = EnemyState.Left;
-    }
-
-    private void OnFinishExploring()
-    {
-        nMAgent.SetDestination(RoomManager.Instance.startingRoom);
-        curState = EnemyState.Leaving;
-    }
-
     public void OnEnterNewRoom(Room newRoom)
     {
         currentRoom = newRoom;
-
-        if (curState != EnemyState.Leaving)
-        {
-            //nMAgent.SetDestination(currentRoom.transform.position);
-            curState = EnemyState.SearchingForNewRoom;
-        }
     }
 
     //Raycasts for vision
-    private void Scan()
+    protected void Scan()
     {
         hitColliders.Clear();
 

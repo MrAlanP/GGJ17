@@ -180,7 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alertness: 0
-  enemyUnitPrefab: {fileID: 108622, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
+  InvestigatorPrefab: {fileID: 108622, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
+  SwatPrefab: {fileID: 0}
   unitsTransform: {fileID: 476793854}
   investigationSpeed: 1
   movementSpeed: 1
@@ -6974,52 +6975,6 @@ Transform:
   - {fileID: 1437779429}
   m_Father: {fileID: 1196510665}
   m_RootOrder: 12
---- !u!1 &302910260
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 302910261}
-  - 114: {fileID: 302910262}
-  m_Layer: 0
-  m_Name: SwatManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &302910261
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 302910260}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2038006231}
-  m_Father: {fileID: 813011681}
-  m_RootOrder: 3
---- !u!114 &302910262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 302910260}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 176546236a6046e4188937fdde1cc8ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alertness: 0
-  enemyUnitPrefab: {fileID: 0}
-  unitsTransform: {fileID: 0}
-  investigationSpeed: 1
-  movementSpeed: 1
-  sightRange: 25
 --- !u!1 &304535043
 GameObject:
   m_ObjectHideFlags: 0
@@ -9815,7 +9770,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 0.64, z: 1.92}
+  m_Size: {x: 2.56, y: 0.64, z: 1.82}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &455687183
 MonoBehaviour:
@@ -10379,7 +10334,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 0.64, z: 3.2}
+  m_Size: {x: 2.56, y: 0.64, z: 3.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &484728632
 Prefab:
@@ -18370,7 +18325,6 @@ Transform:
   - {fileID: 1369504592}
   - {fileID: 903255841}
   - {fileID: 1364422}
-  - {fileID: 302910261}
   - {fileID: 1913612676}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -19700,7 +19654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigatorManager: {fileID: 1364423}
-  swatManager: {fileID: 0}
   waves: 0000000000000000000000000000000001000000
 --- !u!1001 &906737500
 Prefab:
@@ -39238,7 +39191,7 @@ Transform:
   - {fileID: 2102901802}
   - {fileID: 1383320799}
   m_Father: {fileID: 813011681}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1001 &1924818638
 Prefab:
   m_ObjectHideFlags: 0
@@ -40795,33 +40748,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_PrefabInternal: {fileID: 2032989602}
---- !u!1 &2038006230
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2038006231}
-  m_Layer: 0
-  m_Name: Units
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2038006231
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2038006230}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 302910261}
-  m_RootOrder: 0
 --- !u!1001 &2039386382
 Prefab:
   m_ObjectHideFlags: 0

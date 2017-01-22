@@ -6,7 +6,8 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 
     #region Public Variables
     public float alertness = 0;
-    public GameObject enemyUnitPrefab;
+    public GameObject InvestigatorPrefab;
+    public GameObject SwatPrefab;
     public Transform unitsTransform;
     public float investigationSpeed = 1;
     public float movementSpeed = 1;
@@ -29,12 +30,6 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
-
-    public IEnumerator SpawnWave(int UnitsToSpawn)
-    {
-        yield return new WaitForSeconds(2);
 
         switch ((int)alertness)
         {
@@ -51,7 +46,7 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 
             case 3:
                 UIManager.Instance.alert = UIManager.Alert.stage4;
-                sightRange = 3;
+                Enemy.viewDistance = 3;
                 break;
 
             case 4:
@@ -59,18 +54,36 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
                 break;
         }
 
-        for(int i = 0; i < UnitsToSpawn; i++)
-        {
+    }
 
-            GameObject enemyUnit = Instantiate(enemyUnitPrefab);
+    public IEnumerator SpawnUnits(int UnitsToSpawn, SpawnType unitTypeToSpawn)
+    {
+        yield return new WaitForSeconds(2);
+
+        for (int i = 0; i < UnitsToSpawn; i++)
+        {
+            GameObject enemyUnit = null;
+
+            switch (unitTypeToSpawn)
+            {
+                case SpawnType.Investigator:
+                    enemyUnit = Instantiate(InvestigatorPrefab);
+                    break;
+
+                case SpawnType.Swat:
+
+                    enemyUnit = Instantiate(SwatPrefab);
+                    break;
+            }
+
             enemyUnit.transform.SetParent(unitsTransform);
+            enemyUnit.name = unitTypeToSpawn.ToString() + i;
             enemyUnit.transform.position = RoomManager.Instance.startingRoom;
             Enemy enemy = enemyUnit.GetComponent<Enemy>();
             enemyUnits.Add(enemy);
             enemy.Spawn();
             enemy.gameObject.SetActive(true);
         }
-
     }
 
     public virtual void OnEnemyFinish(Enemy enemy)

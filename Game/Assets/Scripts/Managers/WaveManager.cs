@@ -11,7 +11,6 @@ public class WaveManager : Singleton<WaveManager>
     }
 
     public InvestigatorManager investigatorManager;
-    public SwatManager swatManager;
     public WaveType[] waves;
 
 
@@ -34,16 +33,18 @@ public class WaveManager : Singleton<WaveManager>
     {
         if (currentWave < waves.Length)
         {
+            int numberOfEnemies = Mathf.Clamp(currentWave, 0, 3);
+
             switch (waves[currentWave])
             {
                 case WaveType.Investigator:
                     {
-                        StartCoroutine(investigatorManager.SpawnWave(currentWave+1));
+                        StartCoroutine(investigatorManager.SpawnUnits(numberOfEnemies + 1, SpawnType.Investigator));
                         break;
                     }
                 case WaveType.Swat:
                     {
-                        //swatManager.StartWave();
+                        StartCoroutine(investigatorManager.SpawnUnits(numberOfEnemies + 1, SpawnType.Swat));
                         break;
                     }
             }
