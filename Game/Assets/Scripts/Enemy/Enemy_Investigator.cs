@@ -20,6 +20,16 @@ public class Enemy_Investigator : Enemy {
     {
         base.Update();
 
+        if (nMAgent.desiredVelocity.x > 0)
+        {
+            animator.SetInteger("sirection", 90);
+        }
+        else
+        {
+            animator.SetInteger("direction", -90);
+        }
+                
+
         switch (curState)
         {
             case EnemyState.Investigating:

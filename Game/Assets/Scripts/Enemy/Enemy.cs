@@ -51,6 +51,8 @@ public class Enemy : MonoBehaviour {
         {
             nMAgent.speed = EnemyManager.Instance.movementSpeed;
         }
+
+         
     }
 
     public void FindNewRoom()
