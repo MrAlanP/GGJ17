@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 90b3aae498913ec4eb368e493de2e226
-timeCreated: 1485038685
+timeCreated: 1485085708
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -22,6 +22,8 @@ TextureImporter:
     21300030: room_tiles_2_13
     21300032: room_tiles_2_14
     21300034: room_tiles_2_17
+    21300036: room_tiles_2_18
+    21300038: room_tiles_2_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -385,6 +387,40 @@ TextureImporter:
         - {x: -44, y: -61}
         - {x: 52, y: -61}
         - {x: 52, y: 48}
+    - name: room_tiles_2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 32}
+        - {x: -31, y: 23}
+        - {x: -31, y: -5}
+        - {x: -19, y: -10}
+        - {x: 28, y: -10}
+        - {x: 31, y: 0}
+        - {x: 31, y: 27}
+        - {x: 19, y: 32}
+    - name: room_tiles_2_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 91}
+        - {x: -48, y: -86}
+        - {x: 48, y: -86}
+        - {x: 48, y: 91}
     outline: []
   spritePackingTag: 
   userData: 
