@@ -21250,14 +21250,6 @@ Prefab:
       propertyPath: m_Name
       value: SideWall_Right_Full (12)
       objectReference: {fileID: 0}
-    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 129326, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0317fa9133f7ffa47a960d220863e1b7, type: 2}
   m_IsPrefabParent: 0
@@ -31966,14 +31958,6 @@ Prefab:
     - target: {fileID: 417668, guid: 500f95a7b927d964597cd9771041e9e7, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 189498, guid: 500f95a7b927d964597cd9771041e9e7, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 189498, guid: 500f95a7b927d964597cd9771041e9e7, type: 2}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 500f95a7b927d964597cd9771041e9e7, type: 2}
