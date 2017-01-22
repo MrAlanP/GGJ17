@@ -34,4 +34,9 @@ public class Enemy_Investigator : Enemy {
                 break;
         }
     }
+    public override void OnTrapDeath()
+    {
+        base.OnTrapDeath();
+        animator.SetBool("alive", false);
+    }
 }

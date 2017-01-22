@@ -8390,48 +8390,6 @@ MonoBehaviour:
   investigatorManager: {fileID: 1364423}
   swatManager: {fileID: 0}
   waves: 0000000000000000000000000000000001000000
---- !u!1001 &924359697
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.383
-      objectReference: {fileID: 0}
-    - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.366
-      objectReference: {fileID: 0}
-    - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 448342, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &925993097
 Prefab:
   m_ObjectHideFlags: 0
