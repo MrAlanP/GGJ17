@@ -1709,14 +1709,6 @@ Prefab:
       propertyPath: m_Name
       value: DiningTable_Main (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 170862, guid: d642d6e827a03564c88b0a39ba397858, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 170862, guid: d642d6e827a03564c88b0a39ba397858, type: 2}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d642d6e827a03564c88b0a39ba397858, type: 2}
   m_IsPrefabParent: 0
@@ -5661,6 +5653,7 @@ Transform:
   - {fileID: 1987793536}
   - {fileID: 159659331}
   - {fileID: 190998646}
+  - {fileID: 751947201}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &278541973
@@ -15889,6 +15882,52 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_PrefabInternal: {fileID: 748448565}
+--- !u!1001 &751947200
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 273140511}
+    m_Modifications:
+    - target: {fileID: 444458, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 444458, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.3271737
+      objectReference: {fileID: 0}
+    - target: {fileID: 444458, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 4.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 444458, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444458, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444458, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444458, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 444458, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &751947201 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 444458, guid: 2f4fefc2604900545b371e1f96a649be, type: 2}
+  m_PrefabInternal: {fileID: 751947200}
 --- !u!1 &757288342
 GameObject:
   m_ObjectHideFlags: 0
@@ -22749,18 +22788,6 @@ Prefab:
     - target: {fileID: 168008, guid: 960d18038f0a7464b91af17d96567219, type: 2}
       propertyPath: m_Name
       value: DiningTable_Leg (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 402562, guid: 960d18038f0a7464b91af17d96567219, type: 2}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 171378, guid: 960d18038f0a7464b91af17d96567219, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 171378, guid: 960d18038f0a7464b91af17d96567219, type: 2}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 960d18038f0a7464b91af17d96567219, type: 2}
