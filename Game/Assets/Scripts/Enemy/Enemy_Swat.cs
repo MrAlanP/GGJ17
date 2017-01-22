@@ -192,10 +192,13 @@ public class Enemy_Swat : Enemy {
 
     protected override void OnPlayerSeen()
     {
-        print(name + "Says: I've seen the Ghost Engaging");
-        nMAgent.destination = PlayerManager.Instance.rb.position;
-        playerWitnessed = true;
-        curState = EnemyState.Engaging;
-        base.OnPlayerSeen();
+        if (PlayerManager.Instance.inObject)
+        {
+            print(name + "Says: I've seen the Ghost Engaging");
+            nMAgent.destination = PlayerManager.Instance.rb.position;
+            playerWitnessed = true;
+            curState = EnemyState.Engaging;
+            base.OnPlayerSeen();
+        }
     }
 }

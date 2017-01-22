@@ -81,7 +81,8 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
 
             enemyUnit.transform.SetParent(unitsTransform);
             enemyUnit.name = unitTypeToSpawn.ToString() + i;
-            enemyUnit.transform.position = RoomManager.Instance.startingRoom;
+            //enemyUnit.transform.position = RoomManager.Instance.startingRoom;
+            enemyUnit.transform.position = new Vector3(1.2f, 0, -6);
             Enemy enemy = enemyUnit.GetComponent<Enemy>();
             enemyUnits.Add(enemy);
             enemy.Spawn();
