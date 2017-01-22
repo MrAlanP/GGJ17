@@ -762,7 +762,7 @@ GameObject:
   - 4: {fileID: 31682218}
   - 65: {fileID: 31682219}
   - 114: {fileID: 31682220}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: DiningRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1977,7 +1977,7 @@ GameObject:
   - 4: {fileID: 96760158}
   - 65: {fileID: 96760159}
   - 114: {fileID: 96760160}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EntranceRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4863,7 +4863,7 @@ GameObject:
   - 4: {fileID: 204177945}
   - 65: {fileID: 204177947}
   - 114: {fileID: 204177946}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrophyRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9314,7 +9314,7 @@ GameObject:
   - 4: {fileID: 413486610}
   - 65: {fileID: 413486612}
   - 114: {fileID: 413486611}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bedroom2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9741,7 +9741,7 @@ GameObject:
   - 4: {fileID: 455687181}
   - 65: {fileID: 455687182}
   - 114: {fileID: 455687183}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10277,6 +10277,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 495548, guid: b55b3273518938f43a6117adc0f62135, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.243
+      objectReference: {fileID: 0}
+    - target: {fileID: 495548, guid: b55b3273518938f43a6117adc0f62135, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 495548, guid: b55b3273518938f43a6117adc0f62135, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.993
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b55b3273518938f43a6117adc0f62135, type: 2}
   m_IsPrefabParent: 0
@@ -10290,7 +10302,7 @@ GameObject:
   - 4: {fileID: 481731276}
   - 65: {fileID: 481731278}
   - 114: {fileID: 481731277}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17883,7 +17895,7 @@ GameObject:
   - 4: {fileID: 794344506}
   - 65: {fileID: 794344507}
   - 114: {fileID: 794344508}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20363,6 +20375,52 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 441890, guid: dbaaac2b8f76f9a46af48953c6cd6403, type: 2}
   m_PrefabInternal: {fileID: 932580260}
+--- !u!1001 &935950187
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 430100, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 430100, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 430100, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 430100, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430100, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430100, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430100, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 430100, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426486, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.139
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3f3d0330ee758794d81d655f08fdd156, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &936144659
 Prefab:
   m_ObjectHideFlags: 0
@@ -24639,6 +24697,48 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 484724, guid: 90e64588e937f484db7d11f2654bbb4f, type: 2}
   m_PrefabInternal: {fileID: 1161942894}
+--- !u!1001 &1162786657
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 454584, guid: f02537a383a8dda41a47d0daf81ffce6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.615083
+      objectReference: {fileID: 0}
+    - target: {fileID: 454584, guid: f02537a383a8dda41a47d0daf81ffce6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 454584, guid: f02537a383a8dda41a47d0daf81ffce6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.524
+      objectReference: {fileID: 0}
+    - target: {fileID: 454584, guid: f02537a383a8dda41a47d0daf81ffce6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454584, guid: f02537a383a8dda41a47d0daf81ffce6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454584, guid: f02537a383a8dda41a47d0daf81ffce6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454584, guid: f02537a383a8dda41a47d0daf81ffce6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 454584, guid: f02537a383a8dda41a47d0daf81ffce6, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f02537a383a8dda41a47d0daf81ffce6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1164743199
 Prefab:
   m_ObjectHideFlags: 0
@@ -26131,7 +26231,7 @@ GameObject:
   - 4: {fileID: 1229915845}
   - 65: {fileID: 1229915846}
   - 114: {fileID: 1229915847}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Garage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27939,7 +28039,7 @@ GameObject:
   - 4: {fileID: 1336264338}
   - 65: {fileID: 1336264340}
   - 114: {fileID: 1336264339}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Corridor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30804,7 +30904,7 @@ GameObject:
   - 4: {fileID: 1480363179}
   - 65: {fileID: 1480363181}
   - 114: {fileID: 1480363180}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TvRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33285,7 +33385,7 @@ GameObject:
   - 4: {fileID: 1619306582}
   - 65: {fileID: 1619306584}
   - 114: {fileID: 1619306583}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bathroom2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35509,7 +35609,7 @@ GameObject:
   - 4: {fileID: 1705473058}
   - 65: {fileID: 1705473060}
   - 114: {fileID: 1705473059}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Library
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41082,7 +41182,7 @@ GameObject:
   - 4: {fileID: 2047303606}
   - 65: {fileID: 2047303608}
   - 114: {fileID: 2047303607}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Corridor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

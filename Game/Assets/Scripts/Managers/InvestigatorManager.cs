@@ -9,12 +9,15 @@ public class InvestigatorManager : EnemyManager {
 	
 	}
 
-    public override void OnEnemyFinish(Enemy enemy)
+    public override void OnEnemyFinish(Enemy enemy, bool destroy)
     {
         roomsClaimed.Clear();
 
         enemyUnits.Remove(enemy);
-        enemy.gameObject.AddComponent<TimedObjectDestructor>();
+        if (destroy)
+        {
+            enemy.gameObject.AddComponent<TimedObjectDestructor>();
+        }
 
         if (enemyUnits.Count == 0)
         {

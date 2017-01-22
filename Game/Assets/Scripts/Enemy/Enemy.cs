@@ -6,11 +6,12 @@ public class Enemy : MonoBehaviour {
 
     public bool drawRaysDebug = false;
 
-    public bool isAlive { get; private set; }
+    public bool isAlive = true;
 
     protected int scareCount = 0; //How many times we've been scared
 
     private float movementSpeed = 2;
+    protected float fearSpeedMultiplier = 1;
 
     public static float viewDistance = 25;
     private float degreesBetweenRaycast = 2.0f;
@@ -30,11 +31,14 @@ public class Enemy : MonoBehaviour {
 
     public EnemyState curState;
 
-    public int explorationTotal = 1;
+    public int explorationTotal = 2;
 
     public List<Room> roomsExplored = new List<Room>();
 
     public Room targetRoom;
+
+    bool deathWitnessed = false;
+    bool playerWitnessed = false;
 
     // Use this for initialization
     protected virtual void Start() {
@@ -47,12 +51,7 @@ public class Enemy : MonoBehaviour {
     // Update is called once per frame
     protected virtual void Update()
     {
-        if(nMAgent.speed < EnemyManager.Instance.movementSpeed)
-        {
-            nMAgent.speed = EnemyManager.Instance.movementSpeed;
-        }
-
-         
+        nMAgent.speed = EnemyManager.Instance.movementSpeed * fearSpeedMultiplier;
     }
 
     public void FindNewRoom()
@@ -97,7 +96,7 @@ public class Enemy : MonoBehaviour {
 
             RaycastHit hit;
 
-            if (Physics.Raycast(transform.position, direction, out hit, viewDistance))
+            if (Physics.Raycast(transform.position + Vector3.up * .09f, direction, out hit, viewDistance))
             {
                 Vector3 targetDir = hit.point - transform.position;
                 float angle = Vector3.Angle(targetDir, nMAgent.desiredVelocity);
@@ -105,7 +104,7 @@ public class Enemy : MonoBehaviour {
                 if (angle < 45.0f)
                 {
                     if (hit.collider != null && !hitColliders.Contains(hit.collider) &&
-                        hit.collider.bounds.Intersects(currentRoom.GetComponent<BoxCollider>().bounds))
+                        hit.collider.bounds.Intersects(currentRoom.GetComponent<Collider>().bounds))
                     {
                         hitColliders.Add(hit.collider);
                     }
@@ -135,9 +134,18 @@ public class Enemy : MonoBehaviour {
         //Iterate over found colliders
         for(int i = 0; i< hitColliders.Count; i++)
         {
-            if(hitColliders[i].tag == "Player")
+            if (hitColliders[i].tag == "Death" && !hitColliders[i].GetComponent<Enemy>().deathWitnessed)
+            {
+                //print(name + " Says: Oh God," + hitColliders[i].name + " is dead!");
+                EnemyManager.Instance.alertness += 1;
+                hitColliders[i].GetComponent<Enemy>().deathWitnessed = true;
+                OnTrapScare();
+            }
+
+            if (hitColliders[i].tag == "Player" && !playerWitnessed)
             {
                 print(name + " Says: I've seen the Ghost, oh crumbs");
+                OnTrapScare();
                 targetRoom = RoomManager.Instance.GetNextRoom(roomsExplored);
                 //Look for new Room
                 nMAgent.SetDestination(targetRoom.transform.position);
@@ -151,8 +159,6 @@ public class Enemy : MonoBehaviour {
                 curState = EnemyState.ToNewRoom;
 
                 break;
-
-                scareCount++;
             }
         }
     }
@@ -167,7 +173,10 @@ public class Enemy : MonoBehaviour {
     {
         // Play death, kill ect.
         isAlive = false;
+        nMAgent.enabled = false;
+        tag = "Death";
 
+        EnemyManager.Instance.OnEnemyFinish(this, false);
     }
 
     public virtual void ScareState()

@@ -86,7 +86,7 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
         }
     }
 
-    public virtual void OnEnemyFinish(Enemy enemy)
+    public virtual void OnEnemyFinish(Enemy enemy, bool destroy)
     {
     }
 }

@@ -18,112 +18,115 @@ public class Enemy_Investigator : Enemy {
 	// Update is called once per frame
 	protected override void Update ()
     {
-        base.Update();
-
-        if (nMAgent.desiredVelocity.x > 0)
+        if (isAlive)
         {
-            animator.SetInteger("sirection", 90);
-        }
-        else
-        {
-            animator.SetInteger("direction", -90);
-        }
-                
+            base.Update();
 
-        switch (curState)
-        {
-            case EnemyState.Investigating:
+            if (nMAgent.desiredVelocity.x > 0)
+            {
+                animator.SetInteger("direction", 90);
+            }
+            else
+            {
+                animator.SetInteger("direction", -90);
+            }
 
-                //If current rooms has already been explored or has been 
-                if (currentRoom && (currentRoom.explored || investigated))
-                {
-                    if (targetRoom)
-                        Debug.Log(name + " Says: " + targetRoom.name + " room is explored, moving to next room");
 
-                    investigated = false;
+            switch (curState)
+            {
+                case EnemyState.Investigating:
 
-                    //Has the Investigator done all the exploring they can?
-                    if (roomsExplored.Count >= explorationTotal)
+                    //If current rooms has already been explored or has been 
+                    if (currentRoom && (currentRoom.explored || investigated))
                     {
-                        print(name + "Says I'm done exploring, time to leave");
-                        OnFinishExploring();
-                    }
-                    //Have all the rooms been explored
-                    else if (roomsExplored.Count >= RoomManager.Instance.rooms.Length)
-                    {
-                        print(name + " Says: The buildings been explored, leaving");
-                        OnFinishExploring();
-                    }
-                    //If not then find the next room
-                    else
-                    {
-                        curState = EnemyState.SearchingForNewRoom;
-                    }
-                }
-                else
-                {
-                    //If in the centre of room start exploration
-                    if (nMAgent.desiredVelocity.magnitude < 1 && Vector3.Distance(transform.position, nMAgent.destination) < 2)
-                    {
-                        investigationTimer += Time.deltaTime * EnemyManager.Instance.investigationSpeed;
+                        if (targetRoom)
+                            Debug.Log(name + " Says: " + targetRoom.name + " room is explored, moving to next room");
 
-                        if (investigationTimer > investigationTime)
+                        investigated = false;
+
+                        //Has the Investigator done all the exploring they can?
+                        if (roomsExplored.Count >= explorationTotal)
                         {
-                            print("Finished investigating");
-                            InvestigatorManager.Instance.roomsClaimed.Remove(currentRoom);
-                            roomsExplored.Add(targetRoom);
-                            investigated = true;
+                            print(name + "Says I'm done exploring, time to leave");
+                            OnFinishExploring();
+                        }
+                        //Have all the rooms been explored
+                        else if (roomsExplored.Count >= RoomManager.Instance.rooms.Length)
+                        {
+                            print(name + " Says: The buildings been explored, leaving");
+                            OnFinishExploring();
+                        }
+                        //If not then find the next room
+                        else
+                        {
+                            curState = EnemyState.SearchingForNewRoom;
                         }
                     }
-                }
+                    else
+                    {
+                        //If in the centre of room start exploration
+                        if (nMAgent.desiredVelocity.magnitude < 1 && Vector3.Distance(transform.position, nMAgent.destination) < 2)
+                        {
+                            investigationTimer += Time.deltaTime * EnemyManager.Instance.investigationSpeed;
 
-                Scan();
-                break;
+                            if (investigationTimer > investigationTime)
+                            {
+                                print("Finished investigating");
+                                InvestigatorManager.Instance.roomsClaimed.Remove(currentRoom);
+                                roomsExplored.Add(targetRoom);
+                                investigated = true;
+                            }
+                        }
+                    }
 
-            case EnemyState.SearchingForNewRoom:
+                    Scan();
+                    break;
 
-                FindNewRoom();
-                Scan();
-                break;
+                case EnemyState.SearchingForNewRoom:
 
-            case EnemyState.Leaving:
+                    FindNewRoom();
+                    Scan();
+                    break;
 
-                if (currentRoom == RoomManager.Instance.rooms[0])
-                {
-                    OnSafetyReached();
-                }
-                break;
+                case EnemyState.Leaving:
 
-            case EnemyState.ToNewRoom:
+                    if (currentRoom == RoomManager.Instance.rooms[0])
+                    {
+                        OnSafetyReached();
+                    }
+                    break;
 
-                if (currentRoom == targetRoom)
-                {
-                    curState = EnemyState.Investigating;
-                }
-                break;
+                case EnemyState.ToNewRoom:
 
+                    if (currentRoom == targetRoom)
+                    {
+                        curState = EnemyState.Investigating;
+                    }
+                    break;
+
+            }
+
+            if (drawRaysDebug)
+            {
+                Debug.DrawRay(transform.position, nMAgent.desiredVelocity, Color.blue);
+            }
+
+            //Sean triggers for death and scare
+            if (fearTrap)
+            {
+                Debug.Log("enemy script fear");
+                OnTrapScare();
+                fearTrap = false;
+            }
+            if (deathTrap)
+            {
+                Debug.Log("enemy script death");
+                OnTrapDeath();
+                deathTrap = false;
+            }
+
+            ScareState();
         }
-
-        if (drawRaysDebug)
-        {
-            Debug.DrawRay(transform.position, nMAgent.desiredVelocity, Color.blue);
-        }
-
-        //Sean triggers for death and scare
-        if (fearTrap)
-        {
-            Debug.Log("enemy script fear");
-            OnTrapScare();
-            fearTrap = false;
-        }
-        if (deathTrap)
-        {
-            Debug.Log("enemy script death");
-            OnTrapDeath();
-            deathTrap = false;
-        }
-
-        ScareState();
     }
 
     private void OnFinishExploring()
@@ -137,7 +140,7 @@ public class Enemy_Investigator : Enemy {
     {
         RoomManager.Instance.AddExploredRooms(roomsExplored);
         roomsExplored.Clear();
-        InvestigatorManager.Instance.OnEnemyFinish(this);
+        InvestigatorManager.Instance.OnEnemyFinish(this, true);
         curState = EnemyState.Left;
     }
 
@@ -148,6 +151,8 @@ public class Enemy_Investigator : Enemy {
         {
             case 1:
                 animator.SetBool("sad", true);
+                fearSpeedMultiplier = 2;
+                explorationTotal--;
                 Debug.Log("i'm a sad panda");
                 // investagtor scared enemy images
                 // stuff
@@ -159,6 +164,7 @@ public class Enemy_Investigator : Enemy {
                 break;
         }
     }
+
     public override void OnTrapDeath()
     {
         base.OnTrapDeath();

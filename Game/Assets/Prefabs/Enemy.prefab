@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawRaysDebug: 1
+  isAlive: 1
   fearTrap: 0
   deathTrap: 0
   hitColliders: []

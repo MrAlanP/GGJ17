@@ -76,20 +76,19 @@ public class TrapManager : MonoBehaviour {
                 auxAnimator.SetTrigger("Play");
                 UIManager.Instance.useable = false;
             }
-            Debug.Log("Player!");
         }
 
         if (eProxy && isPlaying)
         {
-            Debug.Log("what are you?");
+            //Debug.Log("what are you?");
             if (trapType == TrapType.Lethal)
             {
-                Debug.Log("enemy script scare");
+                //Debug.Log("enemy script scare");
                 enemy.GetComponent<Enemy>().deathTrap = true;
             }
             if (trapType == TrapType.NonLethal)
             {
-                Debug.Log("trap script fear");
+                //Debug.Log("trap script fear");
                 enemy.GetComponent<Enemy>().fearTrap = true;
             }
         }
