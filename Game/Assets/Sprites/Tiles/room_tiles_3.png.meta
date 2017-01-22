@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 12b179c6bf93ce64b92d8e52692a3936
-timeCreated: 1485084973
+timeCreated: 1485089010
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,8 @@ TextureImporter:
     21300004: room_tiles_3_2
     21300006: room_tiles_3_3
     21300008: room_tiles_3_4
+    21300010: room_tiles_3_5
+    21300012: room_tiles_3_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -63,7 +65,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -32, y: 32}
@@ -78,7 +80,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -32, y: 32}
@@ -93,7 +95,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -32, y: 32}
@@ -108,7 +110,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 28, y: -32}
@@ -123,7 +125,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 28, y: 32}
@@ -133,6 +135,36 @@ TextureImporter:
         - {x: -8, y: -1}
         - {x: 17, y: -32}
         - {x: 28, y: -32}
+    - name: room_tiles_3_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47, y: -32}
+        - {x: 47, y: 32}
+        - {x: -47, y: 32}
+        - {x: -47, y: -32}
+    - name: room_tiles_3_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47, y: -32}
+        - {x: 47, y: 32}
+        - {x: -47, y: 32}
+        - {x: -47, y: -32}
     outline: []
   spritePackingTag: 
   userData: 
