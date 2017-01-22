@@ -7135,7 +7135,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 417936, guid: b55b3273518938f43a6117adc0f62135, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.606
       objectReference: {fileID: 0}
     - target: {fileID: 417936, guid: b55b3273518938f43a6117adc0f62135, type: 2}
       propertyPath: m_LocalPosition.y
@@ -39578,6 +39578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c760423a2c2743046ba6880e0bb7456b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  entranceDoor: {x: 1.2, y: 0, z: -7}
   rooms:
   - {fileID: 96760160}
   - {fileID: 794344508}
