@@ -15,6 +15,10 @@ public class Enemy : MonoBehaviour {
     private float viewDistance = 25;
     private float degreesBetweenRaycast = 2.0f;
 
+    //Sean, referance to trap activation
+    public bool fearTrap = false;
+    public bool deathTrap = false;
+
     //All colliders hit in scan
     public List<Collider> hitColliders = new List<Collider>();
 
@@ -131,6 +135,22 @@ public class Enemy : MonoBehaviour {
         {
             Debug.DrawRay(transform.position, nMAgent.desiredVelocity, Color.blue);
         }
+
+        //Sean triggers for death and scare
+        if (fearTrap)
+        {
+            Debug.Log("enemy script fear");
+            OnTrapScare();
+            fearTrap = false;
+        }
+        if (deathTrap)
+        {
+            Debug.Log("enemy script death");
+            OnTrapDeath();
+            deathTrap = false;
+        }
+
+        
 	}
 
     public void Spawn()
@@ -237,4 +257,20 @@ public class Enemy : MonoBehaviour {
             }
         }
     }
+
+    public void OnTrapScare()
+    {
+        // Ramp up fear level
+        scareCount++;
+    }
+
+    public virtual void OnTrapDeath()
+    {
+        // Play death, kill ect.
+        isAlive = false;
+
+    }
+
+    public virtual void ScareState()
+    {}
 }

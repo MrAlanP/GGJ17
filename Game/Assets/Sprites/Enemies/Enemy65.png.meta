@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 4e74c3b010e1a294faa7d8c38c8e1e60
+timeCreated: 1485049908
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy65_0
+    21300002: Enemy65_1
+    21300004: Enemy65_2
+    21300006: Enemy65_3
+    21300008: Enemy65_4
+    21300010: Enemy65_5
+    21300012: Enemy65_6
+    21300014: Enemy65_7
+    21300016: Enemy65_8
+    21300018: Enemy65_9
+    21300020: Enemy65_10
+    21300022: Enemy65_11
+    21300024: Enemy65_12
+    21300026: Enemy65_13
+    21300028: Enemy65_14
+    21300030: Enemy65_15
+    21300032: Enemy65_16
+    21300034: Enemy65_17
+    21300036: Enemy65_18
+    21300038: Enemy65_19
+    21300040: Enemy65_20
+    21300042: Enemy65_21
+    21300044: Enemy65_22
+    21300046: Enemy65_23
+    21300048: Enemy65_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Enemy65_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Enemy65_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Enemy65_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 31}
+        - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+    - name: Enemy65_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Enemy65_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -27}
+        - {x: -13, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Enemy65_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 320
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -27}
+        - {x: -14, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 28}
+        - {x: 16, y: 31}
+    - name: Enemy65_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Enemy65_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Enemy65_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 31}
+        - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+    - name: Enemy65_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Enemy65_10
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -27}
+        - {x: -13, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Enemy65_11
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 256
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -27}
+        - {x: -14, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 28}
+        - {x: 16, y: 31}
+    - name: Enemy65_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Enemy65_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Enemy65_14
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 31}
+        - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+    - name: Enemy65_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Enemy65_16
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -27}
+        - {x: -13, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Enemy65_17
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 192
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -27}
+        - {x: -14, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 28}
+        - {x: 16, y: 31}
+    - name: Enemy65_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Enemy65_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Enemy65_20
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 31}
+        - {x: -18, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+    - name: Enemy65_21
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -26}
+        - {x: -13, y: -31}
+        - {x: 17, y: -31}
+        - {x: 18, y: -20}
+        - {x: 18, y: 31}
+    - name: Enemy65_22
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -27}
+        - {x: -13, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 31}
+        - {x: -14, y: 31}
+        - {x: -18, y: 28}
+    - name: Enemy65_23
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 128
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -18, y: 30}
+        - {x: -18, y: -27}
+        - {x: -14, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: 28}
+        - {x: 16, y: 31}
+    - name: Enemy65_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 75
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 20}
+        - {x: -20, y: 18}
+        - {x: -20, y: -20}
+        - {x: 20, y: -20}
+        - {x: 20, y: 17}
+        - {x: 18, y: 20}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,4 +14,13 @@ public class Enemy_Swat : Enemy {
     {
         base.Update();
     }
+
+    public override void ScareState()
+    {
+        base.ScareState();
+        if(scareCount == 3)
+        {
+            // Exit
+        }
+    }
 }

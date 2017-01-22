@@ -29,6 +29,7 @@ GameObject:
   - 4: {fileID: 423254}
   - 212: {fileID: 21294356}
   - 114: {fileID: 11496258}
+  - 95: {fileID: 9590366}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -76,6 +77,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!95 &9590366
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158936}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b091db4b2a27a6c4ea10f278aa446512, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -88,12 +106,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawRaysDebug: 1
+  fearTrap: 0
+  deathTrap: 0
   hitColliders: []
   currentRoom: {fileID: 0}
   curState: 0
   explorationTotal: 1
   roomsExplored: []
   targetRoom: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &11496258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,7 +186,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 9813b5d35efe32c419d7003af8a767ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4e74c3b010e1a294faa7d8c38c8e1e60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -18,6 +18,7 @@ public class TrapManager : MonoBehaviour {
     bool isPlaying;
     public TrapType trapType;
     GameObject player;
+    GameObject enemy;
     PassCollisionsToGameobject child;
     SpriteRenderer visability;
     Collider playerColl;
@@ -50,7 +51,6 @@ public class TrapManager : MonoBehaviour {
             }
             if (echo && inObject)
             {
-                print("Exiting object");
                 visability.enabled = true;
                 PlayerManager.Instance.inObject = false;
                 UIManager.Instance.useable = false;
@@ -59,7 +59,6 @@ public class TrapManager : MonoBehaviour {
             }
             else if (echo && useable && !inObject)
             {
-                print("Entered object");
                 visability.enabled = false;
                 inObject = true;
                 PlayerManager.Instance.inObject = true;
@@ -71,7 +70,6 @@ public class TrapManager : MonoBehaviour {
             }
             if (foxtrot && visability.enabled == false && useable)
             {
-                print("activating object");
                 useable = false;
                 animator.SetTrigger("Play");
                 auxAnimator.SetTrigger("Play");
@@ -85,11 +83,13 @@ public class TrapManager : MonoBehaviour {
             Debug.Log("what are you?");
             if (trapType == TrapType.Lethal)
             {
-                Debug.Log("needs to DIE");
+                Debug.Log("enemy script scare");
+                enemy.GetComponent<Enemy>().deathTrap = true;
             }
             if (trapType == TrapType.NonLethal)
             {
-                Debug.Log("Needs to leave");
+                Debug.Log("trap script fear");
+                enemy.GetComponent<Enemy>().fearTrap = true;
             }
         }
     }
@@ -102,6 +102,20 @@ public class TrapManager : MonoBehaviour {
         }
         else if (other)
         {
+           enemy = other.gameObject;
+           eProxy = true;
+        }
+
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other == playerColl)
+        {
+
+        }
+        else if (other)
+        {
+            enemy = other.gameObject;
             eProxy = true;
         }
 
