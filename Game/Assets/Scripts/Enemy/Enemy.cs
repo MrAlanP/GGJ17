@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour {
 
+    public Animator animator;
     public bool drawRaysDebug = false;
 
     public bool isAlive = true;
@@ -38,7 +39,7 @@ public class Enemy : MonoBehaviour {
     public Room targetRoom;
 
     bool deathWitnessed = false;
-    bool playerWitnessed = false;
+    protected bool playerWitnessed = false;
 
     // Use this for initialization
     protected virtual void Start() {
@@ -167,7 +168,7 @@ public class Enemy : MonoBehaviour {
         isAlive = false;
         nMAgent.enabled = false;
         tag = "Death";
-
+        animator.SetBool("alive", false);
         EnemyManager.Instance.OnEnemyFinish(this, false);
     }
 

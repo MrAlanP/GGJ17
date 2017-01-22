@@ -3,8 +3,6 @@ using System.Collections;
 
 public class Enemy_Swat : Enemy {
 
-    public Animator animator;
-
     bool investigated = false;
 
     static float investigationTime = 2;
@@ -33,6 +31,7 @@ public class Enemy_Swat : Enemy {
                 animator.SetInteger("direction", -90);
             }
 
+            Scan();
 
             switch (curState)
             {
@@ -86,13 +85,11 @@ public class Enemy_Swat : Enemy {
                         }
                     }
 
-                    Scan();
                     break;
 
                 case EnemyState.SearchingForNewRoom:
 
                     FindNewRoom();
-                    Scan();
                     break;
 
                 case EnemyState.Leaving:
@@ -113,7 +110,7 @@ public class Enemy_Swat : Enemy {
 
                 case EnemyState.Engaging:
 
-                    nMAgent.destination = PlayerManager.Instance.transform.position;
+                    nMAgent.destination = PlayerManager.Instance.rb.position;
 
                     if(Vector3.Distance(transform.position, nMAgent.destination) < 2)
                     {
@@ -179,8 +176,8 @@ public class Enemy_Swat : Enemy {
     protected override void OnPlayerSeen()
     {
         print(name + "Says: I've seen the Ghost Engaging");
-        nMAgent.destination = PlayerManager.Instance.transform.position;
-
+        nMAgent.destination = PlayerManager.Instance.rb.position;
+        playerWitnessed = true;
         curState = EnemyState.Engaging;
         base.OnPlayerSeen();
     }

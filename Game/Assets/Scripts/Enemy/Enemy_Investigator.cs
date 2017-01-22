@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Enemy_Investigator : Enemy {
 
-    public Animator animator;
 
     bool investigated = false;
 
@@ -169,7 +168,6 @@ public class Enemy_Investigator : Enemy {
     public override void OnTrapDeath()
     {
         base.OnTrapDeath();
-        animator.SetBool("alive", false);
     }
 
     protected override void OnPlayerSeen()

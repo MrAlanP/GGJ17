@@ -105,7 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa8f5a4beb154e41abce7e3febdade2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawRaysDebug: 0
+  animator: {fileID: 9590366}
+  drawRaysDebug: 1
   isAlive: 1
   fearTrap: 0
   deathTrap: 0
@@ -115,7 +116,6 @@ MonoBehaviour:
   explorationTotal: 2000
   roomsExplored: []
   targetRoom: {fileID: 0}
-  animator: {fileID: 9590366}
 --- !u!114 &11496258
 MonoBehaviour:
   m_ObjectHideFlags: 1
