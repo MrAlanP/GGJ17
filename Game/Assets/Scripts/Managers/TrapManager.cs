@@ -24,6 +24,7 @@ public class TrapManager : MonoBehaviour {
     Collider enemyColl;
 
     public Animator animator;
+    public Animator auxAnimator;
     public enum TrapType { Lethal, NonLethal };
 
 
@@ -73,6 +74,7 @@ public class TrapManager : MonoBehaviour {
                 print("activating object");
                 useable = false;
                 animator.SetTrigger("Play");
+                auxAnimator.SetTrigger("Play");
                 UIManager.Instance.useable = false;
             }
             Debug.Log("Player!");
