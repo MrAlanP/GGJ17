@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 448342}
   - 136: {fileID: 13633674}
   - 195: {fileID: 19533720}
-  - 114: {fileID: 11400076}
   - 54: {fileID: 5415238}
+  - 114: {fileID: 11449058}
   m_Layer: 0
   m_Name: Swat
   m_TagString: Untagged
@@ -94,7 +94,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11400076
+--- !u!114 &11449058
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,19 +102,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 108622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 283a1ccd56e82934f97040951df8d4d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 2aa8f5a4beb154e41abce7e3febdade2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawRaysDebug: 1
+  drawRaysDebug: 0
+  isAlive: 1
   fearTrap: 0
   deathTrap: 0
   hitColliders: []
   currentRoom: {fileID: 0}
   curState: 0
-  explorationTotal: 1
+  explorationTotal: 2000
   roomsExplored: []
   targetRoom: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 9590366}
 --- !u!114 &11496258
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -5,4 +5,5 @@
     ToNewRoom,
     Leaving,
     Left,
+    Engaging,
 };

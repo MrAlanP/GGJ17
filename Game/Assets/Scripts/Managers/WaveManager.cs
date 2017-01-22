@@ -44,7 +44,7 @@ public class WaveManager : Singleton<WaveManager>
                     }
                 case WaveType.Swat:
                     {
-                        StartCoroutine(investigatorManager.SpawnUnits(numberOfEnemies + 1, SpawnType.Swat));
+                        StartCoroutine(investigatorManager.SpawnUnits(numberOfEnemies + 2, SpawnType.Swat));
                         break;
                     }
             }

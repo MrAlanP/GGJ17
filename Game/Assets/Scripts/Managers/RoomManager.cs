@@ -31,6 +31,23 @@ public class RoomManager : Singleton<RoomManager>
         }
     }
 
+    public int roomsToExplore
+    {
+        get
+        {
+            int count = 0;
+            foreach (Room room in rooms)
+            {
+                if (room.explored)
+                {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+    }
+
 	// Use this for initialization
 	void Start () {
 	
@@ -58,7 +75,26 @@ public class RoomManager : Singleton<RoomManager>
         Debug.LogWarning("Not meant to get here");
         return rooms[0];
     }
-    
+
+    public Room GetNextRoomSwat(List<Room> enemyRooms)
+    {
+        for (int i = 0; i < rooms.Length; i++)
+        {
+            if (!enemyRooms.Contains(rooms[i]) && rooms[i].explored)
+            {
+                print(rooms[i].name + rooms[i].explored);
+                if (!InvestigatorManager.Instance.roomsClaimed.ContainsKey(rooms[i]))
+                {
+                    print("Room not claimed");
+                    return rooms[i];
+                }
+            }
+        }
+
+        Debug.LogWarning("Not meant to get here");
+        return rooms[0];
+    }
+
     public void AddExploredRooms(List<Room> exploredRooms)
     {
         //Check all explored Rooms

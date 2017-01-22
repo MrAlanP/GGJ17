@@ -46,7 +46,7 @@ public class Room : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.GetComponent<Enemy_Investigator>())
+        if (collider.gameObject.GetComponent<Enemy>())
         {
             Debug.Log(collider.name + " entered " + name);
 

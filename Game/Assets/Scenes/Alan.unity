@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alertness: 0
   InvestigatorPrefab: {fileID: 108622, guid: 13d461c6f04b8f44abfb634bdea6ad25, type: 2}
-  SwatPrefab: {fileID: 0}
+  SwatPrefab: {fileID: 108622, guid: 83b357c1b39c5e44e978fcdcf0a074bc, type: 2}
   unitsTransform: {fileID: 476793854}
   investigationSpeed: 1
   movementSpeed: 1
@@ -9786,7 +9786,7 @@ MonoBehaviour:
   attachedRooms:
   - {fileID: 96760160}
   objectsToSee: 0
-  explored: 0
+  explored: 1
 --- !u!1 &457665243
 GameObject:
   m_ObjectHideFlags: 0
@@ -10335,7 +10335,7 @@ MonoBehaviour:
   attachedRooms:
   - {fileID: 96760160}
   objectsToSee: 0
-  explored: 0
+  explored: 1
 --- !u!65 &481731278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17942,7 +17942,7 @@ MonoBehaviour:
   - {fileID: 96760160}
   - {fileID: 1229915847}
   objectsToSee: 0
-  explored: 0
+  explored: 1
 --- !u!1001 &796140919
 Prefab:
   m_ObjectHideFlags: 0
@@ -19666,7 +19666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigatorManager: {fileID: 1364423}
-  waves: 0000000000000000000000000000000001000000
+  waves: 0100000000000000000000000000000001000000
 --- !u!1001 &906737500
 Prefab:
   m_ObjectHideFlags: 0

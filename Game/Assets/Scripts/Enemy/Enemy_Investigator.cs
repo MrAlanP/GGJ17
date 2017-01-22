@@ -71,6 +71,7 @@ public class Enemy_Investigator : Enemy {
 
                             if (investigationTimer > investigationTime)
                             {
+                                investigationTimer = 0;
                                 print("Finished investigating");
                                 InvestigatorManager.Instance.roomsClaimed.Remove(currentRoom);
                                 roomsExplored.Add(targetRoom);
@@ -129,7 +130,7 @@ public class Enemy_Investigator : Enemy {
         }
     }
 
-    private void OnFinishExploring()
+    protected override void OnFinishExploring()
     {
         nMAgent.SetDestination(RoomManager.Instance.startingRoom);
         curState = EnemyState.Leaving;
@@ -169,5 +170,23 @@ public class Enemy_Investigator : Enemy {
     {
         base.OnTrapDeath();
         animator.SetBool("alive", false);
+    }
+
+    protected override void OnPlayerSeen()
+    {
+        print(name + " Says: I've seen the Ghost, oh crumbs");
+        OnTrapScare();
+        targetRoom = RoomManager.Instance.GetNextRoom(roomsExplored);
+        //Look for new Room
+        nMAgent.SetDestination(targetRoom.transform.position);
+
+        if (targetRoom.transform.position != RoomManager.Instance.startingRoom)
+        {
+            print(name + " Says: Found room, claiming");
+            InvestigatorManager.Instance.roomsClaimed.Add(targetRoom, this);
+        }
+
+        curState = EnemyState.ToNewRoom;
+
     }
 }

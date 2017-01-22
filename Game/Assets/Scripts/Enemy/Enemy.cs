@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour {
         nMAgent.speed = EnemyManager.Instance.movementSpeed * fearSpeedMultiplier;
     }
 
-    public void FindNewRoom()
+    public virtual void FindNewRoom()
     {
         if (!targetRoom)
         {
@@ -118,7 +118,7 @@ public class Enemy : MonoBehaviour {
                 {
                     if (drawRaysDebug)
                     {
-                        Debug.DrawRay(transform.position, direction * viewDistance, Color.red);
+                        //Debug.DrawRay(transform.position, direction * viewDistance, Color.red);
                     }
                 }
             }
@@ -144,23 +144,15 @@ public class Enemy : MonoBehaviour {
 
             if (hitColliders[i].tag == "Player" && !playerWitnessed)
             {
-                print(name + " Says: I've seen the Ghost, oh crumbs");
-                OnTrapScare();
-                targetRoom = RoomManager.Instance.GetNextRoom(roomsExplored);
-                //Look for new Room
-                nMAgent.SetDestination(targetRoom.transform.position);
-
-                if (targetRoom.transform.position != RoomManager.Instance.startingRoom)
-                {
-                    print(name + " Says: Found room, claiming");
-                    InvestigatorManager.Instance.roomsClaimed.Add(targetRoom, this);
-                }
-
-                curState = EnemyState.ToNewRoom;
+                OnPlayerSeen();
 
                 break;
             }
         }
+    }
+
+    protected virtual void OnPlayerSeen()
+    {
     }
 
     public void OnTrapScare()
@@ -181,4 +173,9 @@ public class Enemy : MonoBehaviour {
 
     public virtual void ScareState()
     {}
+
+    protected virtual void OnFinishExploring()
+    {
+    }
+
 }

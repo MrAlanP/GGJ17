@@ -155,4 +155,10 @@ public class PlayerManager : Singleton<PlayerManager> {
             rb.position = moveToObject;
         }
     }
+
+    //What happens when the Player is hit by Swat
+    public void OnDeath()
+    {
+    }
+
 }
