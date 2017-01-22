@@ -115,15 +115,23 @@ public class Enemy_Swat : Enemy {
 
                 case EnemyState.Engaging:
 
-                    nMAgent.destination = PlayerManager.Instance.rb.position;
-
-                    if(Vector3.Distance(transform.position, nMAgent.destination) < .5f)
+                    if (!PlayerManager.Instance.inObject)
                     {
-                        PlayerManager.Instance.OnDeath(this.transform);
-                        nMAgent.destination = RoomManager.Instance.rooms[0].transform.position;
+                        nMAgent.destination = PlayerManager.Instance.rb.position;
 
-                        curState = EnemyState.Leaving;
+                        if (Vector3.Distance(transform.position, nMAgent.destination) < .5f)
+                        {
+                            PlayerManager.Instance.OnDeath(this.transform);
+                            nMAgent.destination = RoomManager.Instance.rooms[0].transform.position;
+
+                            curState = EnemyState.Leaving;
+                        }
                     }
+                    else
+                    {
+                        FindNewRoom();
+                    }
+
                     break;
 
             }
@@ -192,7 +200,7 @@ public class Enemy_Swat : Enemy {
 
     protected override void OnPlayerSeen()
     {
-        if (PlayerManager.Instance.inObject)
+        if (!PlayerManager.Instance.inObject)
         {
             print(name + "Says: I've seen the Ghost Engaging");
             nMAgent.destination = PlayerManager.Instance.rb.position;

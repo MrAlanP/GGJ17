@@ -155,7 +155,7 @@ public class Enemy : MonoBehaviour {
     public void LeaveHouse()
     {
         curState = EnemyState.Leaving;
-        nMAgent.destination = RoomManager.Instance.startingRoom;
+        nMAgent.destination = new Vector3(1.2f, 0, -6);
     }
 
     protected virtual void OnPlayerSeen()
