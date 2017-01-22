@@ -102,7 +102,7 @@ public class Enemy : MonoBehaviour {
                 Vector3 targetDir = hit.point - transform.position;
                 float angle = Vector3.Angle(targetDir, nMAgent.desiredVelocity);
 
-                if (angle < 45.0f)
+                if (angle < 30.0f)
                 {
                     if (hit.collider != null && !hitColliders.Contains(hit.collider) &&
                         hit.collider.bounds.Intersects(currentRoom.GetComponent<Collider>().bounds))

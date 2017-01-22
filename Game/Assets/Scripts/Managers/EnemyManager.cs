@@ -35,7 +35,6 @@ public abstract class EnemyManager : Singleton<EnemyManager> {
         switch ((int)alertness)
         {
             case 1:
-                print("Stage 2 ");
                 UIManager.Instance.alert = UIManager.Alert.stage2;
                 investigationSpeed = 2;
                 break;
